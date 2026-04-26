@@ -9,11 +9,17 @@ Use `tradings-api` for the overnight numeric and event scan:
 - `GET /api/news/stock?lang=en&market_country=US` — US single-name headlines
 - `GET /api/news/economic?lang=en` — macro headlines
 - `GET /api/news?symbol={symbol}` — company-specific follow-up headlines
-- `GET /api/quote/{symbol}` or `POST /api/quote/batch` — pre/post-market move, volume, session status
+- `GET /api/quote/{symbol}?session=regular&fields=all` or `POST /api/quote/batch` — pre/post-market move, volume, session status
 - `GET /api/calendar/economic?from=&to=&market=america` — today's macro calendar
 - `GET /api/calendar/earnings?from=&to=&market=america` — today's earnings slate
 
 Web Search remains necessary for rumors, full article context, and event types not covered by the structured feed.
+
+## Execution Notes
+
+- If you start from company names, resolve symbols first via `/api/search/market/{query}?filter=stock` and keep the resolved `EXCHANGE:TICKER` as canonical.
+- Prefer `GET /api/quote/{symbol}?session=regular&fields=all` or the batch equivalent for overnight / pre-market context. The payload shape is nested, with key quote fields under `data.data`.
+- Treat venue-like exchange fields from quote-style payloads as market-data context, not definitive primary-listing metadata.
 
 ## Workflow
 
@@ -34,7 +40,7 @@ Scan for relevant events across coverage universe:
 - Macro data or policy changes affecting the sector from `/api/news/economic` and `/api/calendar/economic`
 
 **Market Context**
-- Overnight futures / pre-market moves from `/api/quote/{symbol}` or `POST /api/quote/batch`
+- Overnight futures / pre-market moves from `/api/quote/{symbol}?session=regular&fields=all` or `POST /api/quote/batch`
 - Sector ETF performance
 - Relevant commodity or currency moves
 - Key economic data releases today

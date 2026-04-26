@@ -10,9 +10,15 @@ Use `tradings-api` first for the numeric refresh:
 - `GET /api/market-data/{symbol}/financials-quarterly` — reported quarterly three-statement actuals
 - `GET /api/market-data/{symbol}/analyst-recommendations` — Street recommendation mix and price-target consensus
 - `GET /api/market-data/{symbol}/enterprise-value` — EV bridge and EV-based valuation context
-- `GET /api/quote/{symbol}` — current price, market cap, and pre/post-market reaction
+- `GET /api/quote/{symbol}?session=regular&fields=all` — current price, market cap, and pre/post-market reaction
 
 Web Search is still needed for exact guidance wording, transcript commentary, segment commentary, restructuring details, and any one-time items that require narrative interpretation.
+
+## Execution Notes
+
+- Resolve the company to `EXCHANGE:TICKER` with `/api/search/market/{query}?filter=stock` first, and keep that resolved symbol as canonical throughout the model update.
+- Use `GET /api/quote/{symbol}?session=regular&fields=all` for current price context. Quote fields are nested under `data.data`, not flat at the top level.
+- Treat `data.current.fiscal_period_current` as a provider label. If it differs from the company's own quarter naming in the latest release or filing, use the primary-source label in the model commentary and keep the API label only as structured-data context.
 
 ## Workflow
 
@@ -25,7 +31,7 @@ Determine the update trigger:
 - **Macro update**: Interest rates, FX, commodity prices changed
 - **Event-driven**: M&A, restructuring, new product, management change
 
-Then pull the structured refresh pack before changing the model: `/api/market-data/{symbol}`, `/financials-quarterly`, `/analyst-recommendations`, `/enterprise-value`, and `/quote/{symbol}`.
+Then pull the structured refresh pack before changing the model: `/api/market-data/{symbol}`, `/financials-quarterly`, `/analyst-recommendations`, `/enterprise-value`, and `/quote/{symbol}?session=regular&fields=all`.
 
 ### Step 2: Plug New Data
 
@@ -81,7 +87,7 @@ Recalculate valuation with updated estimates:
 | EV/EBITDA (NTM EBITDA × target multiple) | | | |
 | **Price Target** | | | |
 
-Use `/api/quote/{symbol}` for current share price / market cap and `/enterprise-value` plus `/analyst-recommendations` for market context around the revised target.
+Use `/api/quote/{symbol}?session=regular&fields=all` for current share price / market cap and `/enterprise-value` plus `/analyst-recommendations` for market context around the revised target.
 
 ### Step 5: Summary & Action
 

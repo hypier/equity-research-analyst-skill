@@ -10,9 +10,15 @@ Use `tradings-api` for the numeric baseline before doing narrative research:
 - `GET /api/market-data/{symbol}/financials-quarterly` — quarterly three-statement actuals
 - `GET /api/market-data/{symbol}/analyst-recommendations` — price-target consensus plus buy/hold/sell distribution
 - `GET /api/price/{symbol}?timeframe=D&range=252` — 1-year price history for report charts
-- `GET /api/quote/{symbol}` — current share price, market cap, session status, and pre/post-market reaction
+- `GET /api/quote/{symbol}?session=regular&fields=all` — current share price, market cap, session status, and pre/post-market reaction
 
 Web Search and SEC / IR materials are still required for release wording, transcript commentary, segment detail not carried in the API, and direct source hyperlinks in the finished report.
+
+## Execution Notes
+
+- Resolve the company to `EXCHANGE:TICKER` with `/api/search/market/{query}?filter=stock` before the structured pull, and treat that resolved symbol as canonical.
+- Use `GET /api/quote/{symbol}?session=regular&fields=all` for quote context. Quote metrics are nested under `data.data`, including last price, daily move, volume, and session status.
+- Treat `data.current.fiscal_period_current` as a provider-side structured label. If it conflicts with the latest company-reported fiscal-quarter wording, use the primary-source quarter label in the report narrative.
 
 ## Quick Navigation
 
@@ -114,7 +120,7 @@ Once the latest quarter is confirmed from the primary source, immediately pull:
 - `/api/market-data/{symbol}`
 - `/api/market-data/{symbol}/financials-quarterly`
 - `/api/market-data/{symbol}/analyst-recommendations`
-- `/api/quote/{symbol}`
+- `/api/quote/{symbol}?session=regular&fields=all`
 
 Use these calls to prefill the numeric template before reading narrative materials. If `data.current.fiscal_period_current` or `earnings_release_date` appears stale relative to the newly found release, treat the API as last-reported context and rely on the current filing / release for quarter-accurate figures.
 
@@ -168,7 +174,7 @@ After SEARCHING FOR and confirming the latest quarter, collect the following:
 - Pull `/api/market-data/{symbol}` for TTM / current-period financial baselines and earnings dates
 - Pull `/api/market-data/{symbol}/financials-quarterly` for quarterly actuals
 - Pull `/api/market-data/{symbol}/analyst-recommendations` for consensus sentiment and price-target context
-- Pull `/api/quote/{symbol}` for current price and immediate market reaction
+- Pull `/api/quote/{symbol}?session=regular&fields=all` for current price and immediate market reaction
 
 Treat these as the starting numeric layer. The release, filing, and transcript remain the source of truth for wording, disclosure nuance, and directly hyperlinked citations.
 
@@ -378,7 +384,7 @@ Based on updated estimates:
 - Determine new fair value
 - Decide if price target changes
 
-Use `/api/quote/{symbol}` for current price / market cap context and `/api/market-data/{symbol}/analyst-recommendations` for the live sell-side target range when framing the updated valuation.
+Use `/api/quote/{symbol}?session=regular&fields=all` for current price / market cap context and `/api/market-data/{symbol}/analyst-recommendations` for the live sell-side target range when framing the updated valuation.
 
 **Price Target Decision:**
 - If estimates changed significantly (>5%) → Usually change price target

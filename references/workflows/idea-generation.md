@@ -9,11 +9,17 @@ Use `tradings-api` to source and rank candidates before doing deeper fundamental
 - `GET /api/leaderboard/stocks` — screen starting universe by gainers / losers / high dividend / 52-week highs / volatility
 - `GET /api/metadata/tabs?type=stocks` and `GET /api/metadata/columnsets` — discover available leaderboard slices
 - `GET /api/market-data/{symbol}` — validate revenue growth, margins, ROIC, leverage, and valuation
-- `GET /api/quote/{symbol}` and `GET /api/ta/{symbol}` — trading context and momentum confirmation
+- `GET /api/quote/{symbol}?session=regular&fields=all` and `GET /api/ta/{symbol}` — trading context and momentum confirmation
 - `GET /api/ideas/hot` and `GET /api/ideas/list/{symbol}` — crowd positioning and community idea flow
 - `GET /api/calendar/ipo?from=&to=` — recent / upcoming IPO names for special-situation work
 
 Web Search is still required for insider buying, short interest, lockup terms, activist filings, and other event-driven / ownership data not present in the API.
+
+## Execution Notes
+
+- When screening by company name, resolve each candidate to `EXCHANGE:TICKER` with `/api/search/market/{query}?filter=stock` before validation.
+- Use the resolved symbol as canonical. Do not depend on `data.company.ticker` or `data.company.exchange` from `/api/market-data/{symbol}` to recover the primary listing.
+- For trade context, prefer `GET /api/quote/{symbol}?session=regular&fields=all`; quote metrics are nested under `data.data`.
 
 ## Workflow
 
@@ -29,7 +35,7 @@ Ask the user for parameters:
 
 ### Step 2: Quantitative Screens
 
-Start with `leaderboard` / `metadata` to pull a candidate list, then validate each shortlisted symbol with `/api/market-data/{symbol}`, `/api/quote/{symbol}`, and `/api/ta/{symbol}`.
+Start with `leaderboard` / `metadata` to pull a candidate list, then validate each shortlisted symbol with `/api/market-data/{symbol}`, `/api/quote/{symbol}?session=regular&fields=all`, and `/api/ta/{symbol}`.
 
 Run screens based on the style:
 

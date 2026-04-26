@@ -116,7 +116,12 @@ See `../tradings-api.md` (Scenario A) for the exact curl commands and the JSON-f
 - `GET /api/market-data/{symbol}/analyst-recommendations` — analyst ratings and target-price consensus
 - `GET /api/market-data/{symbol}/financials-quarterly` — quarterly three-statement data
 - `GET /api/price/{symbol}?timeframe=D&range=252` — daily OHLCV for the stock price chart
-- `GET /api/quote/{symbol}` — real-time quote plus pre/post-market
+- `GET /api/quote/{symbol}?session=regular&fields=all` — real-time quote plus pre/post-market
+
+Execution notes:
+- Resolve the company to `EXCHANGE:TICKER` with `/api/search/market/{query}?filter=stock` first, and treat that resolved symbol as canonical.
+- Quote metrics are nested under `data.data`.
+- If `data.current.fiscal_period_current` conflicts with the company's own fiscal-quarter wording, use the latest IR / SEC label in the report narrative.
 
 **Then use Web Search ONLY for**: earnings release narrative, forward guidance language, earnings call transcript, segment/geographic breakdown, management commentary. Pull the raw SEC 10-Q only when you need to audit or directly quote the filing.
 

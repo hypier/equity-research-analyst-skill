@@ -21,8 +21,13 @@ This document lists every `tradings-api` (TradingView proxy service) endpoint an
 
 ## Lookup Tips
 
+`references/tradings-api.md` is the workflow-facing index and field-mapping guide.
+For exact endpoint behavior, downloaded API docs, and real executed example payloads, always refer to `references/tradings-api-docs/` first.
+In case of any mismatch, treat `references/tradings-api-docs/` as the source of truth and update this file to match it.
+
 - Read this file before opening `tradings-api-docs/openapi.json` or any file in `tradings-api-docs/examples/`.
 - Search `tradings-api-docs/examples/` by endpoint path or JSON field name, not by workflow name.
+- Treat `tradings-api-docs/examples/` as the real executed sample set, not just illustrative pseudodata.
 - Most common files:
   - `examples/10-market-data.md` for company, TTM, current-period, and analyst data
   - `examples/08-calendar.md` for earnings and macro events
@@ -33,7 +38,7 @@ This document lists every `tradings-api` (TradingView proxy service) endpoint an
 - RapidAPI call examples (bundled, grouped by endpoint): `./tradings-api-docs/examples/`
 - Base URL (RapidAPI hosted): `https://tradingview-data1.p.rapidapi.com`
 
-> 📦 **Self-contained note**: `tradings-api-docs/` is a bundled local reference copy of the [tradings-api](https://rapidapi.com/hypier/api/tradingview-data1) docs for this skill. If the contents look stale, refresh the affected files manually from the published API materials.
+> 📦 **Self-contained note**: `tradings-api-docs/` is the bundled local copy of the downloaded `tradings-api` documentation set for this skill, including real request examples and sample payloads captured from execution. If the contents look stale, refresh the affected files manually from the published API materials and re-align this file to those downloaded docs.
 
 ---
 
@@ -72,6 +77,23 @@ All `{symbol}` parameters use `EXCHANGE:TICKER` format:
 
 If the ticker is ambiguous, resolve it first via `/api/search/market/{query}?filter=stock`.
 
+**Observed response shape (verified 2026-04-26):**
+
+```bash
+curl -H "x-rapidapi-host: tradingview-data1.p.rapidapi.com" \
+     -H "x-rapidapi-key: $RAPIDAPI_KEY" \
+     "https://tradingview-data1.p.rapidapi.com/api/search/market/NVIDIA?filter=stock"
+```
+
+Use `data.markets[]`, not `data[]`.
+
+| Needed field | JSON path |
+|---|---|
+| First resolved symbol | `data.markets[0].id` |
+| Short ticker | `data.markets[0].symbol` |
+| Exchange | `data.markets[0].exchange` |
+| Description | `data.markets[0].description` |
+
 ---
 
 ## Scenario A: Quarterly Earnings Analysis (`earnings-analysis`, `earnings-preview`)
@@ -82,6 +104,12 @@ If the ticker is ambiguous, resolve it first via `/api/search/market/{query}?fil
 curl -H "x-rapidapi-key: $RAPIDAPI_KEY" \
   "https://tradingview-data1.p.rapidapi.com/api/market-data/NASDAQ:AAPL"
 ```
+
+**Observed symbol / fiscal-label caveats (verified 2026-04-26):**
+
+- Treat the request symbol (for example `NASDAQ:NVDA`) or the preflight search result from `/api/search/market/{query}` as canonical.
+- Do not rely on `data.company.ticker` or `data.company.exchange` as the canonical listing fields; they may be null or may show a quote venue such as `Cboe One`.
+- Treat `data.current.fiscal_period_current` as a provider-side structured label. If it conflicts with the company's own IR / SEC quarter naming, use the latest primary-source quarter label in narrative output and keep the API label only as a structured-data citation detail.
 
 Returns 5 blocks that populate the following report fields:
 
@@ -138,6 +166,18 @@ curl -H "x-rapidapi-key: $RAPIDAPI_KEY" \
   "https://tradingview-data1.p.rapidapi.com/api/market-data/NASDAQ:AAPL/financials-quarterly"
 ```
 
+**Observed analyst payload shape (verified 2026-04-26):**
+
+The endpoint returns a single object under `data.analyst_recommendations`, not an array.
+
+| Needed field | JSON path |
+|---|---|
+| Recommendation score | `data.analyst_recommendations.recommendation_mark` |
+| Total analysts | `data.analyst_recommendations.recommendation_total` |
+| Buy / overweight / hold / underweight / sell | `data.analyst_recommendations.recommendation_buy`, `recommendation_over`, `recommendation_hold`, `recommendation_under`, `recommendation_sell` |
+| Average / median / high / low target price | `data.analyst_recommendations.price_target_average`, `price_target_median`, `price_target_high`, `price_target_low` |
+| Price-target snapshot date | `data.analyst_recommendations.price_target_date` |
+
 ### Price chart and technicals
 
 ```bash
@@ -147,7 +187,7 @@ curl -H "x-rapidapi-key: $RAPIDAPI_KEY" \
 
 # Real-time quote (pre/post-market, daily change, volume)
 curl -H "x-rapidapi-key: $RAPIDAPI_KEY" \
-  "https://tradingview-data1.p.rapidapi.com/api/quote/NASDAQ:AAPL"
+  "https://tradingview-data1.p.rapidapi.com/api/quote/NASDAQ:AAPL?session=regular&fields=all"
 
 # Multi-timeframe technical signals (for the technical section)
 curl -H "x-rapidapi-key: $RAPIDAPI_KEY" \
@@ -157,6 +197,20 @@ curl -H "x-rapidapi-key: $RAPIDAPI_KEY" \
 curl -H "x-rapidapi-key: $RAPIDAPI_KEY" \
   "https://tradingview-data1.p.rapidapi.com/api/ta/NASDAQ:AAPL/indicators"
 ```
+
+**Observed quote payload shape (verified 2026-04-26):**
+
+The quote endpoint returns metadata at `data.symbol` and quote fields under nested `data.data`.
+
+| Needed field | JSON path |
+|---|---|
+| Symbol | `data.symbol` |
+| Last price | `data.data.lp` |
+| Daily change | `data.data.ch` |
+| Daily change % | `data.data.chp` |
+| Volume | `data.data.volume` |
+| Market cap | `data.data.market_cap_basic` |
+| Session status | `data.data.current_session` |
 
 ---
 
@@ -325,7 +379,7 @@ If the user supplies only a company name (e.g. "Apple"), resolve it to `EXCHANGE
 
 ```bash
 curl ".../api/search/market/Apple?filter=stock"
-# Returns: { data: [ { symbol: "NASDAQ:AAPL", description: "Apple Inc.", ... } ] }
+# Returns: { data: { markets: [ { id: "NASDAQ:AAPL", symbol: "AAPL", description: "Apple Inc.", ... } ] } }
 ```
 
 ---

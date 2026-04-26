@@ -14,6 +14,12 @@ Use `tradings-api` to keep the thesis scorecard data-driven:
 
 Web Search is still needed for original management wording, deep product / regulatory developments, and thesis inputs that rely on channel checks or alternative data.
 
+## Execution Notes
+
+- Resolve the company to `EXCHANGE:TICKER` first via `/api/search/market/{query}?filter=stock` and keep that symbol as canonical in the thesis record.
+- Treat `data.current.fiscal_period_current` as a provider label only. If the company's own quarter naming differs in the latest release or filing, use the primary-source label in thesis updates.
+- If you pull live market context, prefer `GET /api/quote/{symbol}?session=regular&fields=all`; quote metrics are nested under `data.data`.
+
 ## Workflow
 
 ### Step 1: Define or Load Thesis

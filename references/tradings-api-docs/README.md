@@ -1,12 +1,13 @@
 # tradings-api Reference Bundle
 
-This directory contains bundled API reference material for the `equity-research-analyst` skill. Treat it as a local lookup bundle, not as the workflow guide and not as the source of truth for user-facing instructions.
+This directory contains bundled API reference material for the `equity-research-analyst` skill. Treat it as the source of truth for exact endpoint behavior, downloaded schemas, and example payload shapes, but not as the workflow guide for user-facing deliverables.
 
 ## Recommended Reading Order
 
 1. Read `../tradings-api.md` first for the "research task -> endpoint" mapping.
 2. Open `openapi.json` when you need exact parameters, schemas, or response fields.
 3. Open `examples/*.md` when you need a concrete request pattern or sample payload.
+4. If `../tradings-api.md` disagrees with payload structure shown here, trust this folder and update `../tradings-api.md`.
 
 ## Search Tips
 

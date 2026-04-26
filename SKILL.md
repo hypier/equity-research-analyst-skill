@@ -1,6 +1,6 @@
 ---
 name: equity-research-analyst
-description: Produce institutional-quality equity research deliverables including initiation reports, earnings analyses and previews, catalyst calendars, morning notes, sector overviews, investment thesis trackers, financial model updates, and stock screens. Use whenever the user asks for equity research, stock analysis, earnings write-ups, coverage initiation, catalyst tracking, sector reports, thesis reviews, financial modeling, or idea generation. Covers US-listed equities, ETFs, and international tickers resolvable via TradingView. Prefers structured TradingView-backed data over unstructured Web Search.
+description: Use when the user asks for institutional-style equity research on a public company, ETF, or TradingView-resolvable ticker, including initiation reports, earnings updates or previews, catalyst calendars, morning notes, sector or peer overviews, thesis reviews, model refreshes, and stock screening or idea generation.
 ---
 
 # Equity Research Analyst
@@ -64,10 +64,12 @@ Before Web Search, pull structured numeric data (financials, TTM ratios, analyst
 ### Data freshness
 - Training data is outdated. Before writing, verify today's date and confirm that the latest fetched data is current (next earnings date, last reported quarter).
 - If `data.current.fiscal_period_current` is >90 days old, flag as "last reported" and Web Search for newer disclosures.
+- Treat `data.current.fiscal_period_current` as a structured provider label, not the final narrative quarter label. If company IR / SEC naming differs (for example provider `2025-Q4` vs company-reported `Fiscal 2026 Q4`), use the latest primary-source wording in the written report and cite that source explicitly.
 
 ### Ticker resolution
 - Always use `EXCHANGE:TICKER` format (e.g., `NASDAQ:AAPL`, `NYSE:JPM`).
 - If the user supplies only a company name, resolve it via `/api/search/market/{query}?filter=stock` before proceeding.
+- Use the resolved symbol from `/api/search/market/{query}` as the canonical identifier for the workflow. Do not rely on `data.company.ticker` or `data.company.exchange` from `/api/market-data/{symbol}` as the canonical listing identifier, because those fields may be null or may reflect a quote venue rather than the primary exchange.
 
 ### Citation standard
 Every numeric fact in a deliverable must cite its source:

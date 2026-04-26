@@ -14,6 +14,12 @@ Use `tradings-api` to build the public-company and macro backbone of the sector 
 
 Web Search is still required for TAM, third-party market share, M&A precedent detail, private companies, and proprietary industry research.
 
+## Execution Notes
+
+- For peer universes built from company names, resolve each name through `/api/search/market/{query}?filter=stock` and keep the resolved symbol as canonical.
+- When you need live price context, use `GET /api/quote/{symbol}?session=regular&fields=all`; quote metrics live under `data.data`.
+- Treat `data.current.fiscal_period_current` as a provider-side structured label. If a company's latest IR / SEC quarter naming differs, use the primary-source label in the sector write-up.
+
 ## Workflow
 
 ### Step 1: Define Scope

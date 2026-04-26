@@ -11,7 +11,7 @@ Before using external terminals or manual work, prefill the public-market inputs
 - `GET /api/market-data/{symbol}/ttm` — TTM revenue, EBITDA, EPS, cash flow, ROE / ROIC, and margin data
 - `GET /api/market-data/{symbol}/history-quarterly` and `/history-annual` — historical trend arrays for supporting analysis
 - `GET /api/market-data/{symbol}/analyst-recommendations` — Street recommendation mix and price-target range
-- `GET /api/quote/{symbol}` — live share price and current market-cap context
+- `GET /api/quote/{symbol}?session=regular&fields=all` — live share price and current market-cap context
 
 Use external sources only where `tradings-api` is not enough: pre-announcement consensus timestamps, precedent transactions, bond-yield detail, private-company data, and proprietary peer datasets.
 
