@@ -116,11 +116,11 @@ Before delivering an initiation report, verify all items below are complete.
 **Hyperlinks:** ⭐⭐⭐ MANDATORY
 - [ ] ALL URLs are CLICKABLE HYPERLINKS (not plain text)
 - [ ] SEC filings hyperlinked to EDGAR viewer
-- [ ] Earnings transcripts hyperlinked (Seeking Alpha or company IR)
+- [ ] Earnings transcripts hyperlinked (company IR or transcript provider)
 - [ ] Press releases hyperlinked to company IR page
 - [ ] Presentations hyperlinked to PDF URLs
 - [ ] Industry reports hyperlinked (if publicly available)
-- [ ] Subscription data (Bloomberg, FactSet) noted as "(subscription required)"
+- [ ] Subscription / licensed data noted as "(subscription required)"
 - [ ] No raw URLs displayed anywhere - all formatted as hyperlinks
 - [ ] Test 3-5 sample hyperlinks to ensure they work (Ctrl+Click)
 

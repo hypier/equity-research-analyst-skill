@@ -2,6 +2,18 @@
 
 description: Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and thematic trends. Use for client requests, sector initiations, thematic research pieces, or internal knowledge building. Triggers on "sector overview", "industry report", "market landscape", "sector analysis", "industry deep dive", or "thematic research".
 
+## Structured Data Source
+
+Use `tradings-api` to build the public-company and macro backbone of the sector report:
+
+- `GET /api/metadata/columnsets` and `GET /api/metadata/tabs?type=stocks` — available screen columns and market tabs
+- `GET /api/leaderboard/stocks?...` — sector-level peer pulls with valuation / profitability / performance columns
+- `GET /api/market-data/{symbol}` — per-company revenue, margins, valuation, beta, and current period context
+- `GET /api/market-data/{symbol}/analyst-recommendations` — consensus sentiment and price-target context
+- `GET /api/world-economy/indicators/{indicator}` — macro backdrop for cyclical / global sectors
+
+Web Search is still required for TAM, third-party market share, M&A precedent detail, private companies, and proprietary industry research.
+
 ## Workflow
 
 ### Step 1: Define Scope
@@ -19,6 +31,8 @@ description: Create comprehensive industry and sector landscape reports covering
 - Historical growth rate (5-year CAGR)
 - Forecast growth rate and key assumptions
 - Market segmentation (by product, geography, end market, customer type)
+
+Use `tradings-api` for public-company revenue growth and macro baselines; use external industry sources for TAM and non-public market sizing.
 
 **Industry Structure**
 - Fragmented vs. consolidated — top 5 market share
@@ -47,6 +61,8 @@ For each company, brief profile:
 - Recent developments (earnings, M&A, product launches)
 - Valuation snapshot (P/E, EV/EBITDA, EV/Revenue)
 
+Build the comparison table from structured public-company data first, then layer in qualitative differentiation.
+
 **Competitive Dynamics**
 - How do companies compete? (price, product, service, distribution)
 - Who is gaining/losing share and why?
@@ -58,6 +74,8 @@ For each company, brief profile:
 - Premium/discount drivers (growth, margins, market position)
 - Recent M&A transaction multiples
 - How does the sector compare to the broader market?
+
+Current public-market multiples should come from `tradings-api`; precedent M&A multiples still need external deal research.
 
 ### Step 5: Investment Implications
 

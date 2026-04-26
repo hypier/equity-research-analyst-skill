@@ -2,6 +2,19 @@
 
 description: Systematic stock screening and investment idea sourcing. Combines quantitative screens, thematic research, and pattern recognition to surface new long and short ideas. Use when looking for new ideas, running screens, or conducting thematic sweeps. Triggers on "idea generation", "stock screen", "find ideas", "what looks interesting", "screen for", "new ideas", or "pitch me something".
 
+## Structured Data Source
+
+Use `tradings-api` to source and rank candidates before doing deeper fundamental work:
+
+- `GET /api/leaderboard/stocks` — screen starting universe by gainers / losers / high dividend / 52-week highs / volatility
+- `GET /api/metadata/tabs?type=stocks` and `GET /api/metadata/columnsets` — discover available leaderboard slices
+- `GET /api/market-data/{symbol}` — validate revenue growth, margins, ROIC, leverage, and valuation
+- `GET /api/quote/{symbol}` and `GET /api/ta/{symbol}` — trading context and momentum confirmation
+- `GET /api/ideas/hot` and `GET /api/ideas/list/{symbol}` — crowd positioning and community idea flow
+- `GET /api/calendar/ipo?from=&to=` — recent / upcoming IPO names for special-situation work
+
+Web Search is still required for insider buying, short interest, lockup terms, activist filings, and other event-driven / ownership data not present in the API.
+
 ## Workflow
 
 ### Step 1: Define Search Criteria
@@ -15,6 +28,8 @@ Ask the user for parameters:
 - **Theme**: Any specific thematic angle (AI, reshoring, aging demographics, etc.)
 
 ### Step 2: Quantitative Screens
+
+Start with `leaderboard` / `metadata` to pull a candidate list, then validate each shortlisted symbol with `/api/market-data/{symbol}`, `/api/quote/{symbol}`, and `/api/ta/{symbol}`.
 
 Run screens based on the style:
 
@@ -57,6 +72,8 @@ Run screens based on the style:
 - Companies emerging from restructuring
 - Activist involvement
 - Management changes at underperforming companies
+
+Use `tradings-api` to source recent IPO names and public-market context, then supplement with external event / filing work.
 
 ### Step 3: Thematic Sweep
 

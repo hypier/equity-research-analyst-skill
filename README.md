@@ -16,7 +16,7 @@ The skill is designed to help an AI agent handle common sell-side and buy-side r
 - financial model updates
 - idea-generation and stock screens
 
-The skill prefers structured numeric data from the bundled `tradings-api` reference set, then falls back to web research for narrative material such as guidance wording, transcripts, risk factors, and management commentary.
+The skill prefers structured numeric data from the bundled `tradings-api` reference set, then falls back to web research for narrative material such as guidance wording, transcripts, risk factors, management commentary, and proprietary industry context.
 
 ## `SKILL.md` Is The Real Entry Point
 
@@ -30,6 +30,7 @@ For git users, this `README.md` explains the repository. For AI agents, `SKILL.m
 - which user requests should map to which workflow
 - how the agent should load files progressively instead of reading everything at once
 - when to use `tradings-api` versus web research
+- which workflows already have explicit `tradings-api` playbooks for earnings, previews, model updates, thesis tracking, morning notes, sector work, and idea generation
 - global conventions for freshness checks, citation style, ticker resolution, and output formatting
 
 In practice, `SKILL.md` acts as a dispatcher. It does not try to contain every detail inline. Instead, it routes the agent to the smallest relevant file in `references/` for the active task.
@@ -47,7 +48,7 @@ The repository follows a progressive-disclosure structure:
 - `references/earnings-analysis/`
   Detailed guidance for earnings-update execution, report structure, and QA.
 - `references/tradings-api.md`
-  The main task-to-endpoint mapping for the TradingView proxy API.
+  The main task-to-endpoint mapping for the TradingView proxy API, now including workflow-specific scenarios beyond earnings and initiation.
 - `references/tradings-api-docs/`
   Bundled API specification and endpoint examples used as a lookup bundle.
 - `assets/`
@@ -63,6 +64,8 @@ If you are reviewing or extending this skill, these are the main design decision
   The agent should read only the workflow and reference files needed for the active task.
 - Structured-data-first research
   Numeric market and financial content should come from `tradings-api` before web search.
+- Workflow-specific endpoint mapping
+  Each major workflow should say which `tradings-api` endpoints provide its numeric baseline, and which tasks still need Web / SEC / IR follow-up.
 - Clear fallback rules
   Web search is still required for narrative, regulatory, and transcript-heavy content.
 - Institutional output standards

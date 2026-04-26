@@ -20,7 +20,7 @@ This document provides step-by-step instructions for executing Task 2 (Financial
 
 **Prerequisites**: ⚠️ Verify before starting
 - **Required**: Access to company financial data
-  - For public companies: Latest 10-K and recent 10-Qs from SEC EDGAR
+  - For public companies: `tradings-api` annual history plus latest 10-K / recent 10-Qs for audit and gap-fill
   - For private companies: Financial statements or estimates from available sources
   - OR: Pre-extracted historical financials provided by user
 - **Optional**: Company research (Task 1) for business context
@@ -40,7 +40,7 @@ This document provides step-by-step instructions for executing Task 2 (Financial
 **BEFORE STARTING - CHECK:**
 
 **Option A: Extract financials directly (most common)**
-- [ ] Have access to 10-K filings (public company)?
+- [ ] Have access to `tradings-api` or 10-K filings (public company)?
 - [ ] OR have access to financial statements (private company)?
 - [ ] Ready to create Excel file for historical extraction?
 
@@ -52,7 +52,7 @@ This document provides step-by-step instructions for executing Task 2 (Financial
 **Optional Context:**
 - [ ] Company research (Task 1) complete for business understanding?
 
-**IF VERIFICATION FAILS**: Stop and obtain access to financial statements (10-K or equivalent) before proceeding.
+**IF VERIFICATION FAILS**: Stop and obtain access to `tradings-api`, financial statements, or 10-K / equivalent source before proceeding.
 
 ---
 
@@ -90,17 +90,23 @@ This document provides step-by-step instructions for executing Task 2 (Financial
 
 **For Public Companies:**
 
-1. **Download 10-K Filing**
+1. **Seed the historicals from `tradings-api`**
+   - Pull `/api/market-data/{symbol}/financials-annual`
+   - Pull `/api/market-data/{symbol}/history-annual`
+   - Pull `/api/market-data/{symbol}/cash-flow`
+   - Use these payloads to prefill annual revenue, margins, cash flow, leverage, and multi-year trend arrays
+
+2. **Download 10-K Filing for audit and gap-fill**
    - Go to SEC EDGAR (https://www.sec.gov/edgar/searchedgar/companysearch.html)
    - Search for company name or ticker
    - Download latest 10-K (annual report)
    - Navigate to Item 8: Financial Statements and Supplementary Data
 
-2. **Create Historical Financials Excel File**
+3. **Create Historical Financials Excel File**
    - File name: `[Company]_Historical_Financials_[Date].xlsx`
    - This file will be the foundation for the model
 
-3. **Extract Income Statement (3-5 years)**
+4. **Extract Income Statement (3-5 years)**
    - Create Sheet 1: "Historical Income Statement"
    - Extract ALL line items for 3-5 years:
      - Revenue (total and by segment if disclosed)
@@ -117,7 +123,7 @@ This document provides step-by-step instructions for executing Task 2 (Financial
      - EPS (basic and diluted)
      - Shares outstanding (basic and diluted)
 
-4. **Extract Cash Flow Statement (3-5 years)**
+5. **Extract Cash Flow Statement (3-5 years)**
    - Create Sheet 2: "Historical Cash Flow"
    - Extract ALL line items:
      - Operating activities (starting from net income)
@@ -130,7 +136,7 @@ This document provides step-by-step instructions for executing Task 2 (Financial
      - Net change in cash
      - Beginning and ending cash
 
-5. **Extract Balance Sheet (3-5 years)**
+6. **Extract Balance Sheet (3-5 years)**
    - Create Sheet 3: "Historical Balance Sheet"
    - Extract ALL line items:
      - Current assets (cash, receivables, inventory, other)
@@ -142,7 +148,7 @@ This document provides step-by-step instructions for executing Task 2 (Financial
      - Shareholders' equity (common stock, retained earnings)
      - Total liabilities + equity
 
-6. **Calculate Historical Metrics**
+7. **Calculate Historical Metrics**
    - Create Sheet 4: "Historical Metrics"
    - Calculate from statements:
      - Revenue growth % (YoY)
@@ -156,9 +162,10 @@ This document provides step-by-step instructions for executing Task 2 (Financial
      - Debt/Equity ratio
      - Current ratio (Current Assets / Current Liabilities)
 
-7. **Document Sources and Notes**
+8. **Document Sources and Notes**
    - Create Sheet 5: "Notes"
    - Document:
+     - `tradings-api` fetch date and endpoints used
      - 10-K filing date and fiscal year end
      - Any one-time items or adjustments noted
      - Non-GAAP vs GAAP differences

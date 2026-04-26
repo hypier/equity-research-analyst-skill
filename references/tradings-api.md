@@ -12,10 +12,12 @@ This document lists every `tradings-api` (TradingView proxy service) endpoint an
 6. [Scenario D: Morning Note](#scenario-d-morning-note-morning-note)
 7. [Scenario E: Screening / Idea Generation](#scenario-e-screening--idea-generation-idea-generation)
 8. [Scenario F: Sector Overview](#scenario-f-sector-overview-sector-overview)
-9. [Ticker Resolution](#ticker-resolution-generic-preflight)
-10. [Full Endpoint Catalog](#full-endpoint-catalog-60-endpoints)
-11. [Citation Convention](#citation-convention-aligned-with-earnings-analysisskillmd-lines-50-107)
-12. [Fallback Strategy](#fallback-strategy)
+9. [Scenario G: Model Update](#scenario-g-model-update-model-update)
+10. [Scenario H: Thesis Tracker](#scenario-h-thesis-tracker-thesis-tracker)
+11. [Ticker Resolution](#ticker-resolution-generic-preflight)
+12. [Full Endpoint Catalog](#full-endpoint-catalog-60-endpoints)
+13. [Citation Convention](#citation-convention-aligned-with-earnings-analysisskillmd-lines-50-107)
+14. [Fallback Strategy](#fallback-strategy)
 
 ## Lookup Tips
 
@@ -225,19 +227,25 @@ curl ".../api/calendar/economic?from=$FROM&to=$TO&market=america,china"
 ## Scenario D: Morning Note (`morning-note`)
 
 ```bash
-curl ".../api/news/stock?lang=en&market_country=US"   # US equity news
-curl ".../api/news/economic?lang=en"                  # Macro news
-curl ".../api/news?symbol=NASDAQ:AAPL"                # Single-stock news
-curl ".../api/news/{newsId}"                          # News detail
+curl ".../api/news/stock?lang=en&market_country=US"                      # US equity news tape
+curl ".../api/news/economic?lang=en"                                     # Macro news tape
+curl ".../api/news?symbol=NASDAQ:AAPL&lang=en&market=stock&market_country=US"  # Single-stock news
+curl ".../api/quote/NASDAQ:AAPL?session=regular&fields=all"              # Pre/post-market quote
+curl ".../api/calendar/economic?from=$FROM&to=$TO&market=america"        # Today's macro releases
+curl ".../api/calendar/earnings?from=$FROM&to=$TO&market=america"        # Today's / tomorrow's earnings
 ```
+
+For multi-name coverage universes, use `POST /api/quote/batch` to pull the same quote fields across the watchlist in one request.
 
 ---
 
 ## Scenario E: Screening / Idea Generation (`idea-generation`)
 
 ```bash
-# Top US gainers
+# Top US gainers / losers / high dividend / 52-week highs
 curl ".../api/leaderboard/stocks?tab=gainers&market_code=america&count=50"
+curl ".../api/leaderboard/stocks?tab=losers&market_code=america&count=50"
+curl ".../api/leaderboard/stocks?tab=high_dividend&market_code=america&count=50"
 
 # Hot investment ideas (TradingView community)
 curl ".../api/ideas/hot?lang=en&page=1"
@@ -245,6 +253,11 @@ curl ".../api/ideas/hot?lang=en&page=1"
 # Community views on a specific stock
 curl ".../api/ideas/list/NASDAQ:AAPL?lang=en"
 curl ".../api/ideas/NASDAQ:AAPL/minds?lang=en"
+
+# Follow-up diligence on screened candidates
+curl ".../api/market-data/NASDAQ:AAPL"
+curl ".../api/quote/NASDAQ:AAPL?session=regular&fields=all"
+curl ".../api/ta/NASDAQ:AAPL"
 ```
 
 Full list of `tab` values: `/api/metadata/tabs?type=stocks`. Common picks: `gainers`, `losers`, `large_cap`, `high_dividend`, `most_volatile`, `52wk_high`, `overbought`, `oversold`, `penny_stocks`.
@@ -260,7 +273,49 @@ curl ".../api/metadata/tabs?type=stocks"
 
 # Filter by sector (using leaderboard with columnset=valuation/profitability/etc.)
 curl ".../api/leaderboard/stocks?tab=all_stocks&market_code=america&columnset=valuation&count=100"
+
+# Drill into representative companies after the screen
+curl ".../api/market-data/NASDAQ:AAPL"
+curl ".../api/market-data/NASDAQ:MSFT/analyst-recommendations"
+
+# Add macro context for global / cyclical sectors
+curl ".../api/world-economy/indicators/full-year-gdp-growth?region=g20"
 ```
+
+---
+
+## Scenario G: Model Update (`model-update`)
+
+```bash
+# Reported quarter actuals + rolling baselines
+curl ".../api/market-data/NASDAQ:AAPL"
+curl ".../api/market-data/NASDAQ:AAPL/financials-quarterly"
+
+# Consensus and current market context
+curl ".../api/market-data/NASDAQ:AAPL/analyst-recommendations"
+curl ".../api/quote/NASDAQ:AAPL?session=regular&fields=all"
+curl ".../api/market-data/NASDAQ:AAPL/enterprise-value"
+```
+
+Use Web Search only for updated guidance wording, transcript commentary, and one-off disclosures that are not represented in the structured payload.
+
+---
+
+## Scenario H: Thesis Tracker (`thesis-tracker`)
+
+```bash
+# Baseline thesis scorecard metrics
+curl ".../api/market-data/NASDAQ:AAPL"
+curl ".../api/market-data/NASDAQ:AAPL/ttm"
+curl ".../api/market-data/NASDAQ:AAPL/analyst-recommendations"
+
+# Upcoming catalysts and recent evidence
+curl ".../api/calendar/earnings?from=$FROM&to=$TO&market=america"
+curl ".../api/news?symbol=NASDAQ:AAPL&lang=en&market=stock&market_country=US"
+curl ".../api/news/stock?symbol=NASDAQ:AAPL&lang=en&market_country=US"
+```
+
+This scenario is best for maintaining a structured thesis scorecard: earnings cadence, valuation anchor, estimate dispersion, and fresh confirming/disconfirming data points.
 
 ---
 
@@ -305,7 +360,7 @@ Source: Structured data via tradings-api (TradingView); fetched [YYYY-MM-DD]
         Fiscal Period: data.current.fiscal_period_current = "2026-Q1"
 ```
 
-SEC filings (10-Q / 10-K) must still be cited separately with EDGAR hyperlinks. Cite the `analyst-recommendations` endpoint in place of "Bloomberg consensus" when data comes from this API.
+SEC filings (10-Q / 10-K) must still be cited separately with EDGAR hyperlinks. When consensus data comes from this API, cite the `analyst-recommendations` endpoint explicitly instead of a generic terminal label.
 
 ---
 

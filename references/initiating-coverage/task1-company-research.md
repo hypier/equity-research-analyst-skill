@@ -27,6 +27,11 @@ This document provides step-by-step instructions for executing Task 1 (Company R
 ## Data Sources to Gather
 
 ### Primary Sources (Company)
+- **Structured prefill via `tradings-api` (for public companies):**
+  - `/api/market-data/{symbol}/company`: founding year, employee count, website, sector/industry, business description
+  - `/api/market-data/{symbol}/ipo`: IPO timing and listing history
+  - `/api/market-data/{symbol}/credit-ratings`: credit profile for mature issuers
+
 - **SEC Filings (for public companies):**
   - Latest 10-K: Business description, risk factors, MD&A, financials
   - Recent 10-Qs: Quarterly updates
@@ -71,24 +76,29 @@ This document provides step-by-step instructions for executing Task 1 (Company R
 
 ### Step 1: Initial Data Collection
 
-1. **Start with company website**
+1. **Prefill structured basics for public companies**
+   - Pull `/api/market-data/{symbol}/company`, `/ipo`, and `/credit-ratings`
+   - Capture founding year, employee count, website, sector, industry, and any rating data
+   - Use this as the base fact sheet before reading narrative materials
+
+2. **Start with company website**
    - Read About/Company pages
    - Review product pages
    - Identify customer case studies
    - Note key metrics mentioned (employees, customers, etc.)
 
-2. **Gather SEC filings (if public)**
+3. **Gather SEC filings (if public)**
    - Download latest 10-K from SEC EDGAR
    - Download most recent 10-Q
    - Download latest DEF 14A (proxy statement)
    - Note filing dates
 
-3. **Read earnings materials**
+4. **Read earnings materials**
    - Latest earnings transcript
    - Most recent investor presentation
    - Press releases from last 12 months
 
-4. **Document basic facts**
+5. **Document basic facts**
    - Founding date and story
    - Headquarters location
    - Employee count

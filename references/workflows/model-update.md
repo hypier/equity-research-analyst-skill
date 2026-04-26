@@ -2,6 +2,18 @@
 
 description: Update financial models with new data — quarterly earnings, management guidance, macro changes, or revised assumptions. Adjusts estimates, recalculates valuation, and flags material changes. Use after earnings, guidance updates, or when assumptions need refreshing. Triggers on "update model", "plug earnings", "refresh estimates", "update numbers for [company]", "new guidance", or "revise estimates".
 
+## Structured Data Source
+
+Use `tradings-api` first for the numeric refresh:
+
+- `GET /api/market-data/{symbol}` — one-shot pull for current-period ratios, TTM history, next earnings date, and current quarter metadata
+- `GET /api/market-data/{symbol}/financials-quarterly` — reported quarterly three-statement actuals
+- `GET /api/market-data/{symbol}/analyst-recommendations` — Street recommendation mix and price-target consensus
+- `GET /api/market-data/{symbol}/enterprise-value` — EV bridge and EV-based valuation context
+- `GET /api/quote/{symbol}` — current price, market cap, and pre/post-market reaction
+
+Web Search is still needed for exact guidance wording, transcript commentary, segment commentary, restructuring details, and any one-time items that require narrative interpretation.
+
 ## Workflow
 
 ### Step 1: Identify What Changed
@@ -12,6 +24,8 @@ Determine the update trigger:
 - **Estimate revision**: Analyst changing assumptions based on new data
 - **Macro update**: Interest rates, FX, commodity prices changed
 - **Event-driven**: M&A, restructuring, new product, management change
+
+Then pull the structured refresh pack before changing the model: `/api/market-data/{symbol}`, `/financials-quarterly`, `/analyst-recommendations`, `/enterprise-value`, and `/quote/{symbol}`.
 
 ### Step 2: Plug New Data
 
@@ -37,6 +51,8 @@ Update the model with reported actuals:
 - Share count (buybacks, dilution)
 - Capex actual vs. estimate
 - Working capital changes
+
+Use the structured payload as the starting point for these updates, then audit the quarter's earnings release / filing for one-offs and management adjustments.
 
 ### Step 3: Revise Forward Estimates
 
@@ -65,6 +81,8 @@ Recalculate valuation with updated estimates:
 | EV/EBITDA (NTM EBITDA × target multiple) | | | |
 | **Price Target** | | | |
 
+Use `/api/quote/{symbol}` for current share price / market cap and `/enterprise-value` plus `/analyst-recommendations` for market context around the revised target.
+
 ### Step 5: Summary & Action
 
 **Estimate Change Summary:**
@@ -88,5 +106,5 @@ Recalculate valuation with updated estimates:
 - Note any non-recurring items and whether your estimates are GAAP or adjusted
 - Track your estimate revision history — it shows your analytical progression
 - If the quarter was noisy, separate signal from noise in your estimate changes
-- Check consensus after updating — how do your revised estimates compare to the Street?
+- Check consensus after updating — how do your revised estimates compare to the Street and the API's current analyst recommendation / price-target snapshot?
 - Share count matters — dilution from stock comp, converts, or buybacks can materially affect EPS

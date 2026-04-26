@@ -61,7 +61,7 @@ Cite in every earnings update:
 - ✅ 10-Q filing (with filing date and EDGAR link)
 - ✅ Earnings call transcript (with date)
 - ✅ Investor presentation/supplemental materials (if available)
-- ✅ Consensus estimates source (Bloomberg/FactSet/etc. with date)
+- ✅ Consensus estimates source (`tradings-api` or external source, with date)
 - ✅ Prior guidance (from previous quarter's materials)
 
 **REFERENCE SECTION WITH CLICKABLE HYPERLINKS:**

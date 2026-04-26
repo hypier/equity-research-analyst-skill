@@ -78,7 +78,7 @@ Source: Structured data via tradings-api (TradingView); fetched [YYYY-MM-DD]
         Fiscal period: 2026-Q1
 ```
 
-SEC filings keep separate EDGAR hyperlinks. Analyst consensus cites `analyst-recommendations` endpoint (not "Bloomberg").
+SEC filings keep separate EDGAR hyperlinks. When consensus data comes from the API, cite the `analyst-recommendations` endpoint explicitly instead of a generic terminal label.
 
 ### Output formatting
 - Default font for Word deliverables: **Times New Roman**.

@@ -38,6 +38,8 @@ This task requires the financial model from Task 2. Starting without it will res
 - Valuation football field
 - Price target and recommendation
 
+**Structured data note**: Use `tradings-api` to prefill beta, current share price, market cap, EV / EV-based multiples, dividend data, and analyst price-target consensus before using external sources.
+
 ---
 
 ## Input Verification
@@ -126,7 +128,7 @@ This workflow document focuses on execution steps. Reference the methodology fil
 
    Inputs:
    - Risk-Free Rate: [Current 10-year Treasury, e.g., 4.2%]
-   - Beta: [Company beta from Bloomberg/FactSet or peer average]
+   - Beta: [Company beta from `tradings-api` (`/api/market-data/{symbol}`) or peer average if unavailable]
    - Equity Risk Premium: 5-6% (historical average)
 
    Example:
@@ -321,9 +323,10 @@ Base Case: Rev CAGR = 25%, EBITDA Margin = 32% → $56
 - EBITDA margin
 
 **Data sources:**
-- FactSet, CapitalIQ, Bloomberg (preferred)
-- Company 10-Ks/10-Qs for actuals
-- Consensus estimates from Yahoo Finance, Seeking Alpha (if pro tools unavailable)
+- `tradings-api` first: `/api/market-data/{symbol}`, `/analyst-recommendations`, `/enterprise-value`
+- Company 10-Ks/10-Qs for actuals and audit support
+- External peer / transaction datasets for supplemental detail if needed
+- External consensus sources only as fallback if structured data is unavailable
 
 #### C. Calculate Valuation Multiples
 
@@ -361,7 +364,7 @@ Median               38.9     3.5x    3.2x    15.2x      13.8x      25x   17%   
 Minimum              28.5     2.8x    2.6x    12.8x      11.2x      20x   12%     22%
 
 Note: Market data as of [Date]. LTM = Last Twelve Months. NTM = Next Twelve Months.
-Source: FactSet, company filings, [Analyst] estimates.
+Source: Structured data via tradings-api (TradingView), company filings, [Analyst] estimates.
 ```
 
 **CRITICAL**: The statistical summary (max/75th/median/25th/min) is MANDATORY.
@@ -428,7 +431,7 @@ Q1 2023  Comp E       PE Firm        $3.2B    3.5x    13.5x      25%      Carve-
 
 Median                                        4.0x    15.8x      32%
 
-Source: CapitalIQ, company filings, press releases.
+Source: Company filings, press releases, and external transaction databases as needed.
 ```
 
 #### B. Apply to Target Company

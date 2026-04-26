@@ -37,9 +37,11 @@ This document provides step-by-step instructions for executing Task 4 (Chart Gen
   - DCF sensitivity table
   - Comparable companies data
   - Valuation ranges
-- **Required**: External market data
-  - Historical stock price data (Yahoo Finance, Bloomberg)
-  - Historical valuation multiples (optional for chart 34)
+- **Required**: Structured market data
+  - Historical stock price data from `tradings-api` `/api/price/{symbol}`
+  - Historical financial / valuation series from `tradings-api` history endpoints and `*_h[]` arrays
+- **Optional**: External market data
+  - Historical valuation multiples if the user wants a bespoke methodology beyond what can be derived from `tradings-api`
 
 **⚠️ CRITICAL: DO NOT START THIS TASK UNLESS TASKS 1, 2, AND 3 ARE COMPLETE**
 
@@ -49,7 +51,7 @@ This task requires outputs from all three previous tasks. Starting without them 
 - Task 1: Company research document (for 9 charts)
 - Task 2: Financial model with all 6 tabs (for 8 charts)
 - Task 3: Valuation tabs added to the model (for 6 charts)
-- External data access (for 2 charts)
+- Optional external valuation-history access (only if needed for chart 34 enhancement)
 
 Do not attempt to create placeholder charts or skip charts due to missing data.
 
@@ -86,14 +88,16 @@ Do not attempt to create placeholder charts or skip charts due to missing data.
 - [ ] Valuation ranges calculated? (for chart 32 ⭐)
 
 ### External Data Verification
-- [ ] Can access historical stock price data? (Yahoo Finance, Bloomberg for chart 01)
-- [ ] Can access historical valuation data? (Optional, for chart 34)
+- [ ] Can access `/api/price/{symbol}` for historical stock price data? (for chart 01)
+- [ ] Can access `tradings-api` history / `*_h[]` series for valuation-history derivation?
+- [ ] Optional: external historical valuation data available? (only if needed for chart 34 enhancement)
 
 **IF ANY VERIFICATION FAILS**:
 - Missing Task 1? → Complete Task 1 (Company Research) first
 - Missing Task 2? → Complete Task 2 (Financial Modeling) first
 - Missing Task 3? → Complete Task 3 (Valuation Analysis) first
-- Missing external data? → Gather from Yahoo Finance, Bloomberg, or similar sources
+- Missing `tradings-api` data? → Pull the required price / history endpoints first
+- Missing optional external data? → Continue with `tradings-api`-based charts and use external sources only for a more customized chart 34
 
 ---
 
@@ -206,10 +210,10 @@ Understanding where each chart's data comes from:
 - chart_33: Price Target Scenarios → Valuation Summary tab (or calculate from scenarios)
 
 ### From External Sources - 2 charts
-- chart_01: Stock Price Performance → Yahoo Finance, Bloomberg, Alpha Vantage
-- chart_34: Historical Valuation Multiples → Yahoo Finance, Bloomberg (historical P/E, EV/EBITDA)
+- chart_01: Stock Price Performance → `tradings-api` `/api/price/{symbol}`
+- chart_34: Historical Valuation Multiples → derive from `tradings-api` history endpoints where possible; external valuation history is fallback only
 
-**IMPORTANT**: Require ALL three tasks (1, 2, 3) complete PLUS external data access to create all 25 required charts.
+**IMPORTANT**: Require ALL three tasks (1, 2, 3) complete plus the relevant `tradings-api` history endpoints to create the required charts. External data is supplemental, not the default path.
 
 ---
 

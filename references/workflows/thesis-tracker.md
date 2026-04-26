@@ -2,6 +2,18 @@
 
 description: Maintain and update investment theses for portfolio positions and watchlist names. Track key data points, catalysts, and thesis milestones over time. Use when updating a thesis with new information, reviewing position rationale, or checking if a thesis is still intact. Triggers on "update thesis for [company]", "is my thesis still intact", "thesis check", "add data point to [company]", or "review my positions".
 
+## Structured Data Source
+
+Use `tradings-api` to keep the thesis scorecard data-driven:
+
+- `GET /api/market-data/{symbol}` — company, valuation, next earnings date, and rolling fundamental summary
+- `GET /api/market-data/{symbol}/ttm` — margin, cash flow, leverage, and return metrics for thesis pillars
+- `GET /api/market-data/{symbol}/analyst-recommendations` — current price-target and recommendation backdrop
+- `GET /api/calendar/earnings?from=&to=` — upcoming earnings catalysts
+- `GET /api/news?symbol={symbol}` or `GET /api/news/stock?symbol={symbol}` — fresh evidence for or against the thesis
+
+Web Search is still needed for original management wording, deep product / regulatory developments, and thesis inputs that rely on channel checks or alternative data.
+
 ## Workflow
 
 ### Step 1: Define or Load Thesis
@@ -16,7 +28,7 @@ If creating a new thesis:
 - **Target price / valuation**: What's it worth if the thesis plays out
 - **Stop-loss trigger**: What would make you exit
 
-If updating an existing thesis, ask the user for the new data point or development.
+If updating an existing thesis, ask the user for the new data point or development, then refresh the structured baseline before scoring the change.
 
 ### Step 2: Update Log
 
@@ -28,6 +40,12 @@ For each new data point or development:
 - **Action**: No change / Increase position / Trim / Exit
 - **Updated conviction**: High / Medium / Low
 
+Typical structured updates to log:
+- Revenue / margin / FCF progress from `/api/market-data/{symbol}` or `/ttm`
+- Price-target or recommendation drift from `/analyst-recommendations`
+- New earnings date from `/api/calendar/earnings` or `earnings_release_next_date`
+- News items that confirm or challenge the thesis from `/api/news`
+
 ### Step 3: Thesis Scorecard
 
 Maintain a running scorecard:
@@ -38,6 +56,8 @@ Maintain a running scorecard:
 | Margin expansion | Behind | Margins flat YoY | Concerning |
 | New product launch | Pending | Delayed to Q2 | Watch |
 
+Populate the scorecard with the latest structured metrics wherever possible instead of freehand status labels only.
+
 ### Step 4: Catalyst Calendar
 
 Track upcoming catalysts:
@@ -45,6 +65,8 @@ Track upcoming catalysts:
 | Date | Event | Expected Impact | Notes |
 |------|-------|-----------------|-------|
 | | | | |
+
+Seed this table from `/api/calendar/earnings` for earnings dates and from recent `/api/news` items for company-specific follow-up events.
 
 ### Step 5: Output
 
@@ -61,4 +83,4 @@ Format: Concise markdown or Word doc with the scorecard, recent updates, and cur
 - Track disconfirming evidence as rigorously as confirming evidence
 - Review theses at least quarterly, even when nothing dramatic has happened
 - If the user manages multiple positions, offer to do a full portfolio thesis review
-- Store thesis data in a structured format so it can be referenced across sessions
+- Store thesis data in a structured format so it can be referenced across sessions and refreshed against `tradings-api`

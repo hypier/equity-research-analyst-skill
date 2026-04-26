@@ -39,7 +39,7 @@ Select which task to execute:
 | **1** | Company Research | Company name/ticker | 6-8K word document |
 | **2** | Financial Modeling | 10-K or financials access | Excel model (6 tabs) |
 | **3** | Valuation Analysis | Financial model (Task 2) | Valuation + price target |
-| **4** | Chart Generation | Tasks 1, 2, 3 + external data | 25-35 PNG/JPG charts |
+| **4** | Chart Generation | Tasks 1, 2, 3 + optional external valuation history | 25-35 PNG/JPG charts |
 | **5** | Report Assembly | ALL previous tasks (1-4) | 30-50 page DOCX report |
 
 ---
@@ -307,9 +307,11 @@ Required from model:
   - DCF sensitivity table (Task 3 tab in same Excel file)
   - Comparable companies data (Task 3 tab in same Excel file)
   - Valuation ranges (Task 3 tab in same Excel file)
-- **Required**: External market data
-  - Historical stock price data (Yahoo Finance, Bloomberg, etc.)
-  - Historical valuation multiples (for historical trend charts)
+- **Required**: Structured market data
+  - Historical stock price data from `tradings-api` `/api/price/{symbol}`
+  - History arrays and valuation series from `tradings-api`
+- **Optional**: External valuation history
+  - Historical valuation multiples if the user wants a bespoke history methodology
 
 **⚠️ CRITICAL: DO NOT START THIS TASK UNLESS TASKS 1, 2, AND 3 ARE COMPLETE**
 
@@ -319,7 +321,7 @@ This task requires outputs from all three previous tasks. Starting without them 
 - Task 1: Company research document (for 9 charts)
 - Task 2: Financial model with all 6 tabs (for 8 charts)
 - Task 3: Valuation tabs added to the model (for 6 charts)
-- External data access (for 2 charts)
+- `tradings-api` price / history access (external valuation history optional)
 
 Do not attempt to create placeholder charts or skip charts due to missing data.
 
@@ -353,8 +355,9 @@ Required from Task 3:
 - [ ] Valuation ranges - for chart 32 ⭐
 
 Required from External Sources:
-- [ ] Historical stock price data (for chart 01)
-- [ ] Historical valuation multiples (for chart 34)
+- [ ] `tradings-api` historical stock price data available (for chart 01)
+- [ ] `tradings-api` history / valuation series available (for chart 34 base case)
+- [ ] Optional external historical valuation multiples available (only if needed)
 ```
 
 **Process**:

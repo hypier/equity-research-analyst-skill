@@ -2,6 +2,19 @@
 
 description: Draft concise morning meeting notes summarizing overnight developments, trade ideas, and key events for coverage stocks. Designed for the 7am morning meeting format — tight, opinionated, actionable. Triggers on "morning note", "morning meeting", "what happened overnight", "trade idea", "morning call prep", or "daily note".
 
+## Structured Data Source
+
+Use `tradings-api` for the overnight numeric and event scan:
+
+- `GET /api/news/stock?lang=en&market_country=US` — US single-name headlines
+- `GET /api/news/economic?lang=en` — macro headlines
+- `GET /api/news?symbol={symbol}` — company-specific follow-up headlines
+- `GET /api/quote/{symbol}` or `POST /api/quote/batch` — pre/post-market move, volume, session status
+- `GET /api/calendar/economic?from=&to=&market=america` — today's macro calendar
+- `GET /api/calendar/earnings?from=&to=&market=america` — today's earnings slate
+
+Web Search remains necessary for rumors, full article context, and event types not covered by the structured feed.
+
 ## Workflow
 
 ### Step 1: Overnight Developments
@@ -9,19 +22,19 @@ description: Draft concise morning meeting notes summarizing overnight developme
 Scan for relevant events across coverage universe:
 
 **Earnings & Guidance**
-- Any coverage companies reporting overnight or pre-market?
-- Earnings surprises (beat/miss on revenue, EPS, key metrics)
-- Guidance changes (raised, lowered, maintained)
+- Any coverage companies reporting overnight or pre-market? Start with `/api/calendar/earnings`
+- Earnings surprises (beat/miss on revenue, EPS, key metrics) from `tradings-api` + latest release
+- Guidance changes (raised, lowered, maintained) from latest release / transcript
 
 **News & Events**
 - M&A announcements or rumors
 - Management changes
 - Product launches or regulatory decisions
 - Analyst upgrades/downgrades from competitors
-- Macro data or policy changes affecting the sector
+- Macro data or policy changes affecting the sector from `/api/news/economic` and `/api/calendar/economic`
 
 **Market Context**
-- Overnight futures / pre-market moves
+- Overnight futures / pre-market moves from `/api/quote/{symbol}` or `POST /api/quote/batch`
 - Sector ETF performance
 - Relevant commodity or currency moves
 - Key economic data releases today
@@ -69,6 +82,8 @@ If a coverage company reported, provide a quick reaction:
 **Our Take**: 2-3 sentences — is this good or bad for the stock? Does it change our thesis?
 
 **Action**: Maintain / Upgrade / Downgrade rating? Adjust price target?
+
+Use `tradings-api` for the actuals, quote reaction, and calendar timestamps; use the release / transcript for exact guidance wording.
 
 ### Step 4: Output
 

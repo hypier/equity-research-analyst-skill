@@ -2,6 +2,19 @@
 
 This reference document provides comprehensive guidance on the three primary valuation methodologies used in equity research: Discounted Cash Flow (DCF), Trading Comparables, and Precedent Transactions.
 
+## Structured Data Inputs
+
+Before using external terminals or manual work, prefill the public-market inputs from `tradings-api`:
+
+- `GET /api/market-data/{symbol}` — beta, market cap, current / TTM valuation ratios, debt / leverage context, dividend yield, and broad profitability metrics
+- `GET /api/market-data/{symbol}/enterprise-value` — EV bridge and EV-based current multiples
+- `GET /api/market-data/{symbol}/ttm` — TTM revenue, EBITDA, EPS, cash flow, ROE / ROIC, and margin data
+- `GET /api/market-data/{symbol}/history-quarterly` and `/history-annual` — historical trend arrays for supporting analysis
+- `GET /api/market-data/{symbol}/analyst-recommendations` — Street recommendation mix and price-target range
+- `GET /api/quote/{symbol}` — live share price and current market-cap context
+
+Use external sources only where `tradings-api` is not enough: pre-announcement consensus timestamps, precedent transactions, bond-yield detail, private-company data, and proprietary peer datasets.
+
 ## Table of Contents
 
 1. [Discounted Cash Flow (DCF) Analysis](#discounted-cash-flow-dcf-analysis)
@@ -20,7 +33,7 @@ DCF analysis values a company based on the present value of its projected future
 ### Step-by-Step DCF Process
 
 #### 1. Historical Financial Analysis
-- Collect 3-5 years of historical financials
+- Collect 3-5 years of historical financials, prefilling from `tradings-api` history endpoints when available
 - Calculate historical FCF = EBIT(1-Tax Rate) + D&A - CapEx - Change in NWC
 - Analyze historical growth rates and margins
 - Identify trends and cyclicality
@@ -94,7 +107,7 @@ WACC = (E/V × Cost of Equity) + (D/V × Cost of Debt × (1 - Tax Rate))
 Cost of Equity = Risk-Free Rate + Beta × Equity Risk Premium
 ```
 - Risk-Free Rate: 10-year Treasury yield
-- Beta: Regression of stock returns vs. market (or use comparable beta)
+- Beta: Prefer `tradings-api` market-data beta; otherwise use regression / comparable beta
 - Equity Risk Premium: Historical average ~5-6%
 
 **Cost of Debt:**
@@ -185,6 +198,8 @@ Trading comps values a company based on how similar companies are valued in the 
 - Latest fiscal year financial statements
 - Next-year (NTM) estimates from consensus
 - Historical growth rates
+
+For public peers, the default starting point should be `tradings-api` market-data, quote, enterprise-value, and analyst-recommendations endpoints before opening external data terminals.
 
 **Calculate Market Metrics:**
 - Market Cap = Share Price × Shares Outstanding
@@ -291,7 +306,9 @@ Precedent transactions values a company based on prices paid for similar compani
 **Sources:**
 - SEC filings (S-4, 8-K, proxy statements)
 - Press releases and investor presentations
-- M&A databases (CapIQ, FactSet, Bloomberg)
+- M&A databases and other transaction datasets
+
+`tradings-api` does not replace precedent-transaction sourcing; it is most useful here for current trading context and target-company fundamentals alongside the deal work.
 
 #### 3. Calculate Transaction Multiples
 
@@ -402,7 +419,7 @@ Recommendation: BUY with target price of $45 (midpoint of base case)
 ### Sanity Checks
 
 **Cross-check valuation with:**
-1. **Historical multiples**: Is current valuation in line with history?
+1. **Historical multiples**: Is current valuation in line with history? Derive from `tradings-api` price / history data when possible
 2. **Peer comparison**: Justified premium/discount vs. peers?
 3. **Implied growth**: What growth is market pricing in?
 4. **Implied returns**: IRR from current price to target price

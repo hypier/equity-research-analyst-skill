@@ -2,6 +2,18 @@
 
 This document provides detailed step-by-step instructions for each phase of the earnings update process.
 
+## Structured Data Source
+
+Use `tradings-api` for the numeric baseline before doing narrative research:
+
+- `GET /api/market-data/{symbol}` — one-shot pull for company info, TTM history arrays, current-period ratios, current-quarter metadata, and next-quarter EPS forecast
+- `GET /api/market-data/{symbol}/financials-quarterly` — quarterly three-statement actuals
+- `GET /api/market-data/{symbol}/analyst-recommendations` — price-target consensus plus buy/hold/sell distribution
+- `GET /api/price/{symbol}?timeframe=D&range=252` — 1-year price history for report charts
+- `GET /api/quote/{symbol}` — current share price, market cap, session status, and pre/post-market reaction
+
+Web Search and SEC / IR materials are still required for release wording, transcript commentary, segment detail not carried in the API, and direct source hyperlinks in the finished report.
+
 ## Quick Navigation
 
 1. [Data Freshness Guardrail](#data-freshness-guardrail)
@@ -18,7 +30,8 @@ Check the latest reported quarter before doing any analysis.
 1. Check today's date and write it down explicitly.
 2. Search for the latest earnings release or investor-relations posting.
 3. Confirm the release date and quarter from the primary source.
-4. If the latest materials are older than 90 days, search again before proceeding.
+4. Pull the structured `tradings-api` baseline and compare the reported quarter / next earnings fields to the primary source.
+5. If the latest materials are older than 90 days, search again before proceeding.
 
 ## Phase 1: Earnings Data Collection (30-60 minutes)
 
@@ -95,7 +108,17 @@ After identifying the latest quarter from search, understand the company's fisca
 
 Many companies state their fiscal year in the earnings release header. Search `[company] fiscal year calendar` if needed.
 
-**Step 1c: MANDATORY VERIFICATION - Verify Latest Data Obtained**
+**Step 1c: Pull the structured baseline after quarter verification**
+
+Once the latest quarter is confirmed from the primary source, immediately pull:
+- `/api/market-data/{symbol}`
+- `/api/market-data/{symbol}/financials-quarterly`
+- `/api/market-data/{symbol}/analyst-recommendations`
+- `/api/quote/{symbol}`
+
+Use these calls to prefill the numeric template before reading narrative materials. If `data.current.fiscal_period_current` or `earnings_release_date` appears stale relative to the newly found release, treat the API as last-reported context and rely on the current filing / release for quarter-accurate figures.
+
+**Step 1d: MANDATORY VERIFICATION - Verify Latest Data Obtained**
 
 🛑 **STOP - DO NOT PROCEED until verifying ALL of these:**
 
@@ -117,7 +140,7 @@ Many companies state their fiscal year in the earnings release header. Search `[
 
 **IF ANY RED FLAGS PRESENT**: STOP and search again. Do not proceed with outdated data.
 
-**Step 1c: Handle Naming Variations**
+**Step 1e: Handle Naming Variations**
 
 Companies use different terminology - recognize these patterns:
 
@@ -141,6 +164,14 @@ After SEARCHING FOR and confirming the latest quarter, collect the following:
 
 **⚠️ IMPORTANT: SEARCH for and ACCESS actual documents - do not rely on training data.**
 
+**Structured Pull (REQUIRED before narrative collection):**
+- Pull `/api/market-data/{symbol}` for TTM / current-period financial baselines and earnings dates
+- Pull `/api/market-data/{symbol}/financials-quarterly` for quarterly actuals
+- Pull `/api/market-data/{symbol}/analyst-recommendations` for consensus sentiment and price-target context
+- Pull `/api/quote/{symbol}` for current price and immediate market reaction
+
+Treat these as the starting numeric layer. The release, filing, and transcript remain the source of truth for wording, disclosure nuance, and directly hyperlinked citations.
+
 **Primary Materials (REQUIRED):**
 - **Earnings press release** - Usually on company investor relations site under "Press Releases" or "News"
   - Navigate to IR site and find the actual press release
@@ -160,8 +191,8 @@ After SEARCHING FOR and confirming the latest quarter, collect the following:
   - **Search for**: "[Company] latest earnings call transcript" or "[Company] Q[X] [Year] earnings call transcript"
   - **Sources**:
     - Company IR site (some post transcripts directly)
-    - Seeking Alpha: Search "[Company] [latest quarter] earnings call transcript"
-    - AlphaStreet, Motley Fool (alternative sources)
+    - Third-party transcript providers: Search "[Company] [latest quarter] earnings call transcript"
+    - Other financial media / transcript mirrors (alternative sources)
   - **CRITICAL DATE CHECK**:
     - ✅ **Before using ANY transcript, verify the date on the transcript itself**
     - ✅ **The transcript date MUST match the earnings release date from Step 1**
@@ -188,7 +219,7 @@ After SEARCHING FOR and confirming the latest quarter, collect the following:
   - From last earnings update or initiation report
   - Check what was estimated for this quarter's metrics
 
-- **Consensus estimates** - From Bloomberg, FactSet, Refinitiv, or Yahoo Finance
+- **Consensus estimates** - Prefer `tradings-api` `/analyst-recommendations` for current Street snapshot; use other external consensus sources only when you need a pre-release consensus timestamp or a metric not present in the API
   - CRITICAL: Use estimates from BEFORE earnings release
   - Look for "as of [date before earnings]" to ensure pre-announcement consensus
   - Needed for beat/miss analysis
@@ -207,6 +238,7 @@ After SEARCHING FOR and confirming the latest quarter, collect the following:
 - [ ] ✅ **ACCESSED** actual earnings press release and read it
 - [ ] ✅ **OPENED** actual earnings call transcript and verified date
 - [ ] ✅ **CONFIRMED** this is the MOST RECENT quarter by checking dates
+- [ ] ✅ Pulled the `tradings-api` baseline and checked it against the primary-source quarter
 - [ ] ✅ Have full financial results (revenue, EPS, margins, etc.) from actual release
 - [ ] ✅ Have pre-earnings consensus estimates with source date
 
@@ -240,6 +272,8 @@ KEY BUSINESS METRICS:
 [Metric 2]          XXX         XXX        XXX          +X% YoY
 [Metric 3]          XXX         XXX        XXX          +X% YoY
 ```
+
+Populate the reported and historical numeric lines from `tradings-api` first, then reconcile every current-quarter figure to the earnings release / filing before publishing.
 
 ### Step 4: Identify Key Themes from Call
 
@@ -344,6 +378,8 @@ Based on updated estimates:
 - Determine new fair value
 - Decide if price target changes
 
+Use `/api/quote/{symbol}` for current price / market cap context and `/api/market-data/{symbol}/analyst-recommendations` for the live sell-side target range when framing the updated valuation.
+
 **Price Target Decision:**
 - If estimates changed significantly (>5%) → Usually change price target
 - If estimates changed marginally (<5%) → May maintain price target
@@ -401,8 +437,8 @@ Create charts focusing on QUARTERLY TRENDS and WHAT'S NEW.
    - Bar chart showing change
 
 8. **Valuation Chart** (P/E or EV/EBITDA multiple)
-   - Historical multiple range
-   - Current multiple
+   - Historical multiple range (derive from structured price / history series when possible)
+   - Current multiple from `tradings-api`
    - Fair value multiple
 
 **OPTIONAL CHARTS (if space allows):**
@@ -484,6 +520,7 @@ Before publishing, verify:
 - [ ] Every figure has specific source with document and date
 - [ ] Every table has specific source with document reference
 - [ ] Beat/miss analysis cites consensus source with date
+- [ ] If `tradings-api` supplied the consensus context, the endpoint and fetch date are cited clearly
 - [ ] Guidance changes cite current and prior guidance sources
 - [ ] Key statistics have footnotes with specific page/slide references
 - [ ] Sources section lists all materials with URLs
