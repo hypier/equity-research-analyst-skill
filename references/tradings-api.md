@@ -25,6 +25,40 @@ This document lists every `tradings-api` (TradingView proxy service) endpoint an
 For exact endpoint behavior, downloaded API docs, and real executed example payloads, always refer to `references/tradings-api-docs/` first.
 In case of any mismatch, treat `references/tradings-api-docs/` as the source of truth and update this file to match it.
 
+### Reference priority
+
+Use the bundled references in this order:
+
+1. `tradings-api-docs/openapi.json` — source of truth for parameter names, required fields, defaults, and enum constraints
+2. `tradings-api-docs/examples/` — request / response examples and payload-shape hints
+3. `tradings-api.md` — workflow routing and report-field mapping
+
+If sources disagree:
+
+- Trust `openapi.json` for how to build the request.
+- Use `examples/` to understand the returned payload shape after the request has been validated against the spec.
+- Treat `examples/` as potentially illustrative rather than universally valid for every asset class or symbol family.
+
+### Parameter discipline
+
+- Match the endpoint family to the symbol family. Example: `/api/news/crypto` should use crypto symbols such as `BINANCE:BTCUSDT`, not stock tickers.
+- For `/api/search/market/{query}`, set `filter` to the actual asset class you want (`stock`, `crypto`, `forex`, `futures`, `index`, `funds`, `bond`, `options`, or `undefined`) instead of relying on a reused stock example.
+- For `/api/quote/{symbol}`, prefer `?session=regular&fields=all` unless the workflow explicitly needs a different session or a reduced field set.
+- When an example appears to conflict with endpoint semantics, verify the allowed parameters in `openapi.json` before using the example verbatim.
+
+### Common pitfalls
+
+- `GET /api/news/crypto`
+  Use crypto symbols such as `BINANCE:BTCUSDT` when passing `symbol`. Do not reuse stock placeholders from unrelated examples.
+- `GET /api/search/market/{query}`
+  The `filter` value materially changes results. Use `filter=stock` for equities, `filter=crypto` for crypto, `filter=forex` for FX, and so on.
+- `GET /api/quote/{symbol}`
+  Prefer `?session=regular&fields=all` for analysis workflows. The returned quote fields are nested under `data.data`, not flat at the top level.
+- `GET /api/market-data/{symbol}/analyst-recommendations`
+  The payload is a single object at `data.analyst_recommendations`, not an array. Do not parse it as `data[0]`.
+- `GET /api/market-data/{symbol}`
+  Treat the request symbol or preflight search result as canonical. Do not rely on `data.company.ticker` or `data.company.exchange` to reconstruct the primary listing.
+
 - Read this file before opening `tradings-api-docs/openapi.json` or any file in `tradings-api-docs/examples/`.
 - Search `tradings-api-docs/examples/` by endpoint path or JSON field name, not by workflow name.
 - Treat `tradings-api-docs/examples/` as the real executed sample set, not just illustrative pseudodata.
@@ -76,6 +110,14 @@ All `{symbol}` parameters use `EXCHANGE:TICKER` format:
 - Futures: `CME_MINI:ES1!`
 
 If the ticker is ambiguous, resolve it first via `/api/search/market/{query}?filter=stock`.
+
+Pick the `filter` that matches the asset class you are researching:
+
+- Equities / ETFs for this skill's default workflows: `filter=stock`
+- Crypto pairs: `filter=crypto`
+- FX pairs: `filter=forex`
+- Futures: `filter=futures`
+- Indices: `filter=index`
 
 **Observed response shape (verified 2026-04-26):**
 

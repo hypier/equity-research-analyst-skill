@@ -9,6 +9,20 @@ This directory contains bundled API reference material for the `equity-research-
 3. Open `examples/*.md` when you need a concrete request pattern or sample payload.
 4. If `../tradings-api.md` disagrees with payload structure shown here, trust this folder and update `../tradings-api.md`.
 
+## Reference Priority
+
+Use the three reference layers for different jobs:
+
+1. `openapi.json` — source of truth for parameter names, required vs optional fields, defaults, enums, and endpoint existence.
+2. `examples/*.md` — best source for URL shape, header usage, and typical response payload structure after the endpoint and parameters are already validated.
+3. `../tradings-api.md` — workflow-level guidance for which endpoint to call for a research task and which fields matter in deliverables.
+
+If these sources disagree:
+
+- Trust `openapi.json` for request construction.
+- Treat `examples/*.md` as illustrative payload examples that may occasionally use a bad or cross-market symbol placeholder.
+- Update `../tradings-api.md` to record any verified caveat that repeatedly affects real usage.
+
 ## Search Tips
 
 - Prefer `rg "GET /api/market-data/{symbol}" references/tradings-api-docs/examples`

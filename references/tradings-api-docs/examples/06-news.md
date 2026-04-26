@@ -4997,7 +4997,7 @@ HTTP `200`
 
 ```bash
 curl --request GET \
-	--url 'https://tradingview-data1.p.rapidapi.com/api/news/crypto?symbol=NASDAQ%3AAAPL&lang=en' \
+	--url 'https://tradingview-data1.p.rapidapi.com/api/news/crypto?symbol=BINANCE:BTCUSDT&lang=en' \
 	--header 'x-rapidapi-host: tradingview-data1.p.rapidapi.com' \
 	--header 'x-rapidapi-key: YOUR_RAPIDAPI_KEY'
 ```
@@ -5012,18 +5012,417 @@ HTTP `200`
   "data": {
     "items": [
       {
-        "id": "u_today:239b5fe7b094b:0",
-        "title": "Breaking: Crypto Holder Tim Cook Resigns as Apple CEO",
-        "published": 1776717235,
+        "id": "newsbtc:6e878a888094b:0",
+        "title": "Bitcoin Price Wave Down To $40,000 Shows When The Bottom Will Begin",
+        "published": 1777168854,
         "urgency": 2,
-        "link": "https://u.today/breaking-crypto-holder-tim-cook-resigns-as-apple-ceo",
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-price-wave-down-to-40000-shows-when-the-bottom-will-begin/",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/u_today:239b5fe7b094b:0-breaking-crypto-holder-tim-cook-resigns-as-apple-ceo/",
+        "storyPath": "/news/newsbtc:6e878a888094b:0-bitcoin-price-wave-down-to-40-000-shows-when-the-bottom-will-begin/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:f30adc0bd094b:0",
+        "title": "Bitcoin Setup Suggests Liquidity Hunt Before Next Directional Move",
+        "published": 1777165218,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-next-directional-move/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:f30adc0bd094b:0-bitcoin-setup-suggests-liquidity-hunt-before-next-directional-move/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "beincrypto:740688040094b:0",
+        "title": "California Man Gets 70 Months in Prison for $260 Million Crypto Scam",
+        "published": 1777153272,
+        "urgency": 2,
+        "link": "https://beincrypto.com/california-crypto-scam-sentencing/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:740688040094b:0-california-man-gets-70-months-in-prison-for-260-million-crypto-scam/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "cointelegraph:d620b6497094b:0",
+        "title": "Bitcoiners cast doubt on the US military's understanding of the network",
+        "published": 1777145789,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/bitcoiners-cast-doubt-us-military-bitcoin?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:d620b6497094b:0-bitcoiners-cast-doubt-on-the-us-military-s-understanding-of-the-network/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "stocktwits:af2b4c9b6094b:0",
+        "title": "Galaxy CEO Mike Novogratz Warns Saylor’s Bitcoin Buying Spree Could Trigger Supply Shock",
+        "published": 1777138001,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/galaxy-ceo-saylor-bitcoin-buying-supply-shock/cZBK1RQRe2G",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "NASDAQ:MSTR",
+            "logoid": "strategy-cad-hedged-cibc-cdr"
+          }
+        ],
+        "storyPath": "/news/stocktwits:af2b4c9b6094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "beincrypto:57244ac65094b:0",
+        "title": "Bitcoin Has 1 Week to Secure Its Best April Since 2020",
+        "published": 1777136229,
+        "urgency": 2,
+        "link": "https://beincrypto.com/bitcoin-on-route-for-best-april-monthly-returns/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:57244ac65094b:0-bitcoin-has-1-week-to-secure-its-best-april-since-2020/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "cointelegraph:3e64fcc89094b:0",
+        "title": "Bitcoin traders eye $73K next as weekly trend line holds price hostage",
+        "published": 1777119737,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/bitcoin-traders-eye-73k-next-weekly-trend-line-holds-price-hostage?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:3e64fcc89094b:0-bitcoin-traders-eye-73k-next-as-weekly-trend-line-holds-price-hostage/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "newsbtc:ce62894e5094b:0",
+        "title": "Bitcoin ‘Sharks’ Silently Accumulate Amid Market Uncertainty — Details",
+        "published": 1777116654,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-sharks-silently-accumulate-amid-market-uncertainty-details/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:ce62894e5094b:0-bitcoin-sharks-silently-accumulate-amid-market-uncertainty-details/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "stocktwits:18023f3f8094b:0",
+        "title": "VanEck Sees Bullish Shift In Bitcoin While Funding Rates Slide To Lowest Since 2023",
+        "published": 1777113669,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/vaneck-sees-bullish-shift-in-bitcoin/cZBKII6Recx",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:18023f3f8094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "newsbtc:ca8f0507f094b:0",
+        "title": "Bitcoin’s Big Players Are Accumulating — Is $80K Just The Start?",
+        "published": 1777111216,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoins-big-players-are-accumulating-is-80k-just-the-start/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:ca8f0507f094b:0-bitcoin-s-big-players-are-accumulating-is-80k-just-the-start/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:2694f3664094b:0",
+        "title": "Spot Bitcoin ETFs see 9-day inflow streak as investors show resilience",
+        "published": 1777106146,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/spot-bitcoin-etfs-see-9-day-inflow-streak-as-investors-show-resilience?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:2694f3664094b:0-spot-bitcoin-etfs-see-9-day-inflow-streak-as-investors-show-resilience/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "newsbtc:869306e68094b:0",
+        "title": "Bitcoin Traders Double Down On Bearish Bets Amid Consolidation – What This Means For Price",
+        "published": 1777105830,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-traders-double-down-on-bearish-bets-amid-consolidation-what-this-means-for-price/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:869306e68094b:0-bitcoin-traders-double-down-on-bearish-bets-amid-consolidation-what-this-means-for-price/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:ad85556de094b:0",
+        "title": "Bitcoin ETFs See Best Streak Since October 2025 As Inflows Hit $2.4B",
+        "published": 1777093252,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-etfs-best-streak-october-2025-inflows/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:ad85556de094b:0-bitcoin-etfs-see-best-streak-since-october-2025-as-inflows-hit-2-4b/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:168c408b6094b:0",
+        "title": "Hyperliquid whale holds $38M short against Bitcoin, but does it matter?",
+        "published": 1777084518,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/hyperliquid-whale-holds-38m-short-against-bitcoin-but-does-it-matter?utm_source=rss_feed&utm_medium=rss-trading-view_ETH&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:168c408b6094b:0-hyperliquid-whale-holds-38m-short-against-bitcoin-but-does-it-matter/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "newsbtc:bee963ae1094b:0",
+        "title": "Peter Brandt Sees Bitcoin Hitting $300,000-$500,000 By Late 2029",
+        "published": 1777082411,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/peter-brandt-bitcoin-300000-500000/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:bee963ae1094b:0-peter-brandt-sees-bitcoin-hitting-300-000-500-000-by-late-2029/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "DJN_DN20260417000714:0",
+        "title": "3 Things That Could Turn Crypto Around — Barron's",
+        "published": 1777080660,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260417000714:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "beincrypto:097eec947094b:0",
+        "title": "New Quantum Break Claim Sparks Bitcoin Security Debate",
+        "published": 1777078887,
+        "urgency": 2,
+        "link": "https://beincrypto.com/quantum-bitcoin-break-claim-debate-crypto-security/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:097eec947094b:0-new-quantum-break-claim-sparks-bitcoin-security-debate/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "newsbtc:12cc251b3094b:0",
+        "title": "Bitcoin Sentiment Warning: Social Media FOMO Spikes Again",
+        "published": 1777078855,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-sentiment-warning-social-media-fomo/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:12cc251b3094b:0-bitcoin-sentiment-warning-social-media-fomo-spikes-again/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "u_today:2187ea4a5094b:0",
+        "title": "Shiba Inu (SHIB): Everything Is Clear Now, Bitcoin's (BTC) Real Resistance Is $82,000, Another Dogecoin (DOGE) Zero Removal: Crypto Market Review",
+        "published": 1777075260,
+        "urgency": 2,
+        "link": "https://u.today/shiba-inu-shib-everything-is-clear-now-bitcoins-btc-real-resistance-is-82000-another-dogecoin-doge",
+        "relatedSymbols": [
+          {
+            "symbol": "COINBASE:SHIBUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCSHIB"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "CAPITALCOM:DOGEUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCDOGE"
+          }
+        ],
+        "storyPath": "/news/u_today:2187ea4a5094b:0-shiba-inu-shib-everything-is-clear-now-bitcoin-s-btc-real-resistance-is-82-000-another-dogecoin-doge-zero-removal-crypto-market-review/",
         "provider": {
           "id": "u_today",
           "name": "U.Today",
@@ -5032,79 +5431,32 @@ HTTP `200`
         }
       },
       {
-        "id": "cointelegraph:bd44c0a64094b:0",
-        "title": "Kraken debuts tokenized stock perpetual futures for non-US traders",
-        "published": 1771969283,
+        "id": "newsbtc:947fb67df094b:0",
+        "title": "Bitcoin Funding Rates Stay Negative Despite Price Gains — What This Means",
+        "published": 1777075210,
         "urgency": 2,
-        "link": "https://cointelegraph.com/news/kraken-launches-regulated-tokenized-equity-perpetual-futures-for-global-traders?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-funding-rates-negative/",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:KRAKEN",
-            "logoid": "kraken"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/cointelegraph:bd44c0a64094b:0-kraken-debuts-tokenized-stock-perpetual-futures-for-non-us-traders/",
+        "storyPath": "/news/newsbtc:947fb67df094b:0-bitcoin-funding-rates-stay-negative-despite-price-gains-what-this-means/",
         "provider": {
-          "id": "cointelegraph",
-          "name": "Cointelegraph",
-          "logo_id": "cointelegraph-en",
-          "url": "https://cointelegraph.com"
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
         }
       },
       {
-        "id": "the_block:a4af798fa094b:0",
-        "title": "Kraken rolls out round-the-clock perps for gold, major indexes and stocks like Apple, Nvidia and Tesla",
-        "published": 1771954134,
+        "id": "bravenewcoin:7aebc0bae094b:0",
+        "title": "Quantum Computer Breaks Tiny Bitcoin-Style Key, and the Industry Should Stop Pretending This Is Just Sci-Fi",
+        "published": 1777074917,
         "urgency": 2,
-        "link": "https://www.theblock.co/post/391089/kraken-rolls-out-round-the-clock-perps-gold-major-indexes-stocks-nvidia-apple-tesla?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:KRAKEN",
-            "logoid": "kraken"
-          },
-          {
-            "symbol": "NASDAQ:NDAQ",
-            "logoid": "nasdaq"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          }
-        ],
-        "storyPath": "/news/the_block:a4af798fa094b:0-kraken-rolls-out-round-the-clock-perps-for-gold-major-indexes-and-stocks-like-apple-nvidia-and-tesla/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "stocktwits:2bd8aba23094b:0",
-        "title": "Michael Saylor Compares Bitcoin’s Slump To Apple, Amazon ‘Wilderness’ Years Amid MSTR’s $9B Paper Losses",
-        "published": 1771927008,
-        "urgency": 2,
-        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/michael-saylor-compares-btc-slump-to-apple-amazon-wilderness-years/cZRvsqRR4zs",
+        "link": "https://bravenewcoin.com/insights/quantum-computer-breaks-tiny-bitcoin-style-key-and-the-industry-should-stop-pretending-this-is-just-sci-fi",
         "permission": "provider",
         "relatedSymbols": [
           {
@@ -5113,85 +5465,59 @@ HTTP `200`
             "base-currency-logoid": "crypto/XTVCBTC"
           },
           {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:MSTR",
-            "logoid": "strategy-cad-hedged-cibc-cdr"
-          }
-        ],
-        "storyPath": "/news/stocktwits:2bd8aba23094b:0/",
-        "provider": {
-          "id": "stocktwits",
-          "name": "Stocktwits",
-          "logo_id": "stocktwits",
-          "url": "https://stocktwits.com/"
-        }
-      },
-      {
-        "id": "stocktwits:f803a70dc094b:0",
-        "title": "Nasdaq, S&P 500 Futures Climb Ahead Of Apple Earnings: Why META, TSLA, MP, CRML, SER Are On Traders' Radar Today",
-        "published": 1769676372,
-        "urgency": 2,
-        "link": "https://stocktwits.com/news-articles/markets/equity/nasdaq-sp500-futures-higher-meta-tsla-ser-mp-crml-stocks-to-watch/cmyidGCR4KJ",
-        "permission": "provider",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          }
-        ],
-        "storyPath": "/news/stocktwits:f803a70dc094b:0/",
-        "provider": {
-          "id": "stocktwits",
-          "name": "Stocktwits",
-          "logo_id": "stocktwits",
-          "url": "https://stocktwits.com/"
-        }
-      },
-      {
-        "id": "cointelegraph:4de5c9e3e094b:0",
-        "title": "BitMEX pushes into 24/7 stock perps as tokenized equities heat up",
-        "published": 1767700800,
-        "urgency": 2,
-        "link": "https://cointelegraph.com/news/bitmex-pushes-24-7-stock-perps?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
-        "relatedSymbols": [
-          {
-            "symbol": "CRYPTO:BMEXUSD",
+            "symbol": "BITSTAMP:ETHUSD",
             "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCBMEX"
-          },
-          {
-            "symbol": "NASDAQ:NDAQ",
-            "logoid": "nasdaq"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
+            "base-currency-logoid": "crypto/XTVCETH"
           }
         ],
-        "storyPath": "/news/cointelegraph:4de5c9e3e094b:0-bitmex-pushes-into-24-7-stock-perps-as-tokenized-equities-heat-up/",
+        "storyPath": "/news/bravenewcoin:7aebc0bae094b:0/",
+        "provider": {
+          "id": "bravenewcoin",
+          "name": "Brave New Coin",
+          "logo_id": "bravenewcoin",
+          "url": "https://bravenewcoin.com/"
+        }
+      },
+      {
+        "id": "coinpedia:8c9fd82f1094b:0",
+        "title": "Quantum Break: Researcher Wins 1 BTC for Largest ECC Attack Ever",
+        "published": 1777068934,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/quantum-break-researcher-wins-1-btc-for-largest-ecc-attack-ever/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:8c9fd82f1094b:0-quantum-break-researcher-wins-1-btc-for-largest-ecc-attack-ever/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "cointelegraph:ecd9e1072094b:0",
+        "title": "Bitcoin developer Paul Sztorc announces BTC hard fork called eCash",
+        "published": 1777067700,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/bitcoin-dev-paul-sztorc-hard-fork-ecash?utm_source=rss_feed&utm_medium=rss-trading-view_BCH&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BCHUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBCH"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:ecd9e1072094b:0-bitcoin-developer-paul-sztorc-announces-btc-hard-fork-called-ecash/",
         "provider": {
           "id": "cointelegraph",
           "name": "Cointelegraph",
@@ -5200,590 +5526,549 @@ HTTP `200`
         }
       },
       {
-        "id": "chainwire:1c20d852d094b:0",
-        "title": "Bitget Stock Futures Surpass $1 Billion in Cumulative Trading Volume",
-        "published": 1762425193,
+        "id": "newsbtc:98387a7b0094b:0",
+        "title": "Will Bitcoin Fill The $82K CME Gap? $10B Could Be Liquidated—But Bulls May Hate What Follows",
+        "published": 1777064362,
         "urgency": 2,
-        "link": "https://chainwire.org/2025/11/06/bitget-stock-futures-surpass-1-billion-in-cumulative-trading-volume/",
+        "link": "https://www.newsbtc.com/breaking-news-ticker/will-bitcoin-fill-the-82k-cme-gap-10b-could-be-liquidated-but-bulls-may-hate-what-follows/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:98387a7b0094b:0-will-bitcoin-fill-the-82k-cme-gap-10b-could-be-liquidated-but-bulls-may-hate-what-follows/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "u_today:1fde1e316094b:0",
+        "title": "'The O.C.' Star Lambasts Bitcoin on American TV",
+        "published": 1777061985,
+        "urgency": 2,
+        "link": "https://u.today/the-oc-star-lambasts-bitcoin-on-american-tv",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:1fde1e316094b:0-the-o-c-star-lambasts-bitcoin-on-american-tv/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "newsbtc:70ade440d094b:0",
+        "title": "Bitcoin Is Existing Exchanges At An Alarming Rate, But How Are BTC Investors Faring In Terms Of Profit?",
+        "published": 1777057230,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-is-existing-exchanges/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:70ade440d094b:0-bitcoin-is-existing-exchanges-at-an-alarming-rate-but-how-are-btc-investors-faring-in-terms-of-profit/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:1ee744ddb094b:0",
+        "title": "Quantum computer breaks 15-bit elliptic curve cryptographic key",
+        "published": 1777056838,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/quantum-computer-bit-elliptic-curve-key?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:1ee744ddb094b:0-quantum-computer-breaks-15-bit-elliptic-curve-cryptographic-key/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "u_today:22de34291094b:0",
+        "title": "'Something Has Changed': Novogratz Predicts Bitcoin's Next Massive Breakout",
+        "published": 1777056456,
+        "urgency": 2,
+        "link": "https://u.today/something-has-changed-novogratz-predicts-bitcoins-next-massive-breakout",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:22de34291094b:0-something-has-changed-novogratz-predicts-bitcoin-s-next-massive-breakout/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "DJN_DN20260424007404:0",
+        "title": "Crypto Fear and Greed Index Slides Back to Neutral — Market Talk",
+        "published": 1777051680,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BINANCE:ETHUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260424007404:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "cointelegraph:8e452f5a0094b:0",
+        "title": "Bitcoin stays 'stalled' at $78K as oil threatens new risk-asset squeeze",
+        "published": 1777049744,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/bitcoin-stays-stalled-at-78k-as-oil-threatens-new-risk-asset-squeeze?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:8e452f5a0094b:0-bitcoin-stays-stalled-at-78k-as-oil-threatens-new-risk-asset-squeeze/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "coinpedia:d149b0104094b:0",
+        "title": "Bitcoin Price Today: BTC Up 30% From February Lows, iS $100K Next?",
+        "published": 1777049590,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/bitcoin-price-today-btc-up-30-from-february-lows-is-100k-next/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:d149b0104094b:0-bitcoin-price-today-btc-up-30-from-february-lows-is-100k-next/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "invezz:452206cdd094b:0",
+        "title": "Bitcoin nears $80K as ETF inflows hit $2.4B in April",
+        "published": 1777046433,
+        "urgency": 2,
+        "link": "https://invezz.com/news/2026/04/24/bitcoin-nears-80k-as-etf-inflows-hit-1-9b-in-seven-day-streak/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/invezz:452206cdd094b:0-bitcoin-nears-80k-as-etf-inflows-hit-2-4b-in-april/",
+        "provider": {
+          "id": "invezz",
+          "name": "Invezz",
+          "logo_id": "invezz",
+          "url": "https://invezz.com/"
+        }
+      },
+      {
+        "id": "cointelegraph:18958c562094b:0",
+        "title": "Nakamoto taps Bitwise and Kraken for Bitcoin options strategy to hedge risk",
+        "published": 1777046197,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/nakamoto-taps-bitwise-kraken-bitcoin-options-strategy-hedge-risk?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "CRYPTO:NAKAUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCNAKA"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:18958c562094b:0-nakamoto-taps-bitwise-and-kraken-for-bitcoin-options-strategy-to-hedge-risk/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "DJN_DN20260424006530:0",
+        "title": "Fallout From Hack Still Playing Out in DeFi Ecosystem — Market Talk",
+        "published": 1777044420,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BINANCE:ETHUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260424006530:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "stocktwits:6a0858eeb094b:0",
+        "title": "‘Why Hold Dollars?’ Arthur Hayes Says That A Cracking Financial System Could Be Bullish For Bitcoin",
+        "published": 1777044068,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/arthur-hayes-says-that-a-cracking-financial-system-is-bullish-for-bitcoin/cZBhIldRecO",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:6a0858eeb094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260424006201:0",
+        "title": "Sticky Gains in Bitcoin May Be a Sign of Fundamental Turn — Market Talk",
+        "published": 1777042260,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260424006201:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "u_today:2579dd2ae094b:0",
+        "title": "Adam Back Breaks Silence on 'Finding Satoshi' Doc, Says Timezone Gaps Debunk the Latest Bitcoin Creator Theory",
+        "published": 1777038480,
+        "urgency": 2,
+        "link": "https://u.today/adam-back-breaks-silence-on-finding-satoshi-doc-says-timezone-gaps-debunk-the-latest-bitcoin",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:2579dd2ae094b:0-adam-back-breaks-silence-on-finding-satoshi-doc-says-timezone-gaps-debunk-the-latest-bitcoin-creator-theory/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "chainwire:26d3557c2094b:0",
+        "title": "Project Eleven Awards 1 BTC Q-Day Prize for Largest Quantum Attack on Elliptic Curve Cryptography to Date",
+        "published": 1777037203,
+        "urgency": 2,
+        "link": "https://chainwire.org/2026/04/24/project-eleven-awards-1-btc-q-day-prize-for-largest-quantum-attack-on-elliptic-curve-cryptography-to-date/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/chainwire:26d3557c2094b:0-project-eleven-awards-1-btc-q-day-prize-for-largest-quantum-attack-on-elliptic-curve-cryptography-to-date/",
+        "provider": {
+          "id": "chainwire",
+          "name": "Chainwire",
+          "logo_id": "chainwire",
+          "url": "https://www.chainwire.org"
+        }
+      },
+      {
+        "id": "stocktwits:812e3b3c6094b:0",
+        "title": "Arthur Hayes Says Ethereum Could Get Bumped From The Top 3 By 2030 – But Not By Solana",
+        "published": 1777036564,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/arthur-hayes-says-ethereum-could-get-out-from-the-top-3-by-2030/cZBh5eLRecd",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:812e3b3c6094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "the_block:7443e49d5094b:0",
+        "title": "Researcher breaks 15-bit elliptic curve key in ‘largest quantum attack,’ wins 1 bitcoin bounty from Project Eleven",
+        "published": 1777035600,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398792/researcher-breaks-15-bit-elliptic-curve-key-wins-1-bitcoin-bounty-project-eleven?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:7443e49d5094b:0-researcher-breaks-15-bit-elliptic-curve-key-in-largest-quantum-attack-wins-1-bitcoin-bounty-from-project-eleven/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "cointelegraph:7e30ebfdf094b:0",
+        "title": "Bitcoin price set for best gains since Q4 2024 with $77.5K monthly close",
+        "published": 1777031505,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/bitcoin-price-set-for-best-gains-since-q4-2024-with-77-5k-monthly-close?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:7e30ebfdf094b:0-bitcoin-price-set-for-best-gains-since-q4-2024-with-77-5k-monthly-close/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "coinpedia:3e39b183d094b:0",
+        "title": "BTC’s Rally Was a Short Squeeze, Not Real Buying, CryptoQuant",
+        "published": 1777031307,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/btcs-rally-was-a-short-squeeze-not-real-buying-cryptoquant/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:3e39b183d094b:0-btc-s-rally-was-a-short-squeeze-not-real-buying-cryptoquant/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "DJN_DN20260424004227:0",
+        "title": "Bitcoin Turns Higher But Only Slightly Amid Iran War Uncertainties — Market Talk",
+        "published": 1777030740,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260424004227:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "cointelegraph:580d11827094b:0",
+        "title": "Metaplanet raises $50M in zero-interest bonds to buy more Bitcoin",
+        "published": 1777030402,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/metaplanet-issues-50-million-in-zero-coupon-bonds-to-buy-more-bitcoin?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "TSE:3350",
+            "logoid": "metaplanet"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:580d11827094b:0-metaplanet-raises-50m-in-zero-interest-bonds-to-buy-more-bitcoin/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "stocktwits:a0fe56900094b:0",
+        "title": "MSTR Vs BTC – Michael Saylor-Backed Strategy Rises In Early Trade, But Bitcoin Holds Weekly Edge",
+        "published": 1777029055,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/mstr-vs-btc-saylor-backed-strategy-up-but-bitcoin-holds-weekly-edge/cZBhbv6ReTx",
+        "permission": "provider",
         "relatedSymbols": [
           {
             "symbol": "NASDAQ:MSTR",
             "logoid": "strategy-cad-hedged-cibc-cdr"
           },
           {
-            "symbol": "CRYPTO:BGBUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCBGB"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          }
-        ],
-        "storyPath": "/news/chainwire:1c20d852d094b:0-bitget-stock-futures-surpass-1-billion-in-cumulative-trading-volume/",
-        "provider": {
-          "id": "chainwire",
-          "name": "Chainwire",
-          "logo_id": "chainwire",
-          "url": "https://www.chainwire.org"
-        }
-      },
-      {
-        "id": "chainwire:388580132094b:0",
-        "title": "Bitget Turns Up the Heat on Earnings Season with Zero-Fee U.S. Stock Token Trading",
-        "published": 1762177066,
-        "urgency": 2,
-        "link": "https://chainwire.org/2025/11/03/bitget-turns-up-the-heat-on-earnings-season-with-zero-fee-u-s-stock-token-trading/",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "CRYPTO:BGBUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCBGB"
-          }
-        ],
-        "storyPath": "/news/chainwire:388580132094b:0-bitget-turns-up-the-heat-on-earnings-season-with-zero-fee-u-s-stock-token-trading/",
-        "provider": {
-          "id": "chainwire",
-          "name": "Chainwire",
-          "logo_id": "chainwire",
-          "url": "https://www.chainwire.org"
-        }
-      },
-      {
-        "id": "the_block:dbd535e22094b:0",
-        "title": "Standard Chartered says bitcoin may never fall below $100,000 again ‘if this week goes well’",
-        "published": 1761578609,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/376296/standard-chartered-bitcoin-may-never-fall-below-100000-again-if-this-week-goes-well?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:GOOG",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          },
-          {
             "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
             "base-currency-logoid": "crypto/XTVCBTC"
-          },
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "LSE:STAN",
-            "logoid": "standard-chartered"
           }
         ],
-        "storyPath": "/news/the_block:dbd535e22094b:0-standard-chartered-says-bitcoin-may-never-fall-below-100-000-again-if-this-week-goes-well/",
+        "storyPath": "/news/stocktwits:a0fe56900094b:0/",
         "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
         }
       },
       {
-        "id": "99Bitcoins:f8959f54c094b:0",
-        "title": "BlockchainFX Unifies Crypto, Stocks, and Forex Trading – Best Crypto Presale to Buy?",
-        "published": 1759766259,
+        "id": "newsbtc:fea7dc1d1094b:0",
+        "title": "Bitcoin Recovery May Not Arrive Until October, Scaramucci Says",
+        "published": 1777024824,
         "urgency": 2,
-        "link": "https://99bitcoins.com/news/blockchainfx-unifies-crypto-stocks-and-forex-trading-best-crypto-presale-to-buy/",
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-recovery-not-until-october-scaramucci/",
         "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "BITSTAMP:ETHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCETH"
-          },
           {
             "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
             "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/99Bitcoins:f8959f54c094b:0-blockchainfx-unifies-crypto-stocks-and-forex-trading-best-crypto-presale-to-buy/",
+        "storyPath": "/news/newsbtc:fea7dc1d1094b:0-bitcoin-recovery-may-not-arrive-until-october-scaramucci-says/",
         "provider": {
-          "id": "99Bitcoins",
-          "name": "99Bitcoins",
-          "logo_id": "99bitcoins",
-          "url": "https://99bitcoins.com/"
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
         }
       },
       {
-        "id": "coinpedia:655087e07094b:0",
-        "title": "Apple iPhone 17 Introduces Hardware-Level Security to Protect Crypto Wallets",
-        "published": 1757481129,
+        "id": "the_block:be385a198094b:0",
+        "title": "Spot bitcoin ETFs draw $2 billion in net inflows over 8-day positive streak",
+        "published": 1777023150,
         "urgency": 2,
-        "link": "https://coinpedia.org/news/apple-iphone-17-introduces-hardware-level-security-to-protect-crypto-wallets/",
+        "link": "https://www.theblock.co/post/398757/spot-bitcoin-etf-8-day-streak?utm_source=tradingview&utm_medium=rss",
         "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          }
-        ],
-        "storyPath": "/news/coinpedia:655087e07094b:0-apple-iphone-17-introduces-hardware-level-security-to-protect-crypto-wallets/",
-        "provider": {
-          "id": "coinpedia",
-          "name": "Coinpedia",
-          "logo_id": "coinpedia",
-          "url": "https://www.coinpedia.org/"
-        }
-      },
-      {
-        "id": "coinpedia:081ce9c6a094b:0",
-        "title": "Ondo Brings 100+ Tokenized U.S. Stocks and ETFs to Global Investors",
-        "published": 1756983726,
-        "urgency": 2,
-        "link": "https://coinpedia.org/news/ondo-brings-100-tokenized-u-s-stocks-and-etfs-to-global-investors/",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          }
-        ],
-        "storyPath": "/news/coinpedia:081ce9c6a094b:0-ondo-brings-100-tokenized-u-s-stocks-and-etfs-to-global-investors/",
-        "provider": {
-          "id": "coinpedia",
-          "name": "Coinpedia",
-          "logo_id": "coinpedia",
-          "url": "https://www.coinpedia.org/"
-        }
-      },
-      {
-        "id": "the_block:0e7ed3953094b:0",
-        "title": "The Daily: Coinbase unveils index tied to Mag7, Ondo rolls out tokenized US stocks on Ethereum, and more",
-        "published": 1756923269,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/369382/the-daily-coinbase-unveils-index-tied-to-mag7-ondo-rolls-out-tokenized-us-stocks-on-ethereum-and-more?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "CRYPTO:TWTUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCTWT"
-          },
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          },
-          {
-            "symbol": "BITSTAMP:ETHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCETH"
-          },
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "COINBASE:MORPHOUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCMORPHO"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "COINBASE:LINKUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCLINK"
-          },
-          {
-            "symbol": "NASDAQ:GOOG",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "COINBASE:ONDOUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCONDO"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "CAPITALCOM:1INCHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVC1INCH"
-          },
-          {
-            "symbol": "NASDAQ:COIN",
-            "logoid": "coinbase"
-          }
-        ],
-        "storyPath": "/news/the_block:0e7ed3953094b:0-the-daily-coinbase-unveils-index-tied-to-mag7-ondo-rolls-out-tokenized-us-stocks-on-ethereum-and-more/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:98899c276094b:0",
-        "title": "Ondo debuts over 100 tokenized US stocks and ETFs on Ethereum, with BNB Chain and Solana support to follow",
-        "published": 1756906202,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/369284/ondo-tokenized-stocks-etfs-ethereum-bnb-chain-solana?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:HOOD",
-            "logoid": "robinhood"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "COINBASE:ONDOUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCONDO"
-          },
-          {
-            "symbol": "CAPITALCOM:1INCHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVC1INCH"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:COIN",
-            "logoid": "coinbase"
-          }
-        ],
-        "storyPath": "/news/the_block:98899c276094b:0-ondo-debuts-over-100-tokenized-us-stocks-and-etfs-on-ethereum-with-bnb-chain-and-solana-support-to-follow/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:78c6ce035094b:0",
-        "title": "Kraken expands its tokenized xStocks to Tron in latest expansion of Backed partnership",
-        "published": 1755702000,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/367638/kraken-expands-its-tokenized-xstocks-to-tron-in-latest-expansion-of-backed-partnership?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          }
-        ],
-        "storyPath": "/news/the_block:78c6ce035094b:0-kraken-expands-its-tokenized-xstocks-to-tron-in-latest-expansion-of-backed-partnership/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "coinpedia:728283012094b:0",
-        "title": "Elon Musk Says, “Apple Making It Impossible for Any AI to Beat OpenAI”",
-        "published": 1754975774,
-        "urgency": 2,
-        "link": "https://coinpedia.org/news/elon-musk-says-apple-making-it-impossible-for-any-ai-to-beat-openai/",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          }
-        ],
-        "storyPath": "/news/coinpedia:728283012094b:0-elon-musk-says-apple-making-it-impossible-for-any-ai-to-beat-openai/",
-        "provider": {
-          "id": "coinpedia",
-          "name": "Coinpedia",
-          "logo_id": "coinpedia",
-          "url": "https://www.coinpedia.org/"
-        }
-      },
-      {
-        "id": "coinpedia:dcb6956dd094b:0",
-        "title": "PancakeSwap Price Breakout? Key Levels to Watch This Week",
-        "published": 1754547401,
-        "urgency": 2,
-        "link": "https://coinpedia.org/price-analysis/pancakeswap-price-breakout-key-levels-to-watch-this-week/",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "CRYPTO:CAKEUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCCAKE"
-          }
-        ],
-        "storyPath": "/news/coinpedia:dcb6956dd094b:0-pancakeswap-price-breakout-key-levels-to-watch-this-week/",
-        "provider": {
-          "id": "coinpedia",
-          "name": "Coinpedia",
-          "logo_id": "coinpedia",
-          "url": "https://www.coinpedia.org/"
-        }
-      },
-      {
-        "id": "the_block:146c518b4094b:0",
-        "title": "Backed’s xStocks, which includes tokenized Tesla shares, surpasses $2 billion in trading volume",
-        "published": 1754502282,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/365819/backeds-tokenized-stock-trading-which-includes-tesla-tokens-passes-2-billion-dune-data?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:HOOD",
-            "logoid": "robinhood"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          }
-        ],
-        "storyPath": "/news/the_block:146c518b4094b:0-backed-s-xstocks-which-includes-tokenized-tesla-shares-surpasses-2-billion-in-trading-volume/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "coinpedia:d4bbb2693094b:0",
-        "title": "Chainlink Launches Real-Time Data – Will LINK Price Hit $17.64 Next?",
-        "published": 1754474932,
-        "urgency": 2,
-        "link": "https://coinpedia.org/price-analysis/chainlink-launches-real-time-data-will-link-price-hit-17-64-next/",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "BCBA:SPY",
-            "logoid": "spdr-sandp500-etf-tr"
-          },
-          {
-            "symbol": "COINBASE:LINKUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCLINK"
-          }
-        ],
-        "storyPath": "/news/coinpedia:d4bbb2693094b:0-chainlink-launches-real-time-data-will-link-price-hit-17-64-next/",
-        "provider": {
-          "id": "coinpedia",
-          "name": "Coinpedia",
-          "logo_id": "coinpedia",
-          "url": "https://www.coinpedia.org/"
-        }
-      },
-      {
-        "id": "the_block:42c496b7b094b:0",
-        "title": "eToro launching tokenized US equities, ETF and futures trading amid regulatory clarity",
-        "published": 1753804974,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/364643/etoro-tokenized-equities-etf-futures-trading-regulatory-clarity?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:ETOR",
-            "logoid": "etoro-limited"
-          },
-          {
-            "symbol": "NASDAQ:CME",
-            "logoid": "cme"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          }
-        ],
-        "storyPath": "/news/the_block:42c496b7b094b:0-etoro-launching-tokenized-us-equities-etf-and-futures-trading-amid-regulatory-clarity/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:fbeb0a7d9094b:0",
-        "title": "Robinhood pays $5 in transaction fees to deploy 213 tokenized stock contracts on Arbitrum",
-        "published": 1751471019,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/360783/robinhood-pays-5-in-transaction-fees-to-deploy-213-tokenized-stock-contracts-on-arbitrum?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:HOOD",
-            "logoid": "robinhood"
-          },
-          {
-            "symbol": "COINBASE:ARBUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCARBI"
-          },
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "COINBASE:SOLUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCSOL"
-          },
-          {
-            "symbol": "CRYPTO:BGBUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCBGB"
-          },
-          {
-            "symbol": "BITSTAMP:ETHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCETH"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          }
-        ],
-        "storyPath": "/news/the_block:fbeb0a7d9094b:0-robinhood-pays-5-in-transaction-fees-to-deploy-213-tokenized-stock-contracts-on-arbitrum/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:2bee4a286094b:0",
-        "title": "Kraken launches full-service prime brokerage tailored for institutional crypto clients",
-        "published": 1748955600,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/356720/kraken-launches-full-service-prime-brokerage-institutional-crypto-clients?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          }
-        ],
-        "storyPath": "/news/the_block:2bee4a286094b:0-kraken-launches-full-service-prime-brokerage-tailored-for-institutional-crypto-clients/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:6c96b038d094b:0",
-        "title": "Analyst downplays Trump’s tariff threat on EU goods, Apple devices as bitcoin briefly slips under $109,000",
-        "published": 1748013340,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/355566/analyst-downplays-trumps-tariff-threat-on-eu-goods-apple-devices-as-bitcoin-briefly-slips-under-109000?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
           {
             "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
             "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/the_block:6c96b038d094b:0-analyst-downplays-trump-s-tariff-threat-on-eu-goods-apple-devices-as-bitcoin-briefly-slips-under-109-000/",
+        "storyPath": "/news/the_block:be385a198094b:0-spot-bitcoin-etfs-draw-2-billion-in-net-inflows-over-8-day-positive-streak/",
         "provider": {
           "id": "the_block",
           "name": "The Block",
@@ -5792,211 +6077,90 @@ HTTP `200`
         }
       },
       {
-        "id": "the_block:eb4a32da0094b:0",
-        "title": "Kraken to launch tokenized stock trading for Apple, Nvidia, and others outside US",
-        "published": 1747928821,
+        "id": "beincrypto:6f7948461094b:0",
+        "title": "Are Bitcoin Whales Opportunists? On-Chain Data Reveals the Truth",
+        "published": 1777022665,
         "urgency": 2,
-        "link": "https://www.theblock.co/post/355416/kraken-to-launch-tokenized-stock-trading-for-apple-nvidia-and-others-outside-us-wsj?utm_source=tradingview&utm_medium=rss",
+        "link": "https://beincrypto.com/bitcoin-whales-buy-bounce-not-bottom/",
         "relatedSymbols": [
-          {
-            "symbol": "COINBASE:USDTUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCUSDT"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          }
-        ],
-        "storyPath": "/news/the_block:eb4a32da0094b:0-kraken-to-launch-tokenized-stock-trading-for-apple-nvidia-and-others-outside-us/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "tag:reuters.com,2025:newsml_L4N3RU14M:0",
-        "title": "Kraken to allow trading in Apple, Tesla and Nvidia shares as digital tokens, WSJ reports",
-        "published": 1747922101,
-        "urgency": 2,
-        "permission": "preview",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          }
-        ],
-        "storyPath": "/news/reuters.com,2025:newsml_L4N3RU14M:0-kraken-to-allow-trading-in-apple-tesla-and-nvidia-shares-as-digital-tokens-wsj-reports/",
-        "provider": {
-          "id": "reuters",
-          "name": "Reuters",
-          "logo_id": "reuters"
-        }
-      },
-      {
-        "id": "the_block:feaa07439094b:0",
-        "title": "U.S. App Store to allow apps to skirt 30% fee on NFT, crypto sales following Apple’s legal defeat",
-        "published": 1746307003,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/353047/u-s-app-store-to-allow-apps-to-skirt-30-fee-on-nft-crypto-sales-following-apples-legal-defeat?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          }
-        ],
-        "storyPath": "/news/the_block:feaa07439094b:0-u-s-app-store-to-allow-apps-to-skirt-30-fee-on-nft-crypto-sales-following-apple-s-legal-defeat/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:47825299c094b:0",
-        "title": "South Korea pushes Apple to remove 14 unregistered crypto apps amid compliance drive",
-        "published": 1744700707,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/350787/south-korea-apple-unregistered-crypto-apps?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          }
-        ],
-        "storyPath": "/news/the_block:47825299c094b:0-south-korea-pushes-apple-to-remove-14-unregistered-crypto-apps-amid-compliance-drive/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:fa15ea4aa094b:0",
-        "title": "Crypto markets fall after Trump lays out sweeping reciprocal tariffs; Ethereum, Solana drop 6%",
-        "published": 1743638125,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/349397/crypto-markets-fall-after-trump-lays-out-sweeping-reciprocal-tariffs-ethereum-solana-drop-6?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:NDAQ",
-            "logoid": "nasdaq"
-          },
-          {
-            "symbol": "NASDAQ:CORZ",
-            "logoid": "core-scientific"
-          },
-          {
-            "symbol": "NASDAQ:MARA",
-            "logoid": "marathon-digital-holdings"
-          },
           {
             "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
             "base-currency-logoid": "crypto/XTVCBTC"
           },
+          {
+            "symbol": "CAPITALCOM:EMA"
+          }
+        ],
+        "storyPath": "/news/beincrypto:6f7948461094b:0-are-bitcoin-whales-opportunists-on-chain-data-reveals-the-truth/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "u_today:1c6f667e9094b:0",
+        "title": "Major Bitcoin Miner Keeps Cashing Out Bitcoin (BTC)",
+        "published": 1777017407,
+        "urgency": 2,
+        "link": "https://u.today/major-bitcoin-miner-keeps-cashing-out-bitcoin-btc",
+        "relatedSymbols": [
           {
             "symbol": "NASDAQ:RIOT",
             "logoid": "riot-blockchain"
           },
           {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NYSE:DOW",
-            "logoid": "dow"
-          },
-          {
-            "symbol": "COINBASE:SOLUSD",
+            "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCSOL"
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:1c6f667e9094b:0-major-bitcoin-miner-keeps-cashing-out-bitcoin-btc/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "beincrypto:333b1627f094b:0",
+        "title": "Nearly $10 Billion April Options Expiry Puts Bitcoin and Ethereum Direction in Focus",
+        "published": 1777016505,
+        "urgency": 2,
+        "link": "https://beincrypto.com/bitcoin-ethereum-options-expiry-april-2026/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           },
           {
             "symbol": "BITSTAMP:ETHUSD",
             "currency-logoid": "country/US",
             "base-currency-logoid": "crypto/XTVCETH"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
           }
         ],
-        "storyPath": "/news/the_block:fa15ea4aa094b:0-crypto-markets-fall-after-trump-lays-out-sweeping-reciprocal-tariffs-ethereum-solana-drop-6/",
+        "storyPath": "/news/beincrypto:333b1627f094b:0-nearly-10-billion-april-options-expiry-puts-bitcoin-and-ethereum-direction-in-focus/",
         "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
         }
       },
       {
-        "id": "the_block:7de2ce7a9094b:0",
-        "title": "Japan mulls officially classifying crypto as financial product: Nikkei",
-        "published": 1743393782,
+        "id": "the_block:eaaf2f709094b:0",
+        "title": "Metaplanet issues $50 million in zero-interest bonds to buy more bitcoin",
+        "published": 1777015082,
         "urgency": 2,
-        "link": "https://www.theblock.co/post/348804/japan-mulls-officially-classifying-crypto-as-financial-product-nikkei?utm_source=tradingview&utm_medium=rss",
+        "link": "https://www.theblock.co/post/398740/metaplanet-issues-bonds-bitcoin?utm_source=tradingview&utm_medium=rss",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:GOOG",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "CRYPTO:BGBUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCBGB"
-          }
-        ],
-        "storyPath": "/news/the_block:7de2ce7a9094b:0-japan-mulls-officially-classifying-crypto-as-financial-product-nikkei/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:81f03be67094b:0",
-        "title": "Standard Chartered says Bitcoin’s pain is tied to equities, relief hinges on potential Fed pivot",
-        "published": 1741725343,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/345720/standard-chartered-says-bitcoins-pain-is-tied-to-equities-relief-hinges-on-potential-fed-pivot?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
+            "symbol": "TSE:3350",
+            "logoid": "metaplanet"
           },
           {
             "symbol": "BITSTAMP:BTCUSD",
@@ -6004,7 +6168,7 @@ HTTP `200`
             "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/the_block:81f03be67094b:0-standard-chartered-says-bitcoin-s-pain-is-tied-to-equities-relief-hinges-on-potential-fed-pivot/",
+        "storyPath": "/news/the_block:eaaf2f709094b:0-metaplanet-issues-50-million-in-zero-interest-bonds-to-buy-more-bitcoin/",
         "provider": {
           "id": "the_block",
           "name": "The Block",
@@ -6013,179 +6177,226 @@ HTTP `200`
         }
       },
       {
-        "id": "the_block:3341860ba094b:0",
-        "title": "Ondo Finance launches tokenization platform for open onchain access to US securities",
-        "published": 1738750978,
+        "id": "DJN_DN20260424001682:0",
+        "title": "Bitcoin Falls as Iran War Uncertainty Keeps Investors Cautious — Market Talk",
+        "published": 1777013760,
         "urgency": 2,
-        "link": "https://www.theblock.co/post/338975/ondo-finance-launches-rwa-tokenization-platform?utm_source=tradingview&utm_medium=rss",
+        "permission": "provider",
         "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          }
-        ],
-        "storyPath": "/news/the_block:3341860ba094b:0-ondo-finance-launches-tokenization-platform-for-open-onchain-access-to-us-securities/",
-        "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
-        }
-      },
-      {
-        "id": "the_block:740b7de74094b:0",
-        "title": "Bitcoin and US stocks gain as PCE inflation meets expectations",
-        "published": 1738343402,
-        "urgency": 2,
-        "link": "https://www.theblock.co/post/338263/bitcoin-and-us-stocks-gain-as-pce-inflation-meets-expectations?utm_source=tradingview&utm_medium=rss",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
           {
             "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
             "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/the_block:740b7de74094b:0-bitcoin-and-us-stocks-gain-as-pce-inflation-meets-expectations/",
+        "storyPath": "/news/DJN_DN20260424001682:0/",
         "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
         }
       },
       {
-        "id": "the_block:922cec914094b:0",
-        "title": "Crypto equities down heavily in pre-market trading amid broader price plunge",
-        "published": 1722862300,
+        "id": "coinpedia:c8b7dad90094b:0",
+        "title": "Bitcoin News: Strategy CEO Maps 30% Yield Model, Calls it Future of Digital Credit",
+        "published": 1777011951,
         "urgency": 2,
-        "link": "https://www.theblock.co/post/309410/crypto-equities-pre-market?utm_source=tradingview&utm_medium=rss",
+        "link": "https://coinpedia.org/news/bitcoin-news-strategy-ceo-maps-30-yield-model-calls-it-future-of-digital-credit/",
         "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "BITSTAMP:ETHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCETH"
-          },
-          {
-            "symbol": "NYSE:BAC",
-            "logoid": "bank-of-america"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "BITSTAMP:BTCUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCBTC"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
           {
             "symbol": "NASDAQ:MSTR",
             "logoid": "strategy-cad-hedged-cibc-cdr"
           },
           {
-            "symbol": "NYSE:BRK.A",
-            "logoid": "berkshire-hathaway"
-          },
-          {
-            "symbol": "NASDAQ:COIN",
-            "logoid": "coinbase"
-          },
-          {
-            "symbol": "NASDAQ:HOOD",
-            "logoid": "robinhood"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/the_block:922cec914094b:0-crypto-equities-down-heavily-in-pre-market-trading-amid-broader-price-plunge/",
+        "storyPath": "/news/coinpedia:c8b7dad90094b:0-bitcoin-news-strategy-ceo-maps-30-yield-model-calls-it-future-of-digital-credit/",
         "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
         }
       },
       {
-        "id": "the_block:db734f7a0094b:0",
-        "title": "UPDATE: Bitcoin plunges below $50,000, ether under $2,200 amid Jump Crypto moves, US election uncertainty",
-        "published": 1722822988,
+        "id": "u_today:942bbf11f094b:0",
+        "title": "Spot Bitcoin ETFs Log $2.4B in Less Than Two Weeks",
+        "published": 1777009602,
         "urgency": 2,
-        "link": "https://www.theblock.co/post/309277/bitcoin-plunges-below-55000-ether-under-2400?utm_source=tradingview&utm_medium=rss",
+        "link": "https://u.today/spot-bitcoin-etfs-log-24b-in-less-than-two-weeks",
         "relatedSymbols": [
-          {
-            "symbol": "NYSE:BRK.A",
-            "logoid": "berkshire-hathaway"
-          },
-          {
-            "symbol": "TVC:NI225",
-            "logoid": "indices/nikkei-225"
-          },
-          {
-            "symbol": "COINBASE:ACHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCACH"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "BITSTAMP:ETHUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCETH"
-          },
           {
             "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
             "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/the_block:db734f7a0094b:0-update-bitcoin-plunges-below-50-000-ether-under-2-200-amid-jump-crypto-moves-us-election-uncertainty/",
+        "storyPath": "/news/u_today:942bbf11f094b:0-spot-bitcoin-etfs-log-2-4b-in-less-than-two-weeks/",
         "provider": {
-          "id": "the_block",
-          "name": "The Block",
-          "logo_id": "the-block",
-          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
         }
       },
       {
-        "id": "the_block:f961c6df7094b:0",
-        "title": "Crypto majors trade flat despite stock rebound as markets factor in Biden’s decision to step aside",
-        "published": 1721663184,
+        "id": "beincrypto:22b958d41094b:0",
+        "title": "Bitcoin Whales Accumulate 69% More BTC as ARK Warns the Bottom Isn’t In",
+        "published": 1777008431,
         "urgency": 2,
-        "link": "https://www.theblock.co/post/306675/crypto-majors-trade-flat-despite-stock-rebound-as-markets-factor-in-bidens-decision-to-step-aside?utm_source=tradingview&utm_medium=rss",
+        "link": "https://beincrypto.com/ark-bitcoin-bottom-whales-accumulation/",
         "relatedSymbols": [
           {
-            "symbol": "TVC:DJI",
-            "logoid": "indices/dow-30"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "BITSTAMP:ETHUSD",
+            "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCETH"
-          },
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:22b958d41094b:0-bitcoin-whales-accumulate-69-more-btc-as-ark-warns-the-bottom-isn-t-in/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "newsbtc:865a5aad0094b:0",
+        "title": "Bitcoin Enters Disbelief Phase As Traders Keep Shorting The Rally",
+        "published": 1777006810,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-disbelief-phase-traders-keep-shorting-rally/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:865a5aad0094b:0-bitcoin-enters-disbelief-phase-as-traders-keep-shorting-the-rally/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:d82c73984094b:0",
+        "title": "Analyst Predicts A 30% Bitcoin Price Crash To $50,000, Here’s When",
+        "published": 1776999628,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/30-bitcoin-price-crash-50000/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:d82c73984094b:0-analyst-predicts-a-30-bitcoin-price-crash-to-50-000-here-s-when/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:100f56fc1094b:0",
+        "title": "Bitcoin Price Strengthens, Fresh Upside Targets Come Into View",
+        "published": 1776997854,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/analysis/btc/bitcoin-price-strengthens-78k/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:100f56fc1094b:0-bitcoin-price-strengthens-fresh-upside-targets-come-into-view/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:fbd618a29094b:0",
+        "title": "$80K Bitcoin Target Back In Play As Trump Suggests US-Iran Talks Could Restart",
+        "published": 1776996023,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/80k-bitcoin-target-back-in-play-as-trump-suggests-us-iran-talks-could-restart/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:fbd618a29094b:0-80k-bitcoin-target-back-in-play-as-trump-suggests-us-iran-talks-could-restart/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:810567ff8094b:0",
+        "title": "Critical Bitcoin trend change in works, but analysts say daily close above $80K required",
+        "published": 1776995461,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/critical-bitcoin-trend-change-in-works-but-analysts-say-daily-close-above-dollar80k-required?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:810567ff8094b:0-critical-bitcoin-trend-change-in-works-but-analysts-say-daily-close-above-80k-required/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "bravenewcoin:2e0e1dd81094b:0",
+        "title": "Bitcoin’s Rally Has Legs, But $80,000 Is Still the Line in the Sand",
+        "published": 1776994935,
+        "urgency": 2,
+        "link": "https://bravenewcoin.com/insights/bitcoins-rally-has-legs-but-80000-is-still-the-line-in-the-sand",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/bravenewcoin:2e0e1dd81094b:0/",
+        "provider": {
+          "id": "bravenewcoin",
+          "name": "Brave New Coin",
+          "logo_id": "bravenewcoin",
+          "url": "https://bravenewcoin.com/"
+        }
+      },
+      {
+        "id": "cointelegraph:9b9f1eb7d094b:0",
+        "title": "Altcoins have ‘30% to 60%’ upside if Bitcoin taps $86K: Analyst",
+        "published": 1776992977,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/altcoins-upside-if-bitcoin-taps-86k-analyst?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
           {
             "symbol": "BITSTAMP:BTCUSD",
             "currency-logoid": "country/US",
@@ -6194,30 +6405,128 @@ HTTP `200`
           {
             "symbol": "TVC:IXIC",
             "logoid": "indices/nasdaq-composite"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          },
-          {
-            "symbol": "NASDAQ:GOOG",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "CRYPTO:BGBUSD",
-            "currency-logoid": "country/US",
-            "base-currency-logoid": "crypto/XTVCBGB"
-          },
-          {
-            "symbol": "NYSE:V",
-            "logoid": "visa"
           }
         ],
-        "storyPath": "/news/the_block:f961c6df7094b:0-crypto-majors-trade-flat-despite-stock-rebound-as-markets-factor-in-biden-s-decision-to-step-aside/",
+        "storyPath": "/news/cointelegraph:9b9f1eb7d094b:0-altcoins-have-30-to-60-upside-if-bitcoin-taps-86k-analyst/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "newsbtc:4bcca3c5e094b:0",
+        "title": "The Bitcoin Cycle Is Different: Crypto Expert Reveals When Price Will Cross $100,000 Again",
+        "published": 1776988827,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/the-bitcoin-cycle-is-different/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:4bcca3c5e094b:0-the-bitcoin-cycle-is-different-crypto-expert-reveals-when-price-will-cross-100-000-again/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:0346666a9094b:0",
+        "title": "Global crypto adoption slumps amid macro pressures, Turkey defies downtrend",
+        "published": 1776979296,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/global-crypto-adoption-q1-2026-trm-labs-turkey-resilience?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:0346666a9094b:0-global-crypto-adoption-slumps-amid-macro-pressures-turkey-defies-downtrend/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "u_today:a736bba3d094b:0",
+        "title": "Shiba Inu Sees 88% Surge in Usage, XRP Ledger to Break One Billion Threshold, BlackRock Buys $900 Million Worth of Bitcoin — U.Today Crypto Digest",
+        "published": 1776978933,
+        "urgency": 2,
+        "link": "https://u.today/shiba-inu-sees-88-surge-in-usage-xrp-ledger-to-break-one-billion-threshold-blackrock-buys-900",
+        "relatedSymbols": [
+          {
+            "symbol": "COINBASE:SHIBUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCSHIB"
+          },
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:a736bba3d094b:0-shiba-inu-sees-88-surge-in-usage-xrp-ledger-to-break-one-billion-threshold-blackrock-buys-900-million-worth-of-bitcoin-u-today-crypto-digest/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "u_today:23b9b6d59094b:0",
+        "title": "Bitcoin Could Hit $500K, Veteran Trader Predicts",
+        "published": 1776977463,
+        "urgency": 2,
+        "link": "https://u.today/bitcoin-could-hit-500k-veteran-trader-predicts",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:23b9b6d59094b:0-bitcoin-could-hit-500k-veteran-trader-predicts/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "the_block:9119d42ff094b:0",
+        "title": "Bitcoin ETF ‘flows turned positive for the year’: BNY’s global head of ETFs",
+        "published": 1776974423,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398699/bitcoin-etf-flows-turned-positive-year-bny-global-head-etfs?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "AMEX:GBTC",
+            "logoid": "grayscale"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:9119d42ff094b:0-bitcoin-etf-flows-turned-positive-for-the-year-bny-s-global-head-of-etfs/",
         "provider": {
           "id": "the_block",
           "name": "The Block",
@@ -6226,1954 +6535,3003 @@ HTTP `200`
         }
       },
       {
-        "id": "benzinga:ee958687f094b:0",
-        "title": "Warren Buffett's Berkshire Confirms Apple Sale, Dumps This PC Maker, Finally Reveals Mystery Stock: Here Are The Portfolio Changes To Know",
-        "published": 1715867689,
+        "id": "cointelegraph:1b0dd53b2094b:0",
+        "title": "Bitcoin enters disbelief phase as USDC exchange reserves push above $7.5B",
+        "published": 1776972406,
         "urgency": 2,
-        "link": "https://www.benzinga.com/markets/equities/24/05/38873913/warren-buffetts-berkshire-confirms-apple-sale-dumps-this-pc-maker-finally-reveals-mystery-stock-",
-        "permission": "preview",
+        "link": "https://cointelegraph.com/markets/bitcoin-enters-disbelief-phase-as-usdc-exchange-reserves-push-above-dollar7-5b?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "CRYPTOCAP:CVX"
-          },
-          {
-            "symbol": "NYSE:OXY",
-            "logoid": "occidental-petroleum"
-          },
-          {
-            "symbol": "NYSE:BAC",
-            "logoid": "bank-of-america"
-          },
-          {
-            "symbol": "NYSE:AXP",
-            "logoid": "american-express"
-          },
-          {
-            "symbol": "NYSE:KO",
-            "logoid": "coca-cola"
-          },
-          {
-            "symbol": "NYSE:CB",
-            "logoid": "chubb"
-          },
-          {
-            "symbol": "NYSE:HPQ",
-            "logoid": "hp"
-          },
-          {
-            "symbol": "NYSE:LPX",
-            "logoid": "louisiana-pacific"
-          },
-          {
-            "symbol": "NASDAQ:PARA"
-          },
-          {
-            "symbol": "NASDAQ:SIRI",
-            "logoid": "sirius-xm"
-          },
-          {
-            "symbol": "NYSE:CVX",
-            "logoid": "chevron"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/benzinga:ee958687f094b:0-warren-buffett-s-berkshire-confirms-apple-sale-dumps-this-pc-maker-finally-reveals-mystery-stock-here-are-the-portfolio-changes-to-know/",
+        "storyPath": "/news/cointelegraph:1b0dd53b2094b:0-bitcoin-enters-disbelief-phase-as-usdc-exchange-reserves-push-above-7-5b/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
         }
       },
       {
-        "id": "benzinga:8acff0e70094b:0",
-        "title": "Nvidia Tops Hedge Fund Buys as Interest in AI Stocks Fuel Market Gains: Bloomberg",
-        "published": 1715865951,
+        "id": "u_today:45f897c3b094b:0",
+        "title": "Bitcoin (BTC) Price: Fidelity Predicts Next Major Wave",
+        "published": 1776971917,
         "urgency": 2,
-        "link": "https://www.benzinga.com/news/24/05/38873159/nvidia-tops-hedge-fund-buys-as-interest-in-ai-stocks-fuel-market-gains-bloomberg",
-        "permission": "preview",
+        "link": "https://u.today/bitcoin-btc-price-fidelity-predicts-next-major-wave",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          },
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "NASDAQ:GOOG",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "NASDAQ:GOOGL",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "NYSE:XOM",
-            "logoid": "exxon"
-          },
-          {
-            "symbol": "CRYPTOCAP:CVX"
-          },
-          {
-            "symbol": "NASDAQ:AMD",
-            "logoid": "advanced-micro-devices"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NYSE:SHOC",
-            "logoid": "strive"
-          },
-          {
-            "symbol": "NASDAQ:SMH",
-            "logoid": "vaneck"
-          },
-          {
-            "symbol": "NYSE:CVX",
-            "logoid": "chevron"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/benzinga:8acff0e70094b:0-nvidia-tops-hedge-fund-buys-as-interest-in-ai-stocks-fuel-market-gains-bloomberg/",
+        "storyPath": "/news/u_today:45f897c3b094b:0-bitcoin-btc-price-fidelity-predicts-next-major-wave/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
         }
       },
       {
-        "id": "benzinga:de75ed71d094b:0",
-        "title": "Google Stares Down Largest Tech Antitrust Ruling In 2 Decades — Is AT&T-Style Breakup Next?",
-        "published": 1715278885,
+        "id": "newsbtc:ea359d753094b:0",
+        "title": "Bitcoin Nears $80,000: Two Scenarios That May Decide Q2—Bulls Or Bears?",
+        "published": 1776968743,
         "urgency": 2,
-        "link": "https://www.benzinga.com/news/large-cap/24/05/38741108/google-stares-down-largest-tech-antitrust-ruling-in-2-decades-is-at-t-style-breakup-next",
-        "permission": "preview",
+        "link": "https://www.newsbtc.com/breaking-news-ticker/bitcoin-nears-80000-two-scenarios-that-may-decide-q2-bulls-or-bears/",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:GOOG",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "NASDAQ:GOOGL",
-            "logoid": "alphabet"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "OTC:LNVGY",
-            "logoid": "lenovo"
-          },
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          },
-          {
-            "symbol": "CRYPTOCAP:T"
-          },
-          {
-            "symbol": "NYSE:T",
-            "logoid": "at-and-t"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/benzinga:de75ed71d094b:0-google-stares-down-largest-tech-antitrust-ruling-in-2-decades-is-at-t-style-breakup-next/",
+        "storyPath": "/news/newsbtc:ea359d753094b:0-bitcoin-nears-80-000-two-scenarios-that-may-decide-q2-bulls-or-bears/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
         }
       },
       {
-        "id": "benzinga:fa4bb95c3094b:0",
-        "title": "Will Earnings Cheer Continue This Week? All Eyes On Disney, Palantir, Robinhood While Reddit Gears Up For Debut Quarterly Report",
-        "published": 1714987515,
+        "id": "beincrypto:e6efe4f10094b:0",
+        "title": "Senator Lummis Backs Bitcoin for US Cyber Defense After Admiral Paparo Testimony",
+        "published": 1776967503,
         "urgency": 2,
-        "link": "https://www.benzinga.com/news/earnings/24/05/38636014/will-earnings-cheer-continue-this-week-all-eyes-on-disney-palantir-robinhood-while-reddit-gears-up-",
-        "permission": "preview",
+        "link": "https://beincrypto.com/bitcoin-for-us-defense-cyber-defense/",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NYSE:DIS",
-            "logoid": "walt-disney"
-          },
-          {
-            "symbol": "NYSE:RDDT",
-            "logoid": "reddit"
-          },
-          {
-            "symbol": "NASDAQ:BNTX",
-            "logoid": "biontech"
-          },
-          {
-            "symbol": "NYSE:SAVE"
-          },
-          {
-            "symbol": "NYSE:THS"
-          },
-          {
-            "symbol": "NYSE:TSN",
-            "logoid": "tyson-foods"
-          },
-          {
-            "symbol": "NASDAQ:ADTN",
-            "logoid": "adtran"
-          },
-          {
-            "symbol": "NYSE:COTY",
-            "logoid": "coty"
-          },
-          {
-            "symbol": "NYSE:FIS",
-            "logoid": "fidelity-information-services"
-          },
-          {
-            "symbol": "NYSE:FMC",
-            "logoid": "fmc"
-          },
-          {
-            "symbol": "NASDAQ:JJSF",
-            "logoid": "j-and-j-snack-foods"
-          },
-          {
-            "symbol": "NASDAQ:LCID",
-            "logoid": "lucid-group"
-          },
-          {
-            "symbol": "NASDAQ:LITE",
-            "logoid": "lumentum-hldgs"
-          },
-          {
-            "symbol": "NYSE:PLTR"
-          },
-          {
-            "symbol": "NASDAQ:MCHP",
-            "logoid": "microchip-technology"
-          },
-          {
-            "symbol": "NYSE:WMB",
-            "logoid": "williams"
-          },
-          {
-            "symbol": "NYSE:VNO",
-            "logoid": "vornado-realty-trust-525-series-m-cumulative-redeemable-preferred-shares-of-beneficial-interest-liquidation-preference-2500-per-share-no-par-value-per-sha"
-          },
-          {
-            "symbol": "NYSE:BP",
-            "logoid": "bp"
-          },
-          {
-            "symbol": "NASDAQ:CROX",
-            "logoid": "crocs"
-          },
-          {
-            "symbol": "NASDAQ:DDOG",
-            "logoid": "datadog"
-          },
-          {
-            "symbol": "NYSE:DUK",
-            "logoid": "duke-energy"
-          },
-          {
-            "symbol": "NYSE:ERJ"
-          },
-          {
-            "symbol": "NYSE:EXPD",
-            "logoid": "expeditors"
-          },
-          {
-            "symbol": "NASDAQ:EVGO",
-            "logoid": "evgo"
-          },
-          {
-            "symbol": "NYSE:ROK",
-            "logoid": "rockwell-automation"
-          },
-          {
-            "symbol": "NYSE:UBS",
-            "logoid": "ubs-group"
-          },
-          {
-            "symbol": "NYSE:KLG"
-          },
-          {
-            "symbol": "NYSE:ANET",
-            "logoid": "arista-networks"
-          },
-          {
-            "symbol": "NYSE:CPNG",
-            "logoid": "coupang"
-          },
-          {
-            "symbol": "NASDAQ:EA",
-            "logoid": "electronic-arts"
-          },
-          {
-            "symbol": "NASDAQ:GPRO",
-            "logoid": "gopro"
-          },
-          {
-            "symbol": "NASDAQ:IRBT"
-          },
-          {
-            "symbol": "NASDAQ:LAZR"
-          },
-          {
-            "symbol": "NASDAQ:MTCH",
-            "logoid": "match-group-inc"
-          },
-          {
-            "symbol": "NYSE:OXY",
-            "logoid": "occidental-petroleum"
-          },
-          {
-            "symbol": "NASDAQ:RIVN",
-            "logoid": "rivian"
-          },
-          {
-            "symbol": "NYSE:TWLO",
-            "logoid": "twilio"
-          },
-          {
-            "symbol": "NASDAQ:WYNN",
-            "logoid": "wynn-resorts"
-          },
-          {
-            "symbol": "NYSE:RNG",
-            "logoid": "ringcentral"
-          },
-          {
-            "symbol": "NASDAQ:LYFT",
-            "logoid": "lyft"
-          },
-          {
-            "symbol": "NYSE:BUD",
-            "logoid": "anheuser-busch-inbev"
-          },
-          {
-            "symbol": "NYSE:CHH",
-            "logoid": "choice-hotels-international"
-          },
-          {
-            "symbol": "NYSE:NYT",
-            "logoid": "new-york-times"
-          },
-          {
-            "symbol": "NASDAQ:TBLA",
-            "logoid": "taboola"
-          },
-          {
-            "symbol": "NYSE:SUN",
-            "logoid": "sunoco"
-          },
-          {
-            "symbol": "NYSE:TEVA",
-            "logoid": "teva"
-          },
-          {
-            "symbol": "NYSE:UBER",
-            "logoid": "uber"
-          },
-          {
-            "symbol": "NASDAQ:SATS",
-            "logoid": "echostar"
-          },
-          {
-            "symbol": "NASDAQ:ABNB",
-            "logoid": "airbnb"
-          },
-          {
-            "symbol": "NASDAQ:APP",
-            "logoid": "applovin-cdr-cad-hedged"
-          },
-          {
-            "symbol": "NASDAQ:BYND",
-            "logoid": "beyond-meat"
-          },
-          {
-            "symbol": "NASDAQ:BMBL",
-            "logoid": "bumble"
-          },
-          {
-            "symbol": "CRYPTOCAP:CAKE",
-            "logoid": "crypto/XTVCCAKE"
-          },
-          {
-            "symbol": "NASDAQ:EXAS"
-          },
-          {
-            "symbol": "NYSE:HUBS",
-            "logoid": "hubspot"
-          },
-          {
-            "symbol": "NASDAQ:NWSA",
-            "logoid": "news-corporation"
-          },
-          {
-            "symbol": "NASDAQ:HOOD",
-            "logoid": "robinhood"
-          },
-          {
-            "symbol": "NASDAQ:RUN",
-            "logoid": "sunrun"
-          },
-          {
-            "symbol": "NASDAQ:TTD",
-            "logoid": "the-trade-desk"
-          },
-          {
-            "symbol": "NASDAQ:SEDG",
-            "logoid": "solaredge-technologies"
-          },
-          {
-            "symbol": "NASDAQ:CSIQ",
-            "logoid": "canadian-solar"
-          },
-          {
-            "symbol": "NYSE:CARS",
-            "logoid": "cars-com"
-          },
-          {
-            "symbol": "NASDAQ:CEG",
-            "logoid": "constellation-energy-cad-hedged-cibc-cdr"
-          },
-          {
-            "symbol": "NYSE:RACE",
-            "logoid": "ferrari"
-          },
-          {
-            "symbol": "NYSE:HBI"
-          },
-          {
-            "symbol": "NASDAQ:DNUT",
-            "logoid": "krispy-kreme"
-          },
-          {
-            "symbol": "NASDAQ:PZZA",
-            "logoid": "papa-johns-international"
-          },
-          {
-            "symbol": "NYSE:RBLX",
-            "logoid": "roblox"
-          },
-          {
-            "symbol": "NYSE:SIX"
-          },
-          {
-            "symbol": "NASDAQ:WBD",
-            "logoid": "warner-bros-discovery"
-          },
-          {
-            "symbol": "NYSE:USFD",
-            "logoid": "us-foods"
-          },
-          {
-            "symbol": "NASDAQ:AKAM",
-            "logoid": "akamai"
-          },
-          {
-            "symbol": "NASDAQ:BLNK",
-            "logoid": "blink-charging"
-          },
-          {
-            "symbol": "NASDAQ:DBX",
-            "logoid": "dropbox"
-          },
-          {
-            "symbol": "NASDAQ:MARA",
-            "logoid": "marathon-digital-holdings"
-          },
-          {
-            "symbol": "NASDAQ:NVTS",
-            "logoid": "navitas-semiconductor"
-          },
-          {
-            "symbol": "NASDAQ:RXT",
-            "logoid": "rackspace-technology"
-          },
-          {
-            "symbol": "NASDAQ:SYNA",
-            "logoid": "synaptics"
-          },
-          {
-            "symbol": "NYSE:YELP",
-            "logoid": "yelp"
-          },
-          {
-            "symbol": "AMEX:SPY",
-            "logoid": "spdr-sandp500-etf-tr"
-          },
-          {
-            "symbol": "NASDAQ:QQQ",
-            "logoid": "invesco"
-          },
-          {
-            "symbol": "NASDAQ:PARA"
-          },
-          {
-            "symbol": "EURONEXT:INPHI",
-            "logoid": "philips"
-          },
-          {
-            "symbol": "NASDAQ:CAKE",
-            "logoid": "cheesecake-factory"
-          },
-          {
-            "symbol": "NASDAQ:SANM",
-            "logoid": "sanmina"
-          },
-          {
-            "symbol": "NASDAQ:LSCC",
-            "logoid": "lattice-semiconductor"
-          },
-          {
-            "symbol": "NASDAQ:ON",
-            "logoid": "on-semiconductor"
-          },
-          {
-            "symbol": "NASDAQ:NXPI",
-            "logoid": "nxp-semiconductors"
-          },
-          {
-            "symbol": "NYSE:QGEN",
-            "logoid": "qiagen-nv"
-          },
-          {
-            "symbol": "NYSE:YUMC",
-            "logoid": "yum-china-holdings"
-          },
-          {
-            "symbol": "NYSE:EG",
-            "logoid": "everest-re"
-          },
-          {
-            "symbol": "NASDAQ:RMBS",
-            "logoid": "rambus"
-          },
-          {
-            "symbol": "NYSE:JKS",
-            "logoid": "jinkosolar"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:e6efe4f10094b:0-senator-lummis-backs-bitcoin-for-us-cyber-defense-after-admiral-paparo-testimony/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260423010534:0",
+        "title": "Cryptocurrency Down as Middle East Tensions Persist — Market Talk",
+        "published": 1776965940,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423010534:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "bravenewcoin:d909c9ae3094b:0",
+        "title": "Verifiable Bitcoin Accounts for Institutional Bitcoin. Your Custody, Your Terms.",
+        "published": 1776965334,
+        "urgency": 2,
+        "link": "https://bravenewcoin.com/press-release/verifiable-bitcoin-accounts-for-institutional-bitcoin-your-custody-your-terms",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/bravenewcoin:d909c9ae3094b:0/",
+        "provider": {
+          "id": "bravenewcoin",
+          "name": "Brave New Coin",
+          "logo_id": "bravenewcoin",
+          "url": "https://bravenewcoin.com/"
+        }
+      },
+      {
+        "id": "chainwire:7f8f00b4a094b:0",
+        "title": "Verifiable Bitcoin Accounts for Institutional Bitcoin. Your Custody, Your Terms.",
+        "published": 1776965064,
+        "urgency": 2,
+        "link": "https://chainwire.org/2026/04/23/verifiable-bitcoin-accounts-for-institutional-bitcoin-your-custody-your-terms/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/chainwire:7f8f00b4a094b:0-verifiable-bitcoin-accounts-for-institutional-bitcoin-your-custody-your-terms/",
+        "provider": {
+          "id": "chainwire",
+          "name": "Chainwire",
+          "logo_id": "chainwire",
+          "url": "https://www.chainwire.org"
+        }
+      },
+      {
+        "id": "DJN_DN20260423010149:0",
+        "title": "Stablecoins Enter Third Stage of Evolution, Says CoinDesk — Market Talk",
+        "published": 1776962820,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423010149:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "beincrypto:a7a585feb094b:0",
+        "title": "Bitcoin’s $80,000 Target Remains Elusive Amid New US-China Tensions",
+        "published": 1776961791,
+        "urgency": 2,
+        "link": "https://beincrypto.com/bitcoin-price-us-china-ai-tensions/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:a7a585feb094b:0-bitcoin-s-80-000-target-remains-elusive-amid-new-us-china-tensions/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260423009175:0",
+        "title": "CLARITY Act Seen Critical in Maturation of Blockchain Tech — Market Talk",
+        "published": 1776958920,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BINANCE:ETHUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423009175:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "cointelegraph:e6bed636f094b:0",
+        "title": "Bitcoin weekly close in focus after BTC price fails to revisit $80K",
+        "published": 1776957993,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/bitcoin-weekly-close-in-focus-after-btc-price-fails-to-revisit-80k?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:e6bed636f094b:0-bitcoin-weekly-close-in-focus-after-btc-price-fails-to-revisit-80k/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "coinpedia:395582f6a094b:0",
+        "title": "Bitwise Strategist Says XRP Is No Longer a Crypto Bet, It Is Fintech Infrastructure Now",
+        "published": 1776957975,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/bitwise-strategist-says-xrp-is-no-longer-a-crypto-bet-it-is-fintech-infrastructure-now/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/coinpedia:395582f6a094b:0-bitwise-strategist-says-xrp-is-no-longer-a-crypto-bet-it-is-fintech-infrastructure-now/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "the_block:a9efdea2b094b:0",
+        "title": "‘Rally on trial’: Bitcoin breakout faces key $80,000 test as whales, ETF investors buy into volatility",
+        "published": 1776957856,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398625/rally-trial-analysts-bitcoin-breakout-test-80000-whales-etf-investors-buy-volatility?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:a9efdea2b094b:0-rally-on-trial-bitcoin-breakout-faces-key-80-000-test-as-whales-etf-investors-buy-into-volatility/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "cointelegraph:660eba3c3094b:0",
+        "title": "Spain seizes crypto cold wallets in illegal manga piracy raid",
+        "published": 1776956668,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/spain-seizes-crypto-cold-wallets-manga-piracy?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:660eba3c3094b:0-spain-seizes-crypto-cold-wallets-in-illegal-manga-piracy-raid/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "DJN_DN20260423002588:0",
+        "title": "Bitcoin Price Falls From 11-Week High. Why Ethereum, XRP, Cryptos Are Dropping. — Barrons.com",
+        "published": 1776956340,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423002588:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "coinpedia:445ebe98d094b:0",
+        "title": "CoinEx Founder Yang Haipo Says Crypto’s Collapse Is Inevitable, And Numbers to Back It Up",
+        "published": 1776952097,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/coinex-founder-yang-haipo-says-cryptos-collapse-is-inevitable-and-numbers-to-back-it-up/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:445ebe98d094b:0-coinex-founder-yang-haipo-says-crypto-s-collapse-is-inevitable-and-numbers-to-back-it-up/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "u_today:612e2ccce094b:0",
+        "title": "Bitcoin Price Battle for $87,000: Peter Brandt Identifies the Final Hurdle in Current Rally",
+        "published": 1776951300,
+        "urgency": 2,
+        "link": "https://u.today/bitcoin-price-battle-for-87000-peter-brandt-identifies-the-final-hurdle-in-current-rally",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:612e2ccce094b:0-bitcoin-price-battle-for-87-000-peter-brandt-identifies-the-final-hurdle-in-current-rally/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "beincrypto:09e67d264094b:0",
+        "title": "3 Warning Signs That Bitcoin’s Rally May Be At Risk",
+        "published": 1776950912,
+        "urgency": 2,
+        "link": "https://beincrypto.com/bitcoin-rally-warning-signs-april-2026/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:09e67d264094b:0-3-warning-signs-that-bitcoin-s-rally-may-be-at-risk/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "stocktwits:a12909fb9094b:0",
+        "title": "Crypto Is A Casino – Bitcoin's Collapse Is ‘Inevitable’ As Transfusions Run Out, Says Industry Insider",
+        "published": 1776950129,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/crypto-is-a-casino-bitcoin-collapse-is-inevitable-as-transfusions-run-out/cZBfUT4ReRO",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:a12909fb9094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "the_block:597b33696094b:0",
+        "title": "US military running Bitcoin node to test national security applications, admiral tells Congress",
+        "published": 1776949741,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398593/us-military-running-bitcoin-node-to-test-national-security-applications-admiral-tells-congress?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:597b33696094b:0-us-military-running-bitcoin-node-to-test-national-security-applications-admiral-tells-congress/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "the_block:5a88076ca094b:0",
+        "title": "Pantera among investors pushing bitcoin treasury firm Satsuma to sell $50 million hoard: Bloomberg",
+        "published": 1776949483,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398590/pantera-among-investors-pushing-bitcoin-treasury-firm-satsuma-to-sell-50-million-hoard-bloomberg?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:5a88076ca094b:0-pantera-among-investors-pushing-bitcoin-treasury-firm-satsuma-to-sell-50-million-hoard-bloomberg/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "newsbtc:8c1185c38094b:0",
+        "title": "Bitcoin To $140,000 And XRP To $7? Here’s When It Will Happen",
+        "published": 1776947405,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-140000-and-xrp-7/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
+          }
+        ],
+        "storyPath": "/news/newsbtc:8c1185c38094b:0-bitcoin-to-140-000-and-xrp-to-7-here-s-when-it-will-happen/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "stocktwits:1d388e52b094b:0",
+        "title": "Bitcoin’s $80K Problem Ahead: Over Half Of Short-Term BTC Holders Are About To Hit A Profit Zone",
+        "published": 1776945803,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-is-burning-4-4-million-in-profit-every-hour-warning-sign/cZBfwdiReRI",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:1d388e52b094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260423006464:0",
+        "title": "Bitcoin Eases Further as Iran War Tensions Weigh — Market Talk",
+        "published": 1776945780,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423006464:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "cointelegraph:5f4db5d1b094b:0",
+        "title": "BlackRock drives 7-day Bitcoin ETF inflow streak as BTC nears $80,000",
+        "published": 1776945343,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/bitcoin-etf-1-9-billiow-7-day-inflow-streak-btc-near-80k?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:5f4db5d1b094b:0-blackrock-drives-7-day-bitcoin-etf-inflow-streak-as-btc-nears-80-000/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "beincrypto:49590876e094b:0",
+        "title": "Tesla Holds 11,509 BTC Untouched While Injecting $2 Billion Into SpaceX",
+        "published": 1776944565,
+        "urgency": 2,
+        "link": "https://beincrypto.com/tesla-bitcoin-untouched-spacex-2b-q1/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "NASDAQ:TSLA",
+            "logoid": "tesla"
+          }
+        ],
+        "storyPath": "/news/beincrypto:49590876e094b:0-tesla-holds-11-509-btc-untouched-while-injecting-2-billion-into-spacex/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "cointelegraph:7f97a027a094b:0",
+        "title": "Bitcoin buyers show ‘renewed conviction’ with BTC price push toward $79K",
+        "published": 1776942961,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/bitcoin-buyers-renewed-conviction-btc-price-push-toward-79k?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:7f97a027a094b:0-bitcoin-buyers-show-renewed-conviction-with-btc-price-push-toward-79k/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "stocktwits:aaa2c5f68094b:0",
+        "title": "Tesla Held Onto Its Bitcoin Stash In Q1 Despite Taking A $178M Tax Hit – TSLA Stock Slides Pre-Market",
+        "published": 1776942306,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/equity/tesla-held-onto-its-bitcoin-in-q1-taking-a-178-m-hit-tsla-stock-slides/cZBfuZPReRR",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "NASDAQ:TSLA",
+            "logoid": "tesla"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:aaa2c5f68094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "coinpedia:0a2bca86b094b:0",
+        "title": "Why Bitcoin Price Stuck at $79K, Michael van de Poppe Explains",
+        "published": 1776938577,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/why-bitcoin-price-stuck-at-79k-michael-van-de-poppe-explains/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:0a2bca86b094b:0-why-bitcoin-price-stuck-at-79k-michael-van-de-poppe-explains/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "newsbtc:38f289adc094b:0",
+        "title": "Next Big Bitcoin Move May Defy Everything Traders Expect, Says Expert",
+        "published": 1776938440,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/next-big-bitcoin-defy-everything-traders-expect/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:38f289adc094b:0-next-big-bitcoin-move-may-defy-everything-traders-expect-says-expert/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "beincrypto:abb392b46094b:0",
+        "title": "Adam Back Calls ‘Finding Satoshi’ Documentary’s Finney-Sassaman Theory ‘Odd’",
+        "published": 1776936905,
+        "urgency": 2,
+        "link": "https://beincrypto.com/adam-back-finding-satoshi-finney-sassaman/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:abb392b46094b:0-adam-back-calls-finding-satoshi-documentary-s-finney-sassaman-theory-odd/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260423003319:0",
+        "title": "Fresh Iran War Concerns Trigger Profit-Taking in Bitcoin — Market Talk",
+        "published": 1776935880,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423003319:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "u_today:9a207c930094b:0",
+        "title": "Bitcoin (BTC) Price Is Bottoming, Says Expert Amid Enormous Short Orders Piling",
+        "published": 1776933600,
+        "urgency": 2,
+        "link": "https://u.today/bitcoin-btc-price-is-bottoming-says-expert-amid-enormous-short-orders-piling",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:9a207c930094b:0-bitcoin-btc-price-is-bottoming-says-expert-amid-enormous-short-orders-piling/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "newsbtc:41cb5da6d094b:0",
+        "title": "Bitcoin Bull Cycle Is Right On Schedule: Analyst Reveals When The Bull Run Will Begin",
+        "published": 1776933019,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-bull-cycle-on-schedule/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:41cb5da6d094b:0-bitcoin-bull-cycle-is-right-on-schedule-analyst-reveals-when-the-bull-run-will-begin/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "coinpedia:9bbfde684094b:0",
+        "title": "Bitcoin Price Jumps Above $78K as Strong Demand Returns: Breakout Ahead?",
+        "published": 1776932331,
+        "urgency": 2,
+        "link": "https://coinpedia.org/price-analysis/bitcoin-price-jumps-above-78k-as-strong-demand-returns-breakout-ahead/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:9bbfde684094b:0-bitcoin-price-jumps-above-78k-as-strong-demand-returns-breakout-ahead/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "u_today:878bc4819094b:0",
+        "title": "Why Satoshi’s Identity No Longer Matters: Strategy and Coinbase CEOs Signal the End of the Hunt",
+        "published": 1776932055,
+        "urgency": 2,
+        "link": "https://u.today/why-satoshis-identity-no-longer-matters-strategy-and-coinbase-ceos-signal-the-end-of-the-hunt",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:878bc4819094b:0-why-satoshi-s-identity-no-longer-matters-strategy-and-coinbase-ceos-signal-the-end-of-the-hunt/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "forexlive:f722a4ceb094b:0",
+        "title": "The single chart for bitcoin long term investors shows bulls are fine",
+        "published": 1776931432,
+        "urgency": 2,
+        "link": "https://investinglive.com/Cryptocurrency/the-single-chart-that-for-bitcoin-long-term-investors-shows-bulls-are-fine-20260423/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/forexlive:f722a4ceb094b:0-the-single-chart-for-bitcoin-long-term-investors-shows-bulls-are-fine/",
+        "provider": {
+          "id": "forexlive",
+          "name": "InvestingLive",
+          "logo_id": "forexlive",
+          "url": "https://www.investinglive.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260423002489:0",
+        "title": "Bitcoin Consolidating Gains in Range-Compression Phase — Market Talk",
+        "published": 1776930180,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423002489:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "cointelegraph:e51e1fe34094b:0",
+        "title": "Crypto sentiment index soars to a 3-month high as Bitcoin holds $77K",
+        "published": 1776928031,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/crypto-market-sentiment-hits-3-month-high?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:e51e1fe34094b:0-crypto-sentiment-index-soars-to-a-3-month-high-as-bitcoin-holds-77k/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "newsbtc:185c5e928094b:0",
+        "title": "Bitcoin Rally Catches Shorts Offside—$200M Liquidated As Price Hits $79,000",
+        "published": 1776927650,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-catches-shorts-200m-liquidated-price-79000/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:185c5e928094b:0-bitcoin-rally-catches-shorts-offside-200m-liquidated-as-price-hits-79-000/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "DJN_DN20260423002162:0",
+        "title": "Bitcoin Turns Lower as Hopes For Iran War De-escalation Fade — Market Talk",
+        "published": 1776927600,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423002162:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "tag:reuters.com,2026:newsml_TUCBQMP78:0",
+        "title": "Bluebird Mining Ventures To Invest In 4.8MW Bitcoin Mining Project In Texas",
+        "published": 1776925619,
+        "urgency": 2,
+        "permission": "headline",
+        "relatedSymbols": [
+          {
+            "symbol": "LSE:BMV",
+            "logoid": "bluebird-mining-ventures-ltd-ord-npv-di"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/reuters.com,2026:newsml_TUCBQMP78:0-bluebird-mining-ventures-to-invest-in-4-8mw-bitcoin-mining-project-in-texas/",
+        "provider": {
+          "id": "reuters",
+          "name": "Reuters",
+          "logo_id": "reuters"
+        }
+      },
+      {
+        "id": "DJN_DN20260423001824:0",
+        "title": "Bitcoin in Uptrend That May Test $80,000, Technical Analysis Shows — Market Talk",
+        "published": 1776924660,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260423001824:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "modular_finance:f5488d91a1da6:0",
+        "title": "H100 signs binding agreement to increase bitcoin holdings to approximately 3,500 bitcoin",
+        "published": 1776924000,
+        "urgency": 2,
+        "relatedSymbols": [
+          {
+            "symbol": "NGM:H100",
+            "logoid": "h100"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/modular_finance:f5488d91a1da6:0-h100-signs-binding-agreement-to-increase-bitcoin-holdings-to-approximately-3-500-bitcoin/",
+        "provider": {
+          "id": "modular_finance",
+          "name": "MFN by Modular Finance",
+          "logo_id": "rdp-mfn",
+          "url": "https://modularfinance.com"
+        }
+      },
+      {
+        "id": "invezz:60e5d796c094b:0",
+        "title": "Thailand SEC proposes simpler licensing for crypto derivatives market",
+        "published": 1776921152,
+        "urgency": 2,
+        "link": "https://invezz.com/news/2026/04/23/thailand-sec-proposes-simpler-licensing-route-for-crypto-derivatives-market/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/invezz:60e5d796c094b:0-thailand-sec-proposes-simpler-licensing-for-crypto-derivatives-market/",
+        "provider": {
+          "id": "invezz",
+          "name": "Invezz",
+          "logo_id": "invezz",
+          "url": "https://invezz.com/"
+        }
+      },
+      {
+        "id": "newsbtc:3c19c4ee9094b:0",
+        "title": "Bitcoin Watch: All Eyes On $86,000—What Could Fuel The Next Bullish Breakout",
+        "published": 1776920451,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-watch-all-eyes-on-86000-what-could-fuel-the-next-bullish-breakout/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:3c19c4ee9094b:0-bitcoin-watch-all-eyes-on-86-000-what-could-fuel-the-next-bullish-breakout/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "coinpedia:7e1c1f0c7094b:0",
+        "title": "Traders Bet on $100K Bitcoin Price as Breakout Rally Erases Weeks of Sideways Pain",
+        "published": 1776920351,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/traders-bet-on-100k-bitcoin-price-as-breakout-rally-erases-weeks-of-sideways-pain/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:7e1c1f0c7094b:0-traders-bet-on-100k-bitcoin-price-as-breakout-rally-erases-weeks-of-sideways-pain/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "cryptobriefing:f733c7471094b:0",
+        "title": "Tesla confirms no Bitcoin sales in Q1 despite market selloff",
+        "published": 1776917053,
+        "urgency": 2,
+        "link": "https://cryptobriefing.com/tesla-bitcoin-intact-strategy-q1-2026/",
+        "relatedSymbols": [
+          {
+            "symbol": "NASDAQ:TSLA",
+            "logoid": "tesla"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cryptobriefing:f733c7471094b:0-tesla-confirms-no-bitcoin-sales-in-q1-despite-market-selloff/",
+        "provider": {
+          "id": "cryptobriefing",
+          "name": "Crypto Briefing",
+          "logo_id": "crypto-briefing",
+          "url": "https://cryptobriefing.com"
+        }
+      },
+      {
+        "id": "chainwire:268cf57dc094b:0",
+        "title": "HashKey Group Announces Strategic Partnership with ANAP Holdings to Expand Bitcoin Treasury and Institutional Asset Management in Japan",
+        "published": 1776916958,
+        "urgency": 2,
+        "link": "https://chainwire.org/2026/04/23/hashkey-group-announces-strategic-partnership-with-anap-holdings-to-expand-bitcoin-treasury-and-institutional-asset-management-in-japan/",
+        "relatedSymbols": [
+          {
+            "symbol": "TSE:3189",
+            "logoid": "anap"
+          },
+          {
+            "symbol": "CRYPTO:HSKUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCHSK"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/chainwire:268cf57dc094b:0-hashkey-group-announces-strategic-partnership-with-anap-holdings-to-expand-bitcoin-treasury-and-institutional-asset-management-in-japan/",
+        "provider": {
+          "id": "chainwire",
+          "name": "Chainwire",
+          "logo_id": "chainwire",
+          "url": "https://www.chainwire.org"
+        }
+      },
+      {
+        "id": "newsbtc:d070147b3094b:0",
+        "title": "Bitcoin Hits $78,000—All Eyes On $80,700 Cost Basis?",
+        "published": 1776916857,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-hits-78000-all-eyes-on-80700-cost-basis/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:d070147b3094b:0-bitcoin-hits-78-000-all-eyes-on-80-700-cost-basis/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:f9e3dece8094b:0",
+        "title": "Consistent XRP Buys Could Deliver Outsized Gains By 2030: Finance Expert",
+        "published": 1776913213,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/altcoin/consistent-xrp-buys-could-deliver-outsized-gains-by-2030-finance-expert/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:f9e3dece8094b:0-consistent-xrp-buys-could-deliver-outsized-gains-by-2030-finance-expert/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:cf0612fd8094b:0",
+        "title": "Bitcoin Price Rally Nears $80K, Dips May Draw Fresh Buyers",
+        "published": 1776911609,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/analysis/btc/bitcoin-price-rally-nears-80k/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:cf0612fd8094b:0-bitcoin-price-rally-nears-80k-dips-may-draw-fresh-buyers/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "newsbtc:534118ee3094b:0",
+        "title": "Bitcoin Bulls Rebuild As Futures Metric Hits 4-Month High",
+        "published": 1776909619,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-bulls-rebuild-futures-metric-4-month-high/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:534118ee3094b:0-bitcoin-bulls-rebuild-as-futures-metric-hits-4-month-high/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:b15273bd7094b:0",
+        "title": "LONGITUDE recap: Adam Back on Satoshi, crypto regulation needs tweaks",
+        "published": 1776907834,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/longitude-recap-adam-back-on-satoshi-crypto-regulation-needs-tweaks?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:b15273bd7094b:0-longitude-recap-adam-back-on-satoshi-crypto-regulation-needs-tweaks/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "cointelegraph:fc2df09e9094b:0",
+        "title": "Four reasons why the crypto market is rallying today: Will bulls maintain control?",
+        "published": 1776907800,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/four-reasons-why-the-crypto-market-is-rallying-today-will-bulls-maintain-control?utm_source=rss_feed&utm_medium=rss-trading-view_ETH&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:fc2df09e9094b:0-four-reasons-why-the-crypto-market-is-rallying-today-will-bulls-maintain-control/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "cointelegraph:1e64b4d1a094b:0",
+        "title": "Bitcoin chases monthly high above $80K as nearly all BTC price metrics turn bullish",
+        "published": 1776904200,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/bitcoin-chases-monthly-high-above-dollar80k-as-nearly-all-btc-price-metrics-turn-bullish?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:1e64b4d1a094b:0-bitcoin-chases-monthly-high-above-80k-as-nearly-all-btc-price-metrics-turn-bullish/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "u_today:9b36e2fa5094b:0",
+        "title": "Bitcoin (BTC) Closer to $80,000 Than $60,000 Again, Ethereum's (ETH) $3,000 Recipe, Hyperliquid (HYPE) Bounce Triggered: Crypto Market Review",
+        "published": 1776902460,
+        "urgency": 2,
+        "link": "https://u.today/bitcoin-btc-closer-to-80000-than-60000-again-ethereums-eth-3000-recipe-hyperliquid-hype-bounce",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/u_today:9b36e2fa5094b:0-bitcoin-btc-closer-to-80-000-than-60-000-again-ethereum-s-eth-3-000-recipe-hyperliquid-hype-bounce-triggered-crypto-market-review/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "newsbtc:52f8eafb1094b:0",
+        "title": "Bitcoin And XRP Need Relief From Capital Drain, Says John Bollinger",
+        "published": 1776895217,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin-xrp-relief-capital-drain-john-bollinger/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
+          }
+        ],
+        "storyPath": "/news/newsbtc:52f8eafb1094b:0-bitcoin-and-xrp-need-relief-from-capital-drain-says-john-bollinger/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "u_today:2b249f276094b:0",
+        "title": "Ripple Sends $108 Million XRP to Coinbase, Shiba Inu (SHIB) Sees April's Biggest Bullish Sign, Saylor’s Strategy Scoops $3.6 Billion Bitcoin Gains — U.Today Crypto Digest",
+        "published": 1776894296,
+        "urgency": 2,
+        "link": "https://u.today/ripple-sends-108-million-xrp-to-coinbase-shiba-inu-shib-sees-aprils-biggest-bullish-sign-saylors",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
           },
           {
             "symbol": "NASDAQ:MSTR",
             "logoid": "strategy-cad-hedged-cibc-cdr"
           },
           {
-            "symbol": "NASDAQ:FFIV",
-            "logoid": "f5-network"
-          },
-          {
-            "symbol": "NASDAQ:SOFI",
-            "logoid": "sofi"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/benzinga:fa4bb95c3094b:0-will-earnings-cheer-continue-this-week-all-eyes-on-disney-palantir-robinhood-while-reddit-gears-up-for-debut-quarterly-report/",
+        "storyPath": "/news/u_today:2b249f276094b:0-ripple-sends-108-million-xrp-to-coinbase-shiba-inu-shib-sees-april-s-biggest-bullish-sign-saylor-s-strategy-scoops-3-6-billion-bitcoin-gains-u-today-crypto-digest/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
         }
       },
       {
-        "id": "benzinga:e936d2844094b:0",
-        "title": "Is This Why Berkshire Reduced Apple Stake By 18% In Q1? Buffett Gives Convincing Reason.",
-        "published": 1714845780,
+        "id": "u_today:278592f31094b:0",
+        "title": "Ripple Sends $108 Million XRP to Coinbase, Shiba Inu (SHIB) Sees April's Biggest Bullish Sign,Saylor’s Strategy Scoops $3.6 Billion Bitcoin Gains — U.Today Crypto Digest",
+        "published": 1776894296,
         "urgency": 2,
-        "link": "https://www.benzinga.com/markets/equities/24/05/38630421/warren-buffett-confidence-in-apple-wanes-berkshire-cuts-stake-by-18-amid-tech-giants-troubles",
-        "permission": "preview",
+        "link": "https://u.today/ripple-sends-108-million-xrp-to-coinbase-shiba-inu-shib-sees-aprils-biggest-bullish-signsaylors",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NYSE:BAC",
-            "logoid": "bank-of-america"
-          },
-          {
-            "symbol": "NYSE:AXP",
-            "logoid": "american-express"
-          },
-          {
-            "symbol": "NYSE:KO",
-            "logoid": "coca-cola"
-          },
-          {
-            "symbol": "CRYPTOCAP:CVX"
-          },
-          {
-            "symbol": "NYSE:CVX",
-            "logoid": "chevron"
-          }
-        ],
-        "storyPath": "/news/benzinga:e936d2844094b:0-is-this-why-berkshire-reduced-apple-stake-by-18-in-q1-buffett-gives-convincing-reason/",
-        "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
-        }
-      },
-      {
-        "id": "benzinga:34af49f66094b:0",
-        "title": "Berkshire Hathaway's Q1 Operating Earnings Surged 39% — Here's Why",
-        "published": 1714829389,
-        "urgency": 2,
-        "link": "https://www.benzinga.com/markets/equities/24/05/38629833/berkshire-hathaways-q1-operating-earnings-surged-39-heres-why",
-        "permission": "preview",
-        "relatedSymbols": [
-          {
-            "symbol": "NYSE:AXP",
-            "logoid": "american-express"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NYSE:BAC",
-            "logoid": "bank-of-america"
-          },
-          {
-            "symbol": "NYSE:KO",
-            "logoid": "coca-cola"
-          },
-          {
-            "symbol": "CRYPTOCAP:CVX"
-          },
-          {
-            "symbol": "NYSE:CVX",
-            "logoid": "chevron"
-          }
-        ],
-        "storyPath": "/news/benzinga:34af49f66094b:0-berkshire-hathaway-s-q1-operating-earnings-surged-39-here-s-why/",
-        "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
-        }
-      },
-      {
-        "id": "benzinga:e034bbcd3094b:0",
-        "title": "Warren Buffett's Berkshire To Rake In $226M Passively In A Jiffy, Thanks To Its Core Holding Apple",
-        "published": 1714746225,
-        "urgency": 2,
-        "link": "https://www.benzinga.com/markets/equities/24/05/38615551/warren-buffetts-berkshire-to-rake-in-226m-passively-in-a-jiffy-thanks-to-its-core-holding-apple",
-        "permission": "preview",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NYSE:BAC",
-            "logoid": "bank-of-america"
-          },
-          {
-            "symbol": "NYSE:AXP",
-            "logoid": "american-express"
-          },
-          {
-            "symbol": "NYSE:KO",
-            "logoid": "coca-cola"
-          },
-          {
-            "symbol": "CRYPTOCAP:CVX"
-          },
-          {
-            "symbol": "NYSE:CVX",
-            "logoid": "chevron"
-          }
-        ],
-        "storyPath": "/news/benzinga:e034bbcd3094b:0-warren-buffett-s-berkshire-to-rake-in-226m-passively-in-a-jiffy-thanks-to-its-core-holding-apple/",
-        "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
-        }
-      },
-      {
-        "id": "benzinga:2f01b2370094b:0",
-        "title": "Nasdaq, S&P 500 Futures Rise Ahead Of Apple Earnings: Why This Analyst Thinks 'No Cut' Scenario May Not Be Negative For Market",
-        "published": 1714647171,
-        "urgency": 2,
-        "link": "https://www.benzinga.com/news/earnings/24/05/38576979/nasdaq-s-p-500-futures-rise-ahead-of-apple-earnings-why-this-analyst-thinks-no-cut-scenario-may-not",
-        "permission": "preview",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NYSE:JNJ",
-            "logoid": "johnson-and-johnson"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:CHRW",
-            "logoid": "ch-robinson"
-          },
-          {
-            "symbol": "NASDAQ:EBAY",
-            "logoid": "ebay"
-          },
-          {
-            "symbol": "NASDAQ:ETSY"
-          },
-          {
-            "symbol": "NASDAQ:FSLR",
-            "logoid": "first-solar"
-          },
-          {
-            "symbol": "NASDAQ:FRSH",
-            "logoid": "freshworks"
-          },
-          {
-            "symbol": "NASDAQ:KLIC",
-            "logoid": "kulicke-and-soffa-industries"
-          },
-          {
-            "symbol": "NYSE:MGM",
-            "logoid": "mgm-resorts"
-          },
-          {
-            "symbol": "NASDAQ:NTGR",
-            "logoid": "netgear"
-          },
-          {
-            "symbol": "NASDAQ:MPWR",
-            "logoid": "monolithic-power-system"
-          },
-          {
-            "symbol": "NASDAQ:QRVO",
-            "logoid": "qorvo"
-          },
-          {
-            "symbol": "NYSE:NOVA"
-          },
-          {
-            "symbol": "NASDAQ:UPWK",
-            "logoid": "upwork"
-          },
-          {
-            "symbol": "NYSE:WOLF",
-            "logoid": "wolfspeed"
-          },
-          {
-            "symbol": "NASDAQ:DASH",
-            "logoid": "doordash"
-          },
-          {
-            "symbol": "NASDAQ:ZG",
-            "logoid": "zillow-group"
-          },
-          {
-            "symbol": "NYSE:COP",
-            "logoid": "conocophillips"
-          },
-          {
-            "symbol": "NASDAQ:CYBR"
-          },
-          {
-            "symbol": "NYSE:RACE",
-            "logoid": "ferrari"
-          },
-          {
-            "symbol": "NYSE:ICE",
-            "logoid": "intercontinental-exchange"
-          },
-          {
-            "symbol": "NYSE:KIM",
-            "logoid": "kimco-realty-hc"
-          },
-          {
-            "symbol": "NASDAQ:MRNA",
-            "logoid": "moderna"
-          },
-          {
-            "symbol": "NASDAQ:PENN",
-            "logoid": "penn-national-gaming"
-          },
-          {
-            "symbol": "CRYPTOCAP:W",
-            "logoid": "crypto/XTVCW"
-          },
-          {
-            "symbol": "NYSE:ZTS",
-            "logoid": "zoetis"
-          },
-          {
-            "symbol": "NASDAQ:AMGN",
-            "logoid": "amgen"
-          },
-          {
-            "symbol": "NYSE:BBAI",
-            "logoid": "bigbear-ai"
-          },
-          {
-            "symbol": "NASDAQ:BJRI",
-            "logoid": "bj-s-restaurants"
-          },
-          {
-            "symbol": "NASDAQ:BKNG",
-            "logoid": "booking"
-          },
-          {
-            "symbol": "NYSE:NET",
-            "logoid": "cloudflare-inc"
-          },
-          {
-            "symbol": "NASDAQ:COIN",
-            "logoid": "coinbase"
-          },
-          {
-            "symbol": "NYSE:ED",
-            "logoid": "consolidated-edison"
-          },
-          {
-            "symbol": "NASDAQ:DKNG",
-            "logoid": "draftkings"
-          },
-          {
-            "symbol": "NASDAQ:FIVN",
-            "logoid": "five9"
-          },
-          {
-            "symbol": "NASDAQ:EXPE",
-            "logoid": "expedia"
-          },
-          {
-            "symbol": "NASDAQ:ILMN",
-            "logoid": "illumina"
-          },
-          {
-            "symbol": "NYSE:LYV",
-            "logoid": "live-nation"
-          },
-          {
-            "symbol": "NYSE:X",
-            "logoid": "united-states-steel"
-          },
-          {
-            "symbol": "NASDAQ:REG",
-            "logoid": "regency-centers"
-          },
-          {
-            "symbol": "NYSE:RGA",
-            "logoid": "reinsurance-group-of-america"
-          },
-          {
-            "symbol": "NYSE:PXD"
-          },
-          {
-            "symbol": "NASDAQ:OPEN",
-            "logoid": "opendoor"
-          },
-          {
-            "symbol": "NASDAQ:MNST",
-            "logoid": "monster-beverage"
-          },
-          {
-            "symbol": "NYSE:W",
-            "logoid": "wayfair"
-          },
-          {
-            "symbol": "NASDAQ:QQQ",
-            "logoid": "invesco"
-          }
-        ],
-        "storyPath": "/news/benzinga:2f01b2370094b:0-nasdaq-s-p-500-futures-rise-ahead-of-apple-earnings-why-this-analyst-thinks-no-cut-scenario-may-not-be-negative-for-market/",
-        "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
-        }
-      },
-      {
-        "id": "benzinga:5e4dc9470094b:0",
-        "title": "Will Earnings Cheer Continue To Buoy Markets? Apple, Amazon, Pfizer, Coinbase Lead Flurry Of Q1 Reports This Week",
-        "published": 1714369881,
-        "urgency": 2,
-        "link": "https://www.benzinga.com/news/earnings/24/04/38481553/will-earnings-cheer-continue-to-buoy-markets-apple-amazon-pfizer-coinbase-lead-flurry-of-q1-reports",
-        "permission": "preview",
-        "relatedSymbols": [
-          {
-            "symbol": "NASDAQ:META",
-            "logoid": "meta-platforms"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NYSE:JKS",
-            "logoid": "jinkosolar"
-          },
-          {
-            "symbol": "NASDAQ:ON",
-            "logoid": "on-semiconductor"
-          },
-          {
-            "symbol": "NYSE:PHG",
-            "logoid": "philips"
-          },
-          {
-            "symbol": "NASDAQ:SOFI",
-            "logoid": "sofi"
-          },
-          {
-            "symbol": "NASDAQ:FFIV",
-            "logoid": "f5-network"
-          },
-          {
-            "symbol": "NYSE:EG",
-            "logoid": "everest-re"
-          },
-          {
-            "symbol": "NASDAQ:NXPI",
-            "logoid": "nxp-semiconductors"
-          },
-          {
-            "symbol": "NASDAQ:LSCC",
-            "logoid": "lattice-semiconductor"
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
           },
           {
             "symbol": "NASDAQ:MSTR",
             "logoid": "strategy-cad-hedged-cibc-cdr"
           },
           {
-            "symbol": "NASDAQ:PARA"
-          },
-          {
-            "symbol": "NYSE:QGEN",
-            "logoid": "qiagen-nv"
-          },
-          {
-            "symbol": "NASDAQ:RMBS",
-            "logoid": "rambus"
-          },
-          {
-            "symbol": "NASDAQ:SANM",
-            "logoid": "sanmina"
-          },
-          {
-            "symbol": "NYSE:YUMC",
-            "logoid": "yum-china-holdings"
-          },
-          {
-            "symbol": "NYSE:MMM",
-            "logoid": "3m"
-          },
-          {
-            "symbol": "NYSE:ADM",
-            "logoid": "archer-daniels-midland"
-          },
-          {
-            "symbol": "NYSE:KO",
-            "logoid": "coca-cola"
-          },
-          {
-            "symbol": "NYSE:LLY",
-            "logoid": "eli-lilly"
-          },
-          {
-            "symbol": "NASDAQ:GEHC",
-            "logoid": "ge-healthcare-technologies"
-          },
-          {
-            "symbol": "NYSE:MCD",
-            "logoid": "mcdonalds"
-          },
-          {
-            "symbol": "NYSE:TAP",
-            "logoid": "molson-coors"
-          },
-          {
-            "symbol": "NASDAQ:PYPL",
-            "logoid": "paypal"
-          },
-          {
-            "symbol": "NYSE:THC",
-            "logoid": "tenet-healthcare"
-          },
-          {
-            "symbol": "NASDAQ:AMD",
-            "logoid": "advanced-micro-devices"
-          },
-          {
-            "symbol": "NYSE:OKE",
-            "logoid": "oneok"
-          },
-          {
-            "symbol": "NYSE:PINS",
-            "logoid": "pinterest"
-          },
-          {
-            "symbol": "NASDAQ:SBUX",
-            "logoid": "starbucks"
-          },
-          {
-            "symbol": "NASDAQ:SWKS",
-            "logoid": "skyworks-solutions"
-          },
-          {
-            "symbol": "NYSE:UNM",
-            "logoid": "unum-group"
-          },
-          {
-            "symbol": "NASDAQ:SMCI",
-            "logoid": "super-micro-computer"
-          },
-          {
-            "symbol": "NYSE:SYK",
-            "logoid": "stryker"
-          },
-          {
-            "symbol": "NYSE:RNR",
-            "logoid": "renaissancere"
-          },
-          {
-            "symbol": "NYSE:PRU",
-            "logoid": "prudential"
-          },
-          {
-            "symbol": "NASDAQ:FANG",
-            "logoid": "diamondback"
-          },
-          {
-            "symbol": "NYSE:CLX",
-            "logoid": "clorox"
-          },
-          {
-            "symbol": "NASDAQ:CHK"
-          },
-          {
-            "symbol": "NYSE:BLCO",
-            "logoid": "bausch-and-lomb-corp"
-          },
-          {
-            "symbol": "NYSE:CVS",
-            "logoid": "cvs-health"
-          },
-          {
-            "symbol": "NYSE:DD",
-            "logoid": "dupont-de-nemours"
-          },
-          {
-            "symbol": "NYSE:EL",
-            "logoid": "estee-lauder"
-          },
-          {
-            "symbol": "NYSE:GRMN",
-            "logoid": "garmin-ltd"
-          },
-          {
-            "symbol": "NYSE:GSK",
-            "logoid": "glaxosmithkline"
-          },
-          {
-            "symbol": "NASDAQ:KHC",
-            "logoid": "kraft-heinz"
-          },
-          {
-            "symbol": "NYSE:KKR",
-            "logoid": "kkr"
-          },
-          {
-            "symbol": "NASDAQ:LOGI",
-            "logoid": "logitech-international"
-          },
-          {
-            "symbol": "NYSE:MA",
-            "logoid": "mastercard"
-          },
-          {
-            "symbol": "NYSE:NCLH",
-            "logoid": "norwegian-cruise-line"
-          },
-          {
-            "symbol": "NYSE:PFE",
-            "logoid": "pfizer"
-          },
-          {
-            "symbol": "NASDAQ:WING",
-            "logoid": "wingstop"
-          },
-          {
-            "symbol": "NYSE:YUM",
-            "logoid": "yum-brands"
-          },
-          {
-            "symbol": "NYSE:ALB",
-            "logoid": "albemarle"
-          },
-          {
-            "symbol": "NYSE:ALL",
-            "logoid": "allstate"
-          },
-          {
-            "symbol": "NYSE:BZH",
-            "logoid": "beazer-homes-usa"
-          },
-          {
-            "symbol": "NASDAQ:CHRW",
-            "logoid": "ch-robinson"
-          },
-          {
-            "symbol": "NYSE:DVN",
-            "logoid": "devon-energy"
-          },
-          {
-            "symbol": "NASDAQ:EBAY",
-            "logoid": "ebay"
-          },
-          {
-            "symbol": "NASDAQ:ETSY"
-          },
-          {
-            "symbol": "NASDAQ:FSLR",
-            "logoid": "first-solar"
-          },
-          {
-            "symbol": "NASDAQ:FRSH",
-            "logoid": "freshworks"
-          },
-          {
-            "symbol": "NASDAQ:KLIC",
-            "logoid": "kulicke-and-soffa-industries"
-          },
-          {
-            "symbol": "NYSE:MRO"
-          },
-          {
-            "symbol": "NYSE:MET",
-            "logoid": "metlife"
-          },
-          {
-            "symbol": "NYSE:MGM",
-            "logoid": "mgm-resorts"
-          },
-          {
-            "symbol": "NASDAQ:NTGR",
-            "logoid": "netgear"
-          },
-          {
-            "symbol": "NASDAQ:QRVO",
-            "logoid": "qorvo"
-          },
-          {
-            "symbol": "NYSE:NOVA"
-          },
-          {
-            "symbol": "NASDAQ:UPWK",
-            "logoid": "upwork"
-          },
-          {
-            "symbol": "NYSE:WOLF",
-            "logoid": "wolfspeed"
-          },
-          {
-            "symbol": "NASDAQ:ZG",
-            "logoid": "zillow-group"
-          },
-          {
-            "symbol": "NYSE:MT",
-            "logoid": "arcelormittal"
-          },
-          {
-            "symbol": "NYSE:COP",
-            "logoid": "conocophillips"
-          },
-          {
-            "symbol": "NASDAQ:CYBR"
-          },
-          {
-            "symbol": "NYSE:RACE",
-            "logoid": "ferrari"
-          },
-          {
-            "symbol": "NYSE:ICE",
-            "logoid": "intercontinental-exchange"
-          },
-          {
-            "symbol": "NYSE:KIM",
-            "logoid": "kimco-realty-hc"
-          },
-          {
-            "symbol": "NASDAQ:MRNA",
-            "logoid": "moderna"
-          },
-          {
-            "symbol": "NASDAQ:PENN",
-            "logoid": "penn-national-gaming"
-          },
-          {
-            "symbol": "CRYPTOCAP:W",
-            "logoid": "crypto/XTVCW"
-          },
-          {
-            "symbol": "NYSE:ZTS",
-            "logoid": "zoetis"
-          },
-          {
-            "symbol": "NASDAQ:AMGN",
-            "logoid": "amgen"
-          },
-          {
-            "symbol": "NYSE:BBAI",
-            "logoid": "bigbear-ai"
-          },
-          {
-            "symbol": "NASDAQ:BJRI",
-            "logoid": "bj-s-restaurants"
-          },
-          {
-            "symbol": "NASDAQ:BKNG",
-            "logoid": "booking"
-          },
-          {
-            "symbol": "NYSE:NET",
-            "logoid": "cloudflare-inc"
-          },
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:278592f31094b:0-ripple-sends-108-million-xrp-to-coinbase-shiba-inu-shib-sees-april-s-biggest-bullish-sign-saylor-s-strategy-scoops-3-6-billion-bitcoin-gains-u-today-crypto-digest/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "newsbtc:3c55261b0094b:0",
+        "title": "$60,000 Is The Bottom: Bitcoin Analyst Predicts Lowest Level Before Run To $200,000",
+        "published": 1776891611,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/60000-is-the-bitcoin-bottom/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:3c55261b0094b:0-60-000-is-the-bottom-bitcoin-analyst-predicts-lowest-level-before-run-to-200-000/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "forexlive:e6fceb537094b:0",
+        "title": "Bitcoin rises as ETF inflows hit $1.5bn and short liquidations top $200m",
+        "published": 1776890449,
+        "urgency": 2,
+        "link": "https://investinglive.com/Cryptocurrency/bitcoin-rises-as-etf-inflows-hit-15bn-and-short-liquidations-top-200m-20260422/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/forexlive:e6fceb537094b:0-bitcoin-rises-as-etf-inflows-hit-1-5bn-and-short-liquidations-top-200m/",
+        "provider": {
+          "id": "forexlive",
+          "name": "InvestingLive",
+          "logo_id": "forexlive",
+          "url": "https://www.investinglive.com/"
+        }
+      },
+      {
+        "id": "u_today:32d31c160094b:0",
+        "title": "Bitcoin Dominance Surpasses 60% First Time in 2026 as BTC Nears $80K",
+        "published": 1776889909,
+        "urgency": 2,
+        "link": "https://u.today/bitcoin-dominance-surpasses-60-first-time-in-2026-as-btc-nears-80k",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:32d31c160094b:0-bitcoin-dominance-surpasses-60-first-time-in-2026-as-btc-nears-80k/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "newsbtc:5eb202cae094b:0",
+        "title": "Bears Are Fully In Control Of Bitcoin And It Will Crash Below $60,000, Here’s Why",
+        "published": 1776888021,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bears-in-control-bitcoin-60000/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:5eb202cae094b:0-bears-are-fully-in-control-of-bitcoin-and-it-will-crash-below-60-000-here-s-why/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "invezz:40d8f1691094b:0",
+        "title": "Evening digest: Ukraine aid cleared, Iran Hormuz standoff deepens",
+        "published": 1776887503,
+        "urgency": 2,
+        "link": "https://invezz.com/news/2026/04/22/evening-digest-ukraine-aid-cleared-iran-hormuz-standoff-deepens/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "TVC:UKOIL",
+            "logoid": "crude-oil"
+          }
+        ],
+        "storyPath": "/news/invezz:40d8f1691094b:0-evening-digest-ukraine-aid-cleared-iran-hormuz-standoff-deepens/",
+        "provider": {
+          "id": "invezz",
+          "name": "Invezz",
+          "logo_id": "invezz",
+          "url": "https://invezz.com/"
+        }
+      },
+      {
+        "id": "bravenewcoin:a20740513094b:0",
+        "title": "Bitcoin Breaks a Six-Month Pattern, Approaches $80,000",
+        "published": 1776887328,
+        "urgency": 2,
+        "link": "https://bravenewcoin.com/insights/bitcoin-breaks-a-six-month-pattern-approaches-80000",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/bravenewcoin:a20740513094b:0/",
+        "provider": {
+          "id": "bravenewcoin",
+          "name": "Brave New Coin",
+          "logo_id": "bravenewcoin",
+          "url": "https://bravenewcoin.com/"
+        }
+      },
+      {
+        "id": "beincrypto:5252c8ee4094b:0",
+        "title": "US Military Runs Bitcoin Node for Cybersecurity Tests, Admiral Confirms",
+        "published": 1776885935,
+        "urgency": 2,
+        "link": "https://beincrypto.com/us-military-bitcoin-node-indopacom/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:5252c8ee4094b:0-us-military-runs-bitcoin-node-for-cybersecurity-tests-admiral-confirms/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260422008422:0",
+        "title": "Bitcoin Stability During War Underlies Longer-Term Shift — Market Talk",
+        "published": 1776885780,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BINANCE:ETHUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "NYMEX:CL1!",
+            "logoid": "crude-oil"
+          },
+          {
+            "symbol": "TVC:USOIL",
+            "logoid": "crude-oil"
+          },
+          {
+            "symbol": "MCX:CRUDEOIL1!",
+            "logoid": "crude-oil"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422008422:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "DJN_DN20260422008322:0",
+        "title": "Bitcoin Rides Tech Sector Gains. Is $100,000 Back in the Cards? — Barrons.com",
+        "published": 1776884460,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422008322:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "newsbtc:91f621508094b:0",
+        "title": "Analyst Predicts Bitcoin Price Is Going To $200,000, Reveals When To Buy",
+        "published": 1776880807,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-going-to-200000/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:91f621508094b:0-analyst-predicts-bitcoin-price-is-going-to-200-000-reveals-when-to-buy/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:de8380127094b:0",
+        "title": "Ethereum risks 10% decline versus Bitcoin despite record ETH staking",
+        "published": 1776878347,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/markets/ethereum-decline-10percent-versus-bitcoin-despite-record-eth-staking?utm_source=rss_feed&utm_medium=rss-trading-view_ETH&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:de8380127094b:0-ethereum-risks-10-decline-versus-bitcoin-despite-record-eth-staking/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "stocktwits:64ccbeef6094b:0",
+        "title": "Bitcoin’s ‘Safe Haven’ Narrative Faces Real War Test While Iran Clock Ticks, Pompliano Doubles Down: Report",
+        "published": 1776878199,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoins-safe-haven-narrative-faces-real-war-test/cZBBDQ2RebR",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:64ccbeef6094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260422007866:0",
+        "title": "Bitcoin's Rally Is Just Getting Started. Technicals Speak to More Gains Ahead. — Barrons.com",
+        "published": 1776877560,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422007866:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "newsbtc:033df0523094b:0",
+        "title": "$138M Bitcoin Play Triggers Rally, Signals Shift In Big Money Sentiment",
+        "published": 1776877211,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/138m-bitcoin-play-triggers-rally-signals-shift-in-big-money-sentiment/",
+        "relatedSymbols": [
+          {
+            "symbol": "NYSE:MS",
+            "logoid": "morgan-stanley"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:033df0523094b:0-138m-bitcoin-play-triggers-rally-signals-shift-in-big-money-sentiment/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "DJN_DN20260422007677:0",
+        "title": "Institutions See Bitcoin as Undervalued — Market Talk",
+        "published": 1776875820,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422007677:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "DJN_DN20260422007515:0",
+        "title": "Bitcoin Nears $80,000 as Rebound Extends — Market Talk",
+        "published": 1776874680,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422007515:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "invezz:9a55514e4094b:0",
+        "title": "MSTR stock leads crypto-linked rally as Bitcoin surges",
+        "published": 1776873640,
+        "urgency": 2,
+        "link": "https://invezz.com/news/2026/04/22/mstr-stock-leads-crypto-linked-rally-as-bitcoin-surges/",
+        "relatedSymbols": [
+          {
+            "symbol": "NASDAQ:MSTR",
+            "logoid": "strategy-cad-hedged-cibc-cdr"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/invezz:9a55514e4094b:0-mstr-stock-leads-crypto-linked-rally-as-bitcoin-surges/",
+        "provider": {
+          "id": "invezz",
+          "name": "Invezz",
+          "logo_id": "invezz",
+          "url": "https://invezz.com/"
+        }
+      },
+      {
+        "id": "the_block:aedfde948094b:0",
+        "title": "Eric Trump’s American Bitcoin rises 12% amid increase in BTC mining capacity",
+        "published": 1776873605,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398491/eric-trumps-american-bitcoin-rises-12-amid-increase-in-btc-mining-capacity?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "NASDAQ:ABTC",
+            "logoid": "american-bitcoin"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:aedfde948094b:0-eric-trump-s-american-bitcoin-rises-12-amid-increase-in-btc-mining-capacity/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "invezz:07bf03236094b:0",
+        "title": "Bitcoin up 10% as extended US–Iran ceasefire lifts market risk appetite",
+        "published": 1776871958,
+        "urgency": 2,
+        "link": "https://invezz.com/news/2026/04/22/bitcoin-up-10-as-extended-us-iran-ceasefire-lifts-market-risk-appetite/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/invezz:07bf03236094b:0-bitcoin-up-10-as-extended-us-iran-ceasefire-lifts-market-risk-appetite/",
+        "provider": {
+          "id": "invezz",
+          "name": "Invezz",
+          "logo_id": "invezz",
+          "url": "https://invezz.com/"
+        }
+      },
+      {
+        "id": "u_today:5a1572296094b:0",
+        "title": "Bitcoin Hits $79,000 as a 4,362% Liquidation Imbalance Confirms a Massive Short Squeeze",
+        "published": 1776871860,
+        "urgency": 2,
+        "link": "https://u.today/bitcoin-hits-79000-as-a-4362-liquidation-imbalance-confirms-a-massive-short-squeeze",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:5a1572296094b:0-bitcoin-hits-79-000-as-a-4-362-liquidation-imbalance-confirms-a-massive-short-squeeze/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "u_today:55f9c3718094b:0",
+        "title": "Anthony Pompliano Moves Satoshi Title to All Bitcoin Holders",
+        "published": 1776871319,
+        "urgency": 2,
+        "link": "https://u.today/anthony-pompliano-moves-satoshi-title-to-all-bitcoin-holders",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:55f9c3718094b:0-anthony-pompliano-moves-satoshi-title-to-all-bitcoin-holders/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "DJN_DN20260422006647:0",
+        "title": "Bitcoin Behaving Like Hybrid Asset Amid Middle East Conflict — Market Talk",
+        "published": 1776869640,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422006647:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "stocktwits:0fde40b34094b:0",
+        "title": "BlackRock Silently Scoops Nearly $1 Billion Of Bitcoin, Outpacing Weekly BTC Supply",
+        "published": 1776868157,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/blackrock-silently-scoops-nearly-one-billion-of-bitcoin/cZBBrvuReGs",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "NYSE:BLK",
+            "logoid": "blackrock"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:0fde40b34094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260422006422:0",
+        "title": "Documentary Claims to Solve $80 Billion Mystery at Heart of Bitcoin — WSJ",
+        "published": 1776868080,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422006422:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "forexlive:c8aa5418e094b:0",
+        "title": "Bitcoin climbs to the highest since early February",
+        "published": 1776867845,
+        "urgency": 2,
+        "link": "https://investinglive.com/Cryptocurrency/bitcoin-climbs-to-the-highest-since-early-february-20260422/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/forexlive:c8aa5418e094b:0-bitcoin-climbs-to-the-highest-since-early-february/",
+        "provider": {
+          "id": "forexlive",
+          "name": "InvestingLive",
+          "logo_id": "forexlive",
+          "url": "https://www.investinglive.com/"
+        }
+      },
+      {
+        "id": "DJN_DN20260422006239:0",
+        "title": "Crypto Turns Higher as Legislators Chew on the CLARITY Act — Market Talk",
+        "published": 1776866640,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          },
+          {
+            "symbol": "BINANCE:ETHUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422006239:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "newsbtc:70d267d26094b:0",
+        "title": "Bitcoin Set For Stronger Week, Eyes $88K On Stable Macro Backdrop: Analyst",
+        "published": 1776866409,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-set-for-stronger-week-eyes-88k-on-stable-macro-backdrop-analyst/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:70d267d26094b:0-bitcoin-set-for-stronger-week-eyes-88k-on-stable-macro-backdrop-analyst/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "the_block:29dc9acf6094b:0",
+        "title": "Armed intruders force French family to transfer $820,000 in crypto: report",
+        "published": 1776865539,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398465/armed-intruders-force-french-family-to-transfer-820000-in-crypto-report?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:29dc9acf6094b:0-armed-intruders-force-french-family-to-transfer-820-000-in-crypto-report/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "the_block:3797e9748094b:0",
+        "title": "‘I suspect you got to the right answer’: New Satoshi documentary makes the case Hal Finney and Len Sassaman were Bitcoin’s co-creators",
+        "published": 1776862862,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398423/finding-satoshi-documentary-makes-case-hal-finney-len-sassaman-bitcoins-co-creators?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:3797e9748094b:0-i-suspect-you-got-to-the-right-answer-new-satoshi-documentary-makes-the-case-hal-finney-and-len-sassaman-were-bitcoin-s-co-creators/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "newsbtc:3bd5d6fc8094b:0",
+        "title": "Bitcoin Bull Score Index Turns Neutral For First Time This Bear Market",
+        "published": 1776862817,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-bull-score-neutral-first-time-bear-market/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:3bd5d6fc8094b:0-bitcoin-bull-score-index-turns-neutral-for-first-time-this-bear-market/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "DJN_DN20260422005063:0",
+        "title": "Stablecoins' Usage Could Reduce De-Dollarization Threat — Market Talk",
+        "published": 1776860820,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422005063:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "DJN_DN20260422004853:0",
+        "title": "Bitcoin Has Scope to Recover Further — Market Talk",
+        "published": 1776859740,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422004853:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "DJN_SN20260422008641:0",
+        "title": "Why Strategy's stock is outperforming bitcoin these days",
+        "published": 1776859560,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "NASDAQ:MSTR",
+            "logoid": "strategy-cad-hedged-cibc-cdr"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_SN20260422008641:0/",
+        "provider": {
+          "id": "market-watch",
+          "name": "MarketWatch",
+          "logo_id": "marketwatch"
+        }
+      },
+      {
+        "id": "newsbtc:72092b3a6094b:0",
+        "title": "Bitcoin Power Laws Predicts When Price Will Hit $1,000,000",
+        "published": 1776859205,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoin-power-laws-1000000/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:72092b3a6094b:0-bitcoin-power-laws-predicts-when-price-will-hit-1-000-000/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "beincrypto:b9436eb9b094b:0",
+        "title": "Russia Locks in July 1 Crypto Payments Regime to Bypass Sanctions",
+        "published": 1776859159,
+        "urgency": 2,
+        "link": "https://beincrypto.com/russia-crypto-payments-foreign-trade-july/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/beincrypto:b9436eb9b094b:0-russia-locks-in-july-1-crypto-payments-regime-to-bypass-sanctions/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "cointelegraph:88a4ef87c094b:0",
+        "title": "‘Powerful move’ looms for Bitcoin price, says Bollinger Bands indicator",
+        "published": 1776857815,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/powerful-move-looms-bitcoin-price-bollinger-bands-indicator?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:88a4ef87c094b:0-powerful-move-looms-for-bitcoin-price-says-bollinger-bands-indicator/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "chainwire:732d2d062094b:0",
+        "title": "Bybit Launches Bybit Card Welcome Campaign Offering Up to 120 USDT in Rewards for New Users and First-Time Cardholders",
+        "published": 1776856028,
+        "urgency": 2,
+        "link": "https://chainwire.org/2026/04/22/bybit-launches-bybit-card-welcome-campaign-offering-up-to-120-usdt-in-rewards-for-new-users-and-first-time-cardholders/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/chainwire:732d2d062094b:0-bybit-launches-bybit-card-welcome-campaign-offering-up-to-120-usdt-in-rewards-for-new-users-and-first-time-cardholders/",
+        "provider": {
+          "id": "chainwire",
+          "name": "Chainwire",
+          "logo_id": "chainwire",
+          "url": "https://www.chainwire.org"
+        }
+      },
+      {
+        "id": "newsbtc:83c458822094b:0",
+        "title": "Bitcoin Bottom At $63,000? Grayscale Research Flags Feb. 5 As This Cycle’s Low",
+        "published": 1776855641,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-bottom-at-63000-grayscale-research-flags-feb-5-as-this-cycles-low/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:83c458822094b:0-bitcoin-bottom-at-63-000-grayscale-research-flags-feb-5-as-this-cycle-s-low/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "stocktwits:b706edebe094b:0",
+        "title": "Bitcoin Tops $78,000 After Trump’s Ceasefire Extension – Analyst Sees ‘Heavier’ Breakouts For Altcoins",
+        "published": 1776855374,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-tops-78-000-after-trump-s-ceasefire-extension-analyst-sees-heavier-breakouts-for-altcoins/cZBBVEEReGi",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:b706edebe094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "stocktwits:9290ea2e6094b:0",
+        "title": "MSTR Stock Reportedly Draws Fresh $747M Bet From Capital Group Amid Bitcoin Rally",
+        "published": 1776853518,
+        "urgency": 2,
+        "link": "https://stocktwits.com/news-articles/markets/equity/mstr-stock-reportedly-draws-fresh-bet-from-capital-group-amid-bitcoin-rally/cZBBNX7ReGW",
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "NASDAQ:MSTR",
+            "logoid": "strategy-cad-hedged-cibc-cdr"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/stocktwits:9290ea2e6094b:0/",
+        "provider": {
+          "id": "stocktwits",
+          "name": "Stocktwits",
+          "logo_id": "stocktwits",
+          "url": "https://stocktwits.com/"
+        }
+      },
+      {
+        "id": "u_today:e9acaca45094b:0",
+        "title": "Bitcoin Whales Stack $217 Million Bid Wall While Sell Zone Looms at $80,000",
+        "published": 1776853284,
+        "urgency": 2,
+        "link": "https://u.today/bitcoin-whales-stack-217-million-bid-wall-while-sell-zone-looms-at-80000",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:e9acaca45094b:0-bitcoin-whales-stack-217-million-bid-wall-while-sell-zone-looms-at-80-000/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "the_block:725bf3710094b:0",
+        "title": "UK investors regain tax-free access to crypto ETNs via Innovative Finance ISA route",
+        "published": 1776853097,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398415/uk-investors-regain-tax-free-access-to-crypto-etns-via-innovative-finance-isa-route?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
+          }
+        ],
+        "storyPath": "/news/the_block:725bf3710094b:0-uk-investors-regain-tax-free-access-to-crypto-etns-via-innovative-finance-isa-route/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "u_today:3639c2260094b:0",
+        "title": "BlackRock Spends $900 Million on Another Bitcoin Purchase",
+        "published": 1776852935,
+        "urgency": 2,
+        "link": "https://u.today/blackrock-spends-900-million-on-another-bitcoin-purchase",
+        "relatedSymbols": [
+          {
+            "symbol": "NYSE:BLK",
+            "logoid": "blackrock"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:3639c2260094b:0-blackrock-spends-900-million-on-another-bitcoin-purchase/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "cointelegraph:658f1a483094b:0",
+        "title": "Bitcoin Bull Score hits six-month high as 2022 bear-market fears linger",
+        "published": 1776852602,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/bitcoin-bull-score-hits-six-month-high-2022-bear-market-fears-linger?utm_source=rss_feed&utm_medium=rss-trading-view&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:658f1a483094b:0-bitcoin-bull-score-hits-six-month-high-as-2022-bear-market-fears-linger/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
+        }
+      },
+      {
+        "id": "invezz:1f3a0f28f094b:0",
+        "title": "ADA eyes breakout as Bitcoin hits $78K and crypto rally gains pace",
+        "published": 1776851633,
+        "urgency": 2,
+        "link": "https://invezz.com/news/2026/04/22/ada-eyes-breakout-as-bitcoin-hits-78k-and-crypto-rally-gains-pace/",
+        "relatedSymbols": [
+          {
+            "symbol": "FX:ADAUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCADA"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "COINBASE:ADAUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCADA"
+          }
+        ],
+        "storyPath": "/news/invezz:1f3a0f28f094b:0-ada-eyes-breakout-as-bitcoin-hits-78k-and-crypto-rally-gains-pace/",
+        "provider": {
+          "id": "invezz",
+          "name": "Invezz",
+          "logo_id": "invezz",
+          "url": "https://invezz.com/"
+        }
+      },
+      {
+        "id": "beincrypto:226f6e6c7094b:0",
+        "title": "MicroStrategy’s STRC Preferred Stock Buys 10X More Bitcoin Than All ETFs in 2026",
+        "published": 1776850684,
+        "urgency": 2,
+        "link": "https://beincrypto.com/strategy-strc-bitcoin-purchases-outpace-etfs/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "CAPITALCOM:IBIT"
+          },
+          {
+            "symbol": "NASDAQ:MSTR",
+            "logoid": "strategy-cad-hedged-cibc-cdr"
+          }
+        ],
+        "storyPath": "/news/beincrypto:226f6e6c7094b:0-microstrategy-s-strc-preferred-stock-buys-10x-more-bitcoin-than-all-etfs-in-2026/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "the_block:75a39d054094b:0",
+        "title": "Bitcoin rises above $78,000, Fear & Greed Index exits ‘extreme fear’ zone",
+        "published": 1776848978,
+        "urgency": 2,
+        "link": "https://www.theblock.co/post/398407/bitcoin-78000-escapes-extreme-fear?utm_source=tradingview&utm_medium=rss",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/the_block:75a39d054094b:0-bitcoin-rises-above-78-000-fear-greed-index-exits-extreme-fear-zone/",
+        "provider": {
+          "id": "the_block",
+          "name": "The Block",
+          "logo_id": "the-block",
+          "url": "https://www.theblock.co/?utm_medium=rss&utm_source=tradingview"
+        }
+      },
+      {
+        "id": "coinpedia:d60ea5626094b:0",
+        "title": "Bitcoin News: Why is Bitcoin Price up Today?",
+        "published": 1776846747,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/bitcoin-news-why-is-bitcoin-price-up-today/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:d60ea5626094b:0-bitcoin-news-why-is-bitcoin-price-up-today/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "coinpedia:d740dff26094b:0",
+        "title": "Exclusive: Arthur Hayes Sets $500K Bitcoin Target For End Of 2026, Backs HYPE At $200",
+        "published": 1776846738,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/exclusive-arthur-hayes-sets-500k-bitcoin-target-for-end-of-2026-backs-hype-at-200/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/coinpedia:d740dff26094b:0-exclusive-arthur-hayes-sets-500k-bitcoin-target-for-end-of-2026-backs-hype-at-200/",
+        "provider": {
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
+        }
+      },
+      {
+        "id": "DJN_DN20260422001940:0",
+        "title": "Bitcoin Price Surges Past $78,000 to 11-Week High. Why Cryptos Are Surging. — Barrons.com",
+        "published": 1776846000,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422001940:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "u_today:275218cd8094b:0",
+        "title": "BItcoin's Qunatum Resistance is Here, But Charles Hoskinson Questions It: Explaining Why",
+        "published": 1776845640,
+        "urgency": 2,
+        "link": "https://u.today/bitcoins-qunatum-resistance-is-here-but-charles-hoskinson-questions-it-explaining-why",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:275218cd8094b:0-bitcoin-s-qunatum-resistance-is-here-but-charles-hoskinson-questions-it-explaining-why/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "DJN_SN20260422004213:0",
+        "title": "Why these strategists say 45% of portfolios should be invested in gold, metals and bitcoin",
+        "published": 1776843360,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "TASE:GOLD",
+            "logoid": "gold"
+          }
+        ],
+        "storyPath": "/news/DJN_SN20260422004213:0/",
+        "provider": {
+          "id": "market-watch",
+          "name": "MarketWatch",
+          "logo_id": "marketwatch"
+        }
+      },
+      {
+        "id": "tradingview:224e4b8af094b:0",
+        "title": "BTC/USD: Bitcoin Tackles $78,000 in Upside Swing After Ceasefire Extension",
+        "published": 1776842314,
+        "urgency": 2,
+        "link": "https://www.tradingview.com",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/tradingview:224e4b8af094b:0-btc-usd-bitcoin-tackles-78-000-in-upside-swing-after-ceasefire-extension/",
+        "provider": {
+          "id": "tradingview",
+          "name": "TradingView",
+          "logo_id": "tradingview-snaps"
+        }
+      },
+      {
+        "id": "DJN_DN20260422001643:0",
+        "title": "Bitcoin Rises After Trump's Cease-Fire Extension Announcement — Market Talk",
+        "published": 1776842100,
+        "urgency": 2,
+        "permission": "provider",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "BINANCE:BTCUSDT",
+            "currency-logoid": "crypto/XTVCUSDT",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/DJN_DN20260422001643:0/",
+        "provider": {
+          "id": "dow-jones",
+          "name": "Dow Jones Newswires",
+          "logo_id": "dow-jones-newswires"
+        }
+      },
+      {
+        "id": "beincrypto:b0a3f0ab5094b:0",
+        "title": "Bitcoin Price Rally Masks a $35,000 On-Chain Gap Bulls Are Ignoring",
+        "published": 1776839875,
+        "urgency": 2,
+        "link": "https://beincrypto.com/bitcoin-price-on-chain-gap-warning-analysis/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "CAPITALCOM:LTH",
+            "logoid": "life-time-group"
+          }
+        ],
+        "storyPath": "/news/beincrypto:b0a3f0ab5094b:0-bitcoin-price-rally-masks-a-35-000-on-chain-gap-bulls-are-ignoring/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "forexlive:7bbd6cfa1094b:0",
+        "title": "Bitcoin price analysis today: Bulls press breakout zone as $78,250 the key line to watch",
+        "published": 1776838808,
+        "urgency": 2,
+        "link": "https://investinglive.com/Cryptocurrency/bitcoin-price-analysis-today-bulls-press-breakout-zone-as-78250-the-key-line-to-watch-20260422/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/forexlive:7bbd6cfa1094b:0-bitcoin-price-analysis-today-bulls-press-breakout-zone-as-78-250-the-key-line-to-watch/",
+        "provider": {
+          "id": "forexlive",
+          "name": "InvestingLive",
+          "logo_id": "forexlive",
+          "url": "https://www.investinglive.com/"
+        }
+      },
+      {
+        "id": "newsbtc:3c6f25524094b:0",
+        "title": "Bitcoin’s Record Miner Sell-Off Casts Shadow Over Ceasefire-Fueled Rebound",
+        "published": 1776837632,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/news/bitcoin/bitcoins-record-miner-sell-off-casts-shadow-over-ceasefire-fueled-rebound/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:3c6f25524094b:0-bitcoin-s-record-miner-sell-off-casts-shadow-over-ceasefire-fueled-rebound/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "u_today:6a06fc026094b:0",
+        "title": "Brian Armstrong: New Satoshi Doc is the Best Yet",
+        "published": 1776837059,
+        "urgency": 2,
+        "link": "https://u.today/brian-armstrong-new-satoshi-doc-is-the-best-yet",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:6a06fc026094b:0-brian-armstrong-new-satoshi-doc-is-the-best-yet/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "beincrypto:6cf31596e094b:0",
+        "title": "Grayscale Research Calls Bitcoin Bottom, Sees Early Bull Market Signals",
+        "published": 1776835523,
+        "urgency": 2,
+        "link": "https://beincrypto.com/grayscale-bitcoin-bottom-65k-70k/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          },
+          {
+            "symbol": "NYSE:GRAY",
+            "logoid": "grayscale"
+          }
+        ],
+        "storyPath": "/news/beincrypto:6cf31596e094b:0-grayscale-research-calls-bitcoin-bottom-sees-early-bull-market-signals/",
+        "provider": {
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
+        }
+      },
+      {
+        "id": "tag:reuters.com,2026:newsml_L4N414162:0",
+        "title": "Chinese crypto tycoon eyes Hong Kong capital with bitcoin asset management push",
+        "published": 1776830723,
+        "urgency": 2,
+        "permission": "headline",
+        "relatedSymbols": [
+          {
+            "symbol": "HKEX:1611",
+            "logoid": "sinohope-technology-ltd"
+          },
+          {
+            "symbol": "NASDAQ:IBIT",
+            "logoid": "ishares"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/reuters.com,2026:newsml_L4N414162:0-chinese-crypto-tycoon-eyes-hong-kong-capital-with-bitcoin-asset-management-push/",
+        "provider": {
+          "id": "reuters",
+          "name": "Reuters",
+          "logo_id": "reuters"
+        }
+      },
+      {
+        "id": "newsbtc:c5ddda6b5094b:0",
+        "title": "Bitcoin Price Rebound Accelerates, Traders Eye Strong Upside Continuation",
+        "published": 1776824783,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/analysis/btc/bitcoin-price-rebound-76k/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:c5ddda6b5094b:0-bitcoin-price-rebound-accelerates-traders-eye-strong-upside-continuation/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "u_today:9a4bcb654094b:0",
+        "title": "Does XRP Have a Chance? Unhealthy Bitcoin (BTC) Price Pattern Arises, Hyperliquid's (HYPE) $40 Will not Stay for Long: Crypto Market Review",
+        "published": 1776816060,
+        "urgency": 2,
+        "link": "https://u.today/does-xrp-have-a-chance-unhealthy-bitcoin-btc-price-pattern-arises-hyperliquids-hype-40-will-not",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:XRPUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCXRP"
+          },
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/u_today:9a4bcb654094b:0-does-xrp-have-a-chance-unhealthy-bitcoin-btc-price-pattern-arises-hyperliquid-s-hype-40-will-not-stay-for-long-crypto-market-review/",
+        "provider": {
+          "id": "u_today",
+          "name": "U.Today",
+          "logo_id": "u-today",
+          "url": "https://u.today"
+        }
+      },
+      {
+        "id": "coinpedia:d1704a197094b:0",
+        "title": "Coinbase Council: Preparing the Blockchain for the Quantum Era",
+        "published": 1776813101,
+        "urgency": 2,
+        "link": "https://coinpedia.org/news/coinbase-council-preparing-the-blockchain-for-the-quantum-era/",
+        "relatedSymbols": [
           {
             "symbol": "NASDAQ:COIN",
             "logoid": "coinbase"
           },
           {
-            "symbol": "NYSE:ED",
-            "logoid": "consolidated-edison"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           },
           {
-            "symbol": "NASDAQ:DKNG",
-            "logoid": "draftkings"
-          },
-          {
-            "symbol": "NASDAQ:FIVN",
-            "logoid": "five9"
-          },
-          {
-            "symbol": "NASDAQ:EXPE",
-            "logoid": "expedia"
-          },
-          {
-            "symbol": "NASDAQ:ILMN",
-            "logoid": "illumina"
-          },
-          {
-            "symbol": "NYSE:LYV",
-            "logoid": "live-nation"
-          },
-          {
-            "symbol": "NYSE:X",
-            "logoid": "united-states-steel"
-          },
-          {
-            "symbol": "NASDAQ:REG",
-            "logoid": "regency-centers"
-          },
-          {
-            "symbol": "NYSE:RGA",
-            "logoid": "reinsurance-group-of-america"
-          },
-          {
-            "symbol": "NYSE:PXD"
-          },
-          {
-            "symbol": "NASDAQ:OPEN",
-            "logoid": "opendoor"
-          },
-          {
-            "symbol": "NASDAQ:MNST",
-            "logoid": "monster-beverage"
-          },
-          {
-            "symbol": "NYSE:AXL"
-          },
-          {
-            "symbol": "AMEX:CBOE"
-          },
-          {
-            "symbol": "NYSE:FLR",
-            "logoid": "fluor"
-          },
-          {
-            "symbol": "NYSE:HSY",
-            "logoid": "hershey"
-          },
-          {
-            "symbol": "NYSE:OMI"
-          },
-          {
-            "symbol": "NYSE:XPO",
-            "logoid": "xpo-logistics"
-          },
-          {
-            "symbol": "AMEX:SPY",
-            "logoid": "spdr-sandp500-etf-tr"
-          },
-          {
-            "symbol": "NASDAQ:QQQ",
-            "logoid": "invesco"
-          },
-          {
-            "symbol": "NASDAQ:JBLU",
-            "logoid": "jetblue"
-          },
-          {
-            "symbol": "NYSE:VZ",
-            "logoid": "verizon"
-          },
-          {
-            "symbol": "NASDAQ:BKR",
-            "logoid": "baker-hughes"
-          },
-          {
-            "symbol": "NASDAQ:HON",
-            "logoid": "honeywell"
-          },
-          {
-            "symbol": "TSX:CNR",
-            "logoid": "canadian-national-railways"
-          },
-          {
-            "symbol": "NASDAQ:ORLY",
-            "logoid": "o-reilly-auto"
-          },
-          {
-            "symbol": "NYSE:ABBV",
-            "logoid": "abbvie"
-          },
-          {
-            "symbol": "NYSE:XOM",
-            "logoid": "exxon"
-          },
-          {
-            "symbol": "NYSE:RCL",
-            "logoid": "royal-caribbean-cruises"
-          },
-          {
-            "symbol": "NASDAQ:CMCSA",
-            "logoid": "comcast"
-          },
-          {
-            "symbol": "NYSE:WHR",
-            "logoid": "whirlpool"
-          },
-          {
-            "symbol": "NYSE:GM",
-            "logoid": "general-motors"
-          },
-          {
-            "symbol": "NYSE:HOG",
-            "logoid": "harley-davidson"
-          },
-          {
-            "symbol": "NYSE:TMO",
-            "logoid": "thermo-fisher-scientific"
-          },
-          {
-            "symbol": "NYSE:TDOC",
-            "logoid": "teladoc-health"
-          },
-          {
-            "symbol": "NYSE:LMT",
-            "logoid": "lockheed-martin"
-          },
-          {
-            "symbol": "NYSE:GD",
-            "logoid": "general-dynamics"
-          },
-          {
-            "symbol": "NASDAQ:PEP",
-            "logoid": "pepsico"
-          },
-          {
-            "symbol": "NASDAQ:NDAQ",
-            "logoid": "nasdaq"
-          },
-          {
-            "symbol": "NASDAQ:HAS",
-            "logoid": "hasbro"
-          },
-          {
-            "symbol": "NYSE:IBM",
-            "logoid": "international-bus-mach"
-          },
-          {
-            "symbol": "NYSE:HAL",
-            "logoid": "halliburton"
-          },
-          {
-            "symbol": "NYSE:NOW",
-            "logoid": "servicenow"
-          },
-          {
-            "symbol": "NYSE:BSX",
-            "logoid": "boston-scientific"
-          },
-          {
-            "symbol": "XETR:SAP",
-            "logoid": "sap"
-          },
-          {
-            "symbol": "NYSE:COF",
-            "logoid": "capital-one"
-          },
-          {
-            "symbol": "NASDAQ:TMUS",
-            "logoid": "t-mobile"
-          },
-          {
-            "symbol": "NYSE:KMB"
-          },
-          {
-            "symbol": "NYSE:UPS",
-            "logoid": "united-parcel"
-          },
-          {
-            "symbol": "NASDAQ:LRCX",
-            "logoid": "lam-research"
-          },
-          {
-            "symbol": "NYSE:CAT",
-            "logoid": "caterpillar"
-          },
-          {
-            "symbol": "NASDAQ:GILD",
-            "logoid": "gilead"
-          },
-          {
-            "symbol": "NASDAQ:STLD",
-            "logoid": "steel-dynamics"
-          },
-          {
-            "symbol": "NASDAQ:XRX",
-            "logoid": "xerox"
-          },
-          {
-            "symbol": "NASDAQ:HTZ",
-            "logoid": "hertz"
-          },
-          {
-            "symbol": "NYSE:BMY",
-            "logoid": "bristol-myers-squibb"
-          },
-          {
-            "symbol": "NYSE:MRK",
-            "logoid": "merck-and-co"
-          },
-          {
-            "symbol": "NYSE:MO",
-            "logoid": "altria"
-          },
-          {
-            "symbol": "NASDAQ:BIIB",
-            "logoid": "biogen"
-          },
-          {
-            "symbol": "LSE:AZN",
-            "logoid": "astrazeneca"
-          },
-          {
-            "symbol": "NASDAQ:TXN",
-            "logoid": "texas-instruments"
-          },
-          {
-            "symbol": "NYSE:CL",
-            "logoid": "colgate-palmolive"
-          },
-          {
-            "symbol": "NYSE:AMP",
-            "logoid": "ameriprise-financial"
-          },
-          {
-            "symbol": "NASDAQ:ZION",
-            "logoid": "zions-bancorporation"
-          },
-          {
-            "symbol": "NYSE:NUE",
-            "logoid": "nucor"
-          },
-          {
-            "symbol": "NYSE:GE",
-            "logoid": "ge-aerospace"
-          },
-          {
-            "symbol": "NYSE:FI"
-          },
-          {
-            "symbol": "NASDAQ:INTC",
-            "logoid": "intel"
-          },
-          {
-            "symbol": "NYSE:QS"
-          },
-          {
-            "symbol": "NYSE:CVX",
-            "logoid": "chevron"
-          },
-          {
-            "symbol": "NASDAQ:KLAC",
-            "logoid": "kla-tencor"
-          },
-          {
-            "symbol": "EURONEXT:STMPA",
-            "logoid": "stmicroelectronics"
-          },
-          {
-            "symbol": "NYSE:NEM",
-            "logoid": "newmont"
-          },
-          {
-            "symbol": "NYSE:DOW",
-            "logoid": "dow"
-          },
-          {
-            "symbol": "NYSE:ALV",
-            "logoid": "autoliv"
-          },
-          {
-            "symbol": "NASDAQ:CHTR",
-            "logoid": "charter"
-          },
-          {
-            "symbol": "NYSE:PKG",
-            "logoid": "packaging-of-america"
-          },
-          {
-            "symbol": "NYSE:PHM",
-            "logoid": "pulte-group"
-          },
-          {
-            "symbol": "NYSE:HUM",
-            "logoid": "humana"
-          },
-          {
-            "symbol": "NYSE:AON",
-            "logoid": "aon"
-          },
-          {
-            "symbol": "NYSE:JNPR"
-          },
-          {
-            "symbol": "EURONEXT:SAN",
-            "logoid": "sanofi"
-          },
-          {
-            "symbol": "NYSE:DHI",
-            "logoid": "dr-horton"
-          },
-          {
-            "symbol": "SIX:NOVN",
-            "logoid": "novartis"
-          },
-          {
-            "symbol": "NYSE:NSC",
-            "logoid": "norfolk-southern"
-          },
-          {
-            "symbol": "NASDAQ:WDC",
-            "logoid": "webster-financial"
-          },
-          {
-            "symbol": "NYSE:LUV",
-            "logoid": "southwest"
-          },
-          {
-            "symbol": "NYSE:DGX",
-            "logoid": "quest-diagnostics"
-          },
-          {
-            "symbol": "NASDAQ:NWL",
-            "logoid": "newell-brands"
-          },
-          {
-            "symbol": "NYSE:W",
-            "logoid": "wayfair"
-          },
-          {
-            "symbol": "NASDAQ:STX",
-            "logoid": "seagate"
-          },
-          {
-            "symbol": "NASDAQ:ROKU",
-            "logoid": "roku"
-          },
-          {
-            "symbol": "NYSE:WU",
-            "logoid": "western-union-company"
-          },
-          {
-            "symbol": "NYSE:CMG",
-            "logoid": "chipotle-mexican-grill"
-          },
-          {
-            "symbol": "NYSE:CLF",
-            "logoid": "cleveland-cliffs"
-          },
-          {
-            "symbol": "NASDAQ:MAT",
-            "logoid": "mattel"
-          },
-          {
-            "symbol": "NYSE:CMS",
-            "logoid": "cms-energy"
-          },
-          {
-            "symbol": "NYSE:BYD",
-            "logoid": "boyd-gaming"
-          },
-          {
-            "symbol": "NYSE:SPOT",
-            "logoid": "spotify-technology"
-          },
-          {
-            "symbol": "NYSE:CB",
-            "logoid": "chubb"
-          },
-          {
-            "symbol": "NASDAQ:ODFL",
-            "logoid": "old-dominion"
-          },
-          {
-            "symbol": "NYSE:MTH",
-            "logoid": "meritage-homes"
-          },
-          {
-            "symbol": "NASDAQ:AAL",
-            "logoid": "american-airlines-group"
-          },
-          {
-            "symbol": "NASDAQ:MBLY",
-            "logoid": "mobileye-global"
-          },
-          {
-            "symbol": "NYSE:AN",
-            "logoid": "autonation"
-          },
-          {
-            "symbol": "NYSE:ACI",
-            "logoid": "albertsons"
-          },
-          {
-            "symbol": "NYSE:KNX",
-            "logoid": "knight-swift"
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
           }
         ],
-        "storyPath": "/news/benzinga:5e4dc9470094b:0-will-earnings-cheer-continue-to-buoy-markets-apple-amazon-pfizer-coinbase-lead-flurry-of-q1-reports-this-week/",
+        "storyPath": "/news/coinpedia:d1704a197094b:0-coinbase-council-preparing-the-blockchain-for-the-quantum-era/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "coinpedia",
+          "name": "Coinpedia",
+          "logo_id": "coinpedia",
+          "url": "https://www.coinpedia.org/"
         }
       },
       {
-        "id": "benzinga:56ae1c2af094b:0",
-        "title": "Traders Rethink Interest Rate Cuts, Labor Market Heats Up, Oil Prices Quietly Reach 6-Month High: This Week In The Markets",
-        "published": 1712348612,
+        "id": "newsbtc:8d2ac28d6094b:0",
+        "title": "Anthony Scaramucci Puts Bitcoin Market Cap At $21 Trillion, So How Much Will 1 BTC Be?",
+        "published": 1776807020,
         "urgency": 2,
-        "link": "https://www.benzinga.com/markets/equities/24/04/38117766/traders-rethink-interest-rate-cuts-labor-market-heats-up-oil-prices-quietly-reach-6-month-high-t",
-        "permission": "preview",
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-21-trillion-market-cap/",
         "relatedSymbols": [
           {
-            "symbol": "AMEX:XLE",
-            "logoid": "sector/energy"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NYSE:DIS",
-            "logoid": "walt-disney"
-          },
-          {
-            "symbol": "NYSE:LLY",
-            "logoid": "eli-lilly"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NASDAQ:NKLA",
-            "logoid": "nikolamotor"
-          },
-          {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "CRYPTOCAP:RVN"
-          },
-          {
-            "symbol": "NASDAQ:LCID",
-            "logoid": "lucid-group"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/benzinga:56ae1c2af094b:0-traders-rethink-interest-rate-cuts-labor-market-heats-up-oil-prices-quietly-reach-6-month-high-this-week-in-the-markets/",
+        "storyPath": "/news/newsbtc:8d2ac28d6094b:0-anthony-scaramucci-puts-bitcoin-market-cap-at-21-trillion-so-how-much-will-1-btc-be/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
         }
       },
       {
-        "id": "benzinga:bc2612c18094b:0",
-        "title": "Wondering Where To Find An Over 7% Annual Return? Check Out These 10 Investment-Grade Corporate Bonds",
-        "published": 1712334254,
+        "id": "beincrypto:0e6799866094b:0",
+        "title": "Coinbase Publishes First Paper on Quantum Computing Position for Crypto",
+        "published": 1776806003,
         "urgency": 2,
-        "link": "https://www.benzinga.com/news/large-cap/24/04/38113613/wondering-where-to-find-an-over-7-annual-return-check-out-these-10-investment-grade-corporate-bond",
-        "permission": "preview",
+        "link": "https://beincrypto.com/coinbase-quantum-computing-blockchain-paper/",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:NVDA",
-            "logoid": "nvidia"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           },
           {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
+            "symbol": "BITSTAMP:ETHUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCETH"
           },
           {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
+            "symbol": "COINBASE:SOLUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCSOL"
           },
           {
-            "symbol": "NYSE:LLY",
-            "logoid": "eli-lilly"
+            "symbol": "BITSTAMP:APTUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCAPTO"
           },
           {
-            "symbol": "NYSE:DIS",
-            "logoid": "walt-disney"
-          },
-          {
-            "symbol": "NYSE:AMC",
-            "logoid": "amc-entertainment-holdings"
-          },
-          {
-            "symbol": "NASDAQ:OPI"
-          },
-          {
-            "symbol": "NASDAQ:NAVI",
-            "logoid": "navient"
-          },
-          {
-            "symbol": "NASDAQ:PSEC",
-            "logoid": "prospect-capital-corporation"
-          },
-          {
-            "symbol": "NYSE:PDM",
-            "logoid": "piedmont-office-realty-trust"
-          },
-          {
-            "symbol": "CRYPTOCAP:SNX",
-            "logoid": "crypto/XTVCSNX"
-          },
-          {
-            "symbol": "NASDAQ:CHTR",
-            "logoid": "charter"
-          },
-          {
-            "symbol": "NYSE:VNO",
-            "logoid": "vornado-realty-trust-525-series-m-cumulative-redeemable-preferred-shares-of-beneficial-interest-liquidation-preference-2500-per-share-no-par-value-per-sha"
-          },
-          {
-            "symbol": "NYSE:F",
-            "logoid": "ford"
-          },
-          {
-            "symbol": "OTC:BAYRY",
-            "logoid": "bayer"
-          },
-          {
-            "symbol": "NYSE:VICI",
-            "logoid": "vici-properties"
-          },
-          {
-            "symbol": "NYSE:ALLY",
-            "logoid": "ally"
-          },
-          {
-            "symbol": "NASDAQ:CNXC",
-            "logoid": "concentrix"
-          },
-          {
-            "symbol": "NYSE:LUMN",
-            "logoid": "lumen"
-          },
-          {
-            "symbol": "NASDAQ:SATS",
-            "logoid": "echostar"
-          },
-          {
-            "symbol": "NYSE:SNX",
-            "logoid": "synnex"
+            "symbol": "NASDAQ:COIN",
+            "logoid": "coinbase"
           }
         ],
-        "storyPath": "/news/benzinga:bc2612c18094b:0-wondering-where-to-find-an-over-7-annual-return-check-out-these-10-investment-grade-corporate-bonds/",
+        "storyPath": "/news/beincrypto:0e6799866094b:0-coinbase-publishes-first-paper-on-quantum-computing-position-for-crypto/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "beincrypto",
+          "name": "Beincrypto",
+          "logo_id": "beincrypto",
+          "url": "https://beincrypto.com/"
         }
       },
       {
-        "id": "benzinga:8e80a4e55094b:0",
-        "title": "Amazon To Rally Around 20%? Here Are 10 Top Analyst Forecasts For Monday",
-        "published": 1711989153,
+        "id": "bravenewcoin:f1be5f67d094b:0",
+        "title": "Bitcoin Clings to $75,000 as Warsh Cools Rate Bets and Strategy Eclipses BlackRock",
+        "published": 1776805238,
         "urgency": 2,
-        "link": "https://www.benzinga.com/news/24/04/38027506/amazon-to-rally-around-20-here-are-10-top-analyst-forecasts-for-monday",
-        "permission": "preview",
+        "link": "https://bravenewcoin.com/insights/bitcoin-clings-to-75000-as-warsh-cools-rate-bets-and-strategy-eclipses-blackrock",
+        "permission": "provider",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:ABNB",
-            "logoid": "airbnb"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           },
           {
-            "symbol": "NYSE:CCL",
-            "logoid": "carnival"
-          },
-          {
-            "symbol": "NYSE:SPGI",
-            "logoid": "s-and-p-global"
-          },
-          {
-            "symbol": "NASDAQ:GEHC",
-            "logoid": "ge-healthcare-technologies"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:AMZN",
-            "logoid": "amazon"
-          },
-          {
-            "symbol": "NYSE:XOM",
-            "logoid": "exxon"
-          },
-          {
-            "symbol": "NYSE:RH",
-            "logoid": "rh"
-          },
-          {
-            "symbol": "NASDAQ:MSFT",
-            "logoid": "microsoft"
-          },
-          {
-            "symbol": "CRYPTOCAP:SNX",
-            "logoid": "crypto/XTVCSNX"
-          },
-          {
-            "symbol": "NYSE:SNX",
-            "logoid": "synnex"
+            "symbol": "NASDAQ:MSTR",
+            "logoid": "strategy-cad-hedged-cibc-cdr"
           }
         ],
-        "storyPath": "/news/benzinga:8e80a4e55094b:0-amazon-to-rally-around-20-here-are-10-top-analyst-forecasts-for-monday/",
+        "storyPath": "/news/bravenewcoin:f1be5f67d094b:0/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "bravenewcoin",
+          "name": "Brave New Coin",
+          "logo_id": "bravenewcoin",
+          "url": "https://bravenewcoin.com/"
         }
       },
       {
-        "id": "benzinga:4be81cd8a094b:0",
-        "title": "Tesla Remains Wall Street's Bearish Betting Chip Among Large-Caps, But A Hot AI Play's Short Interest Also Surges",
-        "published": 1710314323,
+        "id": "invezz:360d7238a094b:0",
+        "title": "Evening digest: Trump eyes Iran deal, Warsh pledges Fed independence",
+        "published": 1776802320,
         "urgency": 2,
-        "link": "https://www.benzinga.com/markets/equities/24/03/37641406/tesla-remains-wall-streets-bearish-betting-chip-among-large-caps-but-a-hot-ai-plays-short-intere",
-        "permission": "preview",
+        "link": "https://invezz.com/news/2026/04/21/evening-digest-trump-iran-deal-hopes-warsh-pledges-fed-independence/",
         "relatedSymbols": [
           {
-            "symbol": "NASDAQ:TSLA",
-            "logoid": "tesla"
-          },
-          {
-            "symbol": "CRYPTOCAP:CVX"
-          },
-          {
-            "symbol": "NYSE:XOM",
-            "logoid": "exxon"
-          },
-          {
-            "symbol": "NASDAQ:AAPL",
-            "logoid": "apple"
-          },
-          {
-            "symbol": "NASDAQ:SMCI",
-            "logoid": "super-micro-computer"
-          },
-          {
-            "symbol": "NASDAQ:CHTR",
-            "logoid": "charter"
-          },
-          {
-            "symbol": "NYSE:CVX",
-            "logoid": "chevron"
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
           }
         ],
-        "storyPath": "/news/benzinga:4be81cd8a094b:0-tesla-remains-wall-street-s-bearish-betting-chip-among-large-caps-but-a-hot-ai-play-s-short-interest-also-surges/",
+        "storyPath": "/news/invezz:360d7238a094b:0-evening-digest-trump-eyes-iran-deal-warsh-pledges-fed-independence/",
         "provider": {
-          "id": "benzinga",
-          "name": "Benzinga",
-          "logo_id": "benzinga",
-          "url": "https://benzinga.com/"
+          "id": "invezz",
+          "name": "Invezz",
+          "logo_id": "invezz",
+          "url": "https://invezz.com/"
+        }
+      },
+      {
+        "id": "newsbtc:830a3d81b094b:0",
+        "title": "Bitcoin Fear Fading? Sentiment Hits Highest Since Mid-January",
+        "published": 1776796236,
+        "urgency": 2,
+        "link": "https://www.newsbtc.com/bitcoin-news/bitcoin-fear-fading-sentiment-highest-january/",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/newsbtc:830a3d81b094b:0-bitcoin-fear-fading-sentiment-hits-highest-since-mid-january/",
+        "provider": {
+          "id": "newsbtc",
+          "name": "NewsBTC",
+          "logo_id": "newsbtc",
+          "url": "https://www.newsbtc.com"
+        }
+      },
+      {
+        "id": "cointelegraph:c18bf18ba094b:0",
+        "title": "Bitcoin inflows to Binance fall to 2023 low as BTC bulls set target on $80K",
+        "published": 1776794400,
+        "urgency": 2,
+        "link": "https://cointelegraph.com/news/bitcoin-inflows-to-binance-fall-to-2023-low-as-btc-bulls-set-target-on-dollar80k?utm_source=rss_feed&utm_medium=rss-trading-view_BTC&utm_campaign=rss_partner_inbound",
+        "relatedSymbols": [
+          {
+            "symbol": "BITSTAMP:BTCUSD",
+            "currency-logoid": "country/US",
+            "base-currency-logoid": "crypto/XTVCBTC"
+          }
+        ],
+        "storyPath": "/news/cointelegraph:c18bf18ba094b:0-bitcoin-inflows-to-binance-fall-to-2023-low-as-btc-bulls-set-target-on-80k/",
+        "provider": {
+          "id": "cointelegraph",
+          "name": "Cointelegraph",
+          "logo_id": "cointelegraph-en",
+          "url": "https://cointelegraph.com"
         }
       }
     ],
     "streaming": {
-      "channel": "405134b70020975aebf7e607b497"
+      "channel": "e988e978ac2ecd8bb735e98e1ff4"
+    },
+    "pagination": {
+      "cursor": "eyJfaWQiOiJjb2ludGVsZWdyYXBoOmMxOGJmMThiYTA5NGIiLCJwdWJkYXRlIjoxNzc2Nzk0NDAwMDAwfQ=="
     }
   },
   "msg": "Success"

@@ -21,6 +21,9 @@ Keep context tight and load only the files needed for the active task.
 
 - Start with `references/tradings-api.md` for task-to-endpoint mapping.
 - Use `references/tradings-api-docs/README.md` for file selection inside the bundled API docs.
+- Use `references/tradings-api-docs/openapi.json` as the source of truth for exact parameters, defaults, and allowed enum values.
+- Use `references/tradings-api-docs/examples/` mainly for concrete URL patterns and response shapes, not for deciding which asset-class parameter should be used.
+- If an example and the OpenAPI spec disagree, trust `openapi.json` for parameters and trust executed examples only for payload shape after the request has been validated against the spec.
 - Search patterns that usually find the right example quickly:
   - `GET /api/market-data/{symbol}`
   - `GET /api/calendar/earnings`
