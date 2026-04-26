@@ -53,6 +53,8 @@ curl "https://tradingview-data1.p.rapidapi.com/api/market-data/NASDAQ:AAPL"
 
 Environment variables: `RAPIDAPI_KEY`, optional `TRADINGS_API_BASE`.
 
+For persistent user setup guidance, prefer the user-level shell configuration described in `./tradings-api-docs/README.md` and avoid storing real secrets inside the skill folder or packaged `.skill` artifact.
+
 ---
 
 ## Symbol Format

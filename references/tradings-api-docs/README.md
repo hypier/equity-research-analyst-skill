@@ -43,6 +43,35 @@ export RAPIDAPI_KEY="your_key_here"
 
 Use that key in request headers when calling the hosted API.
 
+## Persistent Configuration Guidance
+
+When guiding a user to set up `RAPIDAPI_KEY`, recommend a user-level shell environment variable as the default long-term solution:
+
+```bash
+echo 'export RAPIDAPI_KEY="your_key_here"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Why this is the default recommendation:
+
+- Keeps secrets outside the skill folder and outside the packaged `.skill` artifact
+- Makes `RAPIDAPI_KEY` available across terminal sessions
+- Matches the plain environment-variable usage shown in this skill's examples
+
+If the user wants project-scoped credentials instead of a global shell setting, suggest a local `.env` or `direnv` workflow only as a secondary option. In that case:
+
+- Keep the real secret out of the skill folder whenever possible
+- Do not commit secrets to git
+- Do not place a real key in `SKILL.md`, `references/`, or packaged assets
+
+### Agent Guidance
+
+When a user asks how to configure the API key, guide them in this order:
+
+1. Recommend `~/.zshrc` for persistent local setup
+2. Offer `.env` or `direnv` only if they explicitly want project-scoped configuration
+3. Warn against storing real credentials inside the skill project or distributable `.skill` package
+
 ## Maintenance Notes
 
 - This repo no longer includes `sync-tradings-api-docs.sh`.
