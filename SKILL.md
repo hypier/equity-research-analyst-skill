@@ -7,6 +7,27 @@ description: Produce institutional-quality equity research deliverables includin
 
 Produce institutional-grade equity research deliverables covering nine distinct workflows. Each workflow has its own dedicated reference file in `references/workflows/`; this SKILL.md is the dispatcher and the hub for cross-workflow conventions.
 
+## Loading Strategy
+
+Keep context tight and load only the files needed for the active task.
+
+1. Match the request to exactly one workflow in `references/workflows/`.
+2. Read only that workflow file first.
+3. Open deep-dive references only when the active workflow points to them.
+4. Read `references/tradings-api.md` before opening anything in `references/tradings-api-docs/`.
+5. Treat `references/tradings-api-docs/` as a lookup bundle: search by endpoint name or JSON field, then open the smallest relevant file instead of loading an entire large example file.
+
+### `tradings-api` lookup guide
+
+- Start with `references/tradings-api.md` for task-to-endpoint mapping.
+- Use `references/tradings-api-docs/README.md` for file selection inside the bundled API docs.
+- Search patterns that usually find the right example quickly:
+  - `GET /api/market-data/{symbol}`
+  - `GET /api/calendar/earnings`
+  - `GET /api/search/market/{query}`
+  - `earnings_release_next_date`
+  - `analyst-recommendations`
+
 ## When to invoke which workflow
 
 Match the user request to one of the nine workflows below and read the corresponding reference file from `references/workflows/`. If the request is ambiguous, ask the user to confirm before committing.
@@ -62,7 +83,9 @@ SEC filings keep separate EDGAR hyperlinks. Analyst consensus cites `analyst-rec
 ### Output formatting
 - Default font for Word deliverables: **Times New Roman**.
 - Do **not** add emojis to research reports unless the user explicitly requests them.
-- Follow the page/structure templates in `assets/initiating-coverage/report-template.md` for initiation reports; other workflows use the template embedded in their own reference file.
+- Follow the page/structure templates in `assets/initiating-coverage/report-template.md` for initiation reports.
+- Use `references/initiating-coverage/quality-checklist.md` for final initiation-report QA.
+- Other workflows use the template embedded in their own reference file.
 
 ### No shortcuts
 - Deliver exactly the outputs specified in each workflow reference. Do **not** create extra "completion summaries", "executive summaries", or "quick reference guides".
@@ -104,9 +127,9 @@ equity-research-analyst/
 │       ├── task3-valuation.md
 │       ├── task4-chart-generation.md
 │       ├── task5-report-assembly.md
+│       ├── quality-checklist.md
 │       └── valuation-methodologies.md
 ├── assets/
 │   └── initiating-coverage/              # Templates used in output
-│       ├── report-template.md
-│       └── quality-checklist.md
+│       └── report-template.md
 ```

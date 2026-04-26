@@ -2,6 +2,18 @@
 
 This document provides step-by-step instructions for executing Task 3 (Valuation Analysis) of the initiating-coverage skill.
 
+## Quick Navigation
+
+1. [Task Overview](#task-overview)
+2. [Input Verification](#input-verification)
+3. [Detailed Methodology Reference](#detailed-methodology-reference)
+4. [Step-by-Step Valuation Workflow](#step-by-step-valuation-workflow)
+5. [Quality Standards](#quality-standards)
+6. [Sanity Checks](#sanity-checks)
+7. [Output Files](#output-files)
+8. [Success Criteria](#success-criteria)
+9. [Next Steps](#next-steps)
+
 ## Task Overview
 
 **Purpose**: Perform comprehensive valuation using DCF, comparables, and precedent transactions.

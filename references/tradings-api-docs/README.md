@@ -8,6 +8,13 @@ This directory contains bundled API reference material for the `equity-research-
 2. Open `openapi.json` when you need exact parameters, schemas, or response fields.
 3. Open `examples/*.md` when you need a concrete request pattern or sample payload.
 
+## Search Tips
+
+- Prefer `rg "GET /api/market-data/{symbol}" references/tradings-api-docs/examples`
+- Prefer `rg "GET /api/calendar/earnings" references/tradings-api-docs/examples`
+- Prefer `rg "earnings_release_next_date|analyst-recommendations" references/tradings-api-docs/examples`
+- Open the smallest matching example file instead of loading the largest example bundle wholesale.
+
 ## What Is In This Folder
 
 - `openapi.json`: bundled OpenAPI spec for the TradingView proxy service.

@@ -2,6 +2,31 @@
 
 This document lists every `tradings-api` (TradingView proxy service) endpoint and maps its response fields to equity research report sections. Shared by all skills in the `equity-research` plugin. **Prefer the structured API for numeric data**; use Web Search only for narrative content (MD&A, forward guidance, earnings call transcripts, segment breakdowns, risk factors).
 
+## Quick Navigation
+
+1. [Authentication](#authentication)
+2. [Symbol Format](#symbol-format)
+3. [Scenario A: Quarterly Earnings Analysis](#scenario-a-quarterly-earnings-analysis-earnings-analysis-earnings-preview)
+4. [Scenario B: Initiation Report](#scenario-b-initiation-report-initiating-coverage)
+5. [Scenario C: Catalyst Calendar](#scenario-c-catalyst-calendar-catalyst-calendar)
+6. [Scenario D: Morning Note](#scenario-d-morning-note-morning-note)
+7. [Scenario E: Screening / Idea Generation](#scenario-e-screening--idea-generation-idea-generation)
+8. [Scenario F: Sector Overview](#scenario-f-sector-overview-sector-overview)
+9. [Ticker Resolution](#ticker-resolution-generic-preflight)
+10. [Full Endpoint Catalog](#full-endpoint-catalog-60-endpoints)
+11. [Citation Convention](#citation-convention-aligned-with-earnings-analysisskillmd-lines-50-107)
+12. [Fallback Strategy](#fallback-strategy)
+
+## Lookup Tips
+
+- Read this file before opening `tradings-api-docs/openapi.json` or any file in `tradings-api-docs/examples/`.
+- Search `tradings-api-docs/examples/` by endpoint path or JSON field name, not by workflow name.
+- Most common files:
+  - `examples/10-market-data.md` for company, TTM, current-period, and analyst data
+  - `examples/08-calendar.md` for earnings and macro events
+  - `examples/01-price-data.md`, `02-quote-data.md`, `04-technical-analysis.md` for chart inputs
+  - `examples/06-news.md` for narrative news sourcing
+
 - OpenAPI source (bundled): `./tradings-api-docs/openapi.json`
 - RapidAPI call examples (bundled, grouped by endpoint): `./tradings-api-docs/examples/`
 - Base URL (RapidAPI hosted): `https://tradingview-data1.p.rapidapi.com`

@@ -2,6 +2,15 @@
 
 This document provides examples, tips for success, common mistakes to avoid, and comprehensive quality checklists.
 
+## Quick Navigation
+
+1. [Example Headlines](#example-headlines)
+2. [Tips for Success](#tips-for-success)
+3. [Common Mistakes to Avoid](#common-mistakes-to-avoid)
+4. [Comprehensive Quality Control Checklist](#comprehensive-quality-control-checklist)
+5. [Pre-Delivery Final Check](#pre-delivery-final-check)
+6. [Summary Delivery Format](#summary-delivery-format)
+
 ## Example Headlines
 
 ### Good Earnings Update Headlines:

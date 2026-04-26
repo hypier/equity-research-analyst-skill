@@ -2,6 +2,21 @@
 
 This document provides step-by-step instructions for executing Task 4 (Chart Generation) of the initiating-coverage skill.
 
+## Quick Navigation
+
+1. [Task Overview](#task-overview)
+2. [Input Verification](#input-verification)
+3. [Chart Requirements](#chart-requirements-25-required--10-optional)
+4. [Data Source Mapping](#data-source-mapping-for-required-charts)
+5. [Step-by-Step Chart Generation Workflow](#step-by-step-chart-generation-workflow)
+6. [Quality Standards](#quality-standards)
+7. [Chart Types Reference](#chart-types-reference)
+8. [File Naming Convention](#file-naming-convention)
+9. [Common Issues](#common-chart-generation-issues)
+10. [Success Criteria](#success-criteria)
+11. [Output Files](#output-files)
+12. [Next Steps](#next-steps)
+
 ## Task Overview
 
 **Purpose**: Generate 25-35 professional financial charts for the report.

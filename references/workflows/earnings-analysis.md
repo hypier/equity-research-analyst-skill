@@ -3,6 +3,13 @@
 
 Create professional **EARNINGS UPDATE REPORTS** analyzing quarterly results for companies already under coverage, following institutional standards (JPMorgan, Goldman Sachs, Morgan Stanley format).
 
+## Workflow Summary
+
+- Use this file as the entry point for earnings updates.
+- For execution steps, open `../earnings-analysis/workflow.md`.
+- For report shape, open `../earnings-analysis/report-structure.md`.
+- For headlines, QA, and delivery checks, open `../earnings-analysis/best-practices.md`.
+
 **Key Characteristics:**
 - **Length**: 8-12 pages
 - **Word Count**: 3,000-5,000 words
@@ -12,19 +19,6 @@ Create professional **EARNINGS UPDATE REPORTS** analyzing quarterly results for 
 - **Audience**: Clients already familiar with the company
 - **Focus**: What's NEW - beat/miss, updated estimates, thesis impact
 - **Font**: Times New Roman throughout (unless user specifies otherwise)
-
-## When to Use
-
-Use when the user requests:
-- "Create an earnings update for [Company] Q3 2024"
-- "Analyze [Company]'s quarterly results"
-- "Post-earnings report for [Company]"
-- "Q1/Q2/Q3/Q4 update for [Company]"
-
-**Do NOT use if:**
-- User requests "initiation report" → Use different skill
-- User requests "flash note" or "quick take" → Different format
-- Company is not already covered → Need initiation first
 
 ## Critical Requirements
 

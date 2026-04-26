@@ -6,6 +6,21 @@ Produces institutional-grade first-time coverage reports (JPMorgan / Goldman Sac
 
 **Structured data**: pull numerics (financials, ratios, valuation, analyst consensus, dividends, credit ratings, IPO info, prices, technicals) from `tradings-api` before Web Search. See `../tradings-api.md` (Scenarios A & B) for the endpoint catalog and JSON-to-field mapping. Web Search + SEC EDGAR are still required for: business description deep-dive (10-K Item 1), risk factors (10-K Item 1A), management bios (DEF 14A + LinkedIn), segment/geographic breakdown (10-K/10-Q footnotes), industry research, transcripts, and original guidance wording.
 
+## Quick Navigation
+
+1. [Task Selection](#task-selection)
+2. [How to Use This Skill](#how-to-use-this-skill)
+3. [Task 1: Company Research](#task-1-company-research)
+4. [Task 2: Financial Modeling](#task-2-financial-modeling)
+5. [Task 3: Valuation Analysis](#task-3-valuation-analysis)
+6. [Task 4: Chart Generation](#task-4-chart-generation)
+7. [Task 5: Report Assembly](#task-5-report-assembly)
+8. [Input Verification Protocol](#input-verification-protocol)
+9. [Task Reference Files](#task-reference-files)
+10. [Quality Standards](#quality-standards)
+11. [Important Notes](#important-notes)
+12. [Success Criteria](#success-criteria)
+
 **Exact deliverables** (nothing else):
 - Task 1: Research document (`.md`)
 - Task 2: Financial model (`.xlsx`)
@@ -619,7 +634,7 @@ Detailed instructions for each task are in separate reference files to keep this
 - **../initiating-coverage/task4-chart-generation.md** - Chart generation workflow
 - **../initiating-coverage/task5-report-assembly.md** - Report writing workflow
   - Also see: ../../assets/initiating-coverage/report-template.md for report structure
-  - Also see: ../../assets/initiating-coverage/quality-checklist.md for quality checks
+  - Also see: ../initiating-coverage/quality-checklist.md for quality checks
 
 **When to load reference files**: Load ONLY the reference file associated with the specific task being performed. These files are very large - do not load multiple reference files at once. Read the appropriate task reference file at the start of the task for detailed step-by-step instructions.
 

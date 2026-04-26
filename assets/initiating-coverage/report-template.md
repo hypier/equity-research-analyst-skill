@@ -803,7 +803,7 @@ Catalysts:
 
 **Chart Style Guidelines:**
 - **Consistent color scheme** throughout (pick 3-5 brand colors)
-- **Professional fonts** (Arial, Calibri, or similar)
+- **Professional fonts** (default to Times New Roman unless the user specifies otherwise)
 - **Clear labels and legends** on every chart
 - **Source citations** at bottom of each chart
 - **High information density** - use chart space efficiently

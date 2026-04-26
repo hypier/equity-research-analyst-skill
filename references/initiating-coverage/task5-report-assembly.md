@@ -2,6 +2,21 @@
 
 This document provides step-by-step instructions for executing Task 5 (Report Assembly) of the initiating-coverage skill.
 
+## Quick Navigation
+
+1. [Task Overview](#task-overview)
+2. [Input Verification](#input-verification-critical)
+3. [Report Specifications](#report-specifications)
+4. [Report Structure](#report-structure)
+5. [Report Assembly Philosophy](#report-assembly-philosophy)
+6. [Step-by-Step Report Assembly Workflow](#step-by-step-report-assembly-workflow)
+7. [File Operations Summary](#file-operations-summary)
+8. [Writing Style Guidelines](#writing-style-guidelines)
+9. [Common Pitfalls to Avoid](#common-pitfalls-to-avoid)
+10. [Success Criteria](#success-criteria)
+11. [Output Files](#output-files)
+12. [Final Note](#final-note)
+
 ## Task Overview
 
 **Purpose**: Write and assemble the comprehensive final DOCX report.
@@ -32,11 +47,9 @@ Do not attempt to create placeholder content, substitute missing sections, or as
 
 ---
 
-## 🔥 CRITICAL INSTRUCTION: SPARE NO TOKENS OR EFFORT
+## Scope and Quality Bar
 
-**THIS IS THE FINAL DELIVERABLE. GO ALL OUT. NO SHORTCUTS. NO ABBREVIATIONS.**
-
-After completing 4 previous tasks, this final task assembles everything into publication-ready institutional research. **This must be PERFECT.**
+After completing Tasks 1-4, assemble the publication-ready institutional report without omitting required sections, charts, or tables.
 
 ### Absolute Requirements
 
@@ -63,16 +76,12 @@ After completing 4 previous tasks, this final task assembles everything into pub
 
 ### Quality Standard
 
-**This report will be read by institutional investors making million-dollar decisions.**
-
 It must be:
 - **Complete**: Every section written in full with no placeholders
 - **Comprehensive**: All data extracted and included, all charts embedded
 - **Professional**: Proper formatting, citations, tables, charts throughout
 - **Thorough**: Deep analysis with specific numbers, detailed assumptions, complete scenarios
 - **Dense**: 60-80% page coverage with text and visuals on every page
-
-**Creating the final work product of a 6-10 hour equity research process. Make it count.**
 
 ---
 
@@ -1014,7 +1023,7 @@ Use Claude's DOCX skill to:
 - Add page numbers to all pages
 
 **Key formatting requirements:**
-- Professional fonts (Calibri, Arial, or similar)
+- Professional fonts (default to Times New Roman unless the user specifies otherwise)
 - Proper headers and footers with page numbers
 - Section breaks between major sections
 - Embed all 25-35 charts inline throughout text
@@ -1321,7 +1330,7 @@ This is the culmination of all equity research work from Tasks 1-4. The output s
 
 ---
 
-## 🔥 FINAL REMINDER: NO SHORTCUTS, NO COMPROMISES
+## Final Reminder
 
 **Use whatever tokens are needed to deliver a complete, professional report.**
 

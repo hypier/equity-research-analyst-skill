@@ -2,6 +2,18 @@
 
 This document provides step-by-step instructions for executing Task 2 (Financial Modeling) of the initiating-coverage skill.
 
+## Quick Navigation
+
+1. [Task Overview](#task-overview)
+2. [Input Verification](#input-verification)
+3. [Model Structure and Formatting](#model-structure-and-formatting)
+4. [Step-by-Step Modeling Workflow](#step-by-step-modeling-workflow)
+5. [Quality Standards](#quality-standards)
+6. [File Naming Convention](#file-naming-convention)
+7. [Success Criteria](#success-criteria)
+8. [Common Model Types](#common-model-types---special-considerations)
+9. [Next Steps](#next-steps)
+
 ## Task Overview
 
 **Purpose**: Extract historical financials and build comprehensive Excel financial model with projections and scenarios.

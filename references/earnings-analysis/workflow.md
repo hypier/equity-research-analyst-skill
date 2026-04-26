@@ -2,17 +2,23 @@
 
 This document provides detailed step-by-step instructions for each phase of the earnings update process.
 
-## ⚠️⚠️⚠️ CRITICAL WARNING: ALWAYS USE THE LATEST EARNINGS DATA ⚠️⚠️⚠️
+## Quick Navigation
 
-**STOP AND READ THIS FIRST:**
+1. [Data Freshness Guardrail](#data-freshness-guardrail)
+2. [Phase 1: Earnings Data Collection](#phase-1-earnings-data-collection-30-60-minutes)
+3. [Phase 2: Analysis](#phase-2-analysis-2-3-hours)
+4. [Phase 3: Chart Generation](#phase-3-chart-generation-1-2-hours)
+5. [Phase 4: Report Creation](#phase-4-report-creation-2-3-hours)
+6. [Phase 5: Quality Check & Delivery](#phase-5-quality-check--delivery-30-minutes)
 
-Training data is OUTDATED. Actively search for and retrieve the MOST RECENT earnings materials. Using outdated earnings data is the #1 mistake in earnings analysis.
+## Data Freshness Guardrail
 
-**BEFORE STARTING:**
-1. **CHECK TODAY'S DATE** - Write down the current date
-2. **SEARCH FOR LATEST** - Use web search to find the most recent earnings
-3. **VERIFY THE DATE** - Confirm the earnings release is within the last 3 months
-4. **IF OLDER THAN 3 MONTHS** - Wrong quarter obtained, search again
+Check the latest reported quarter before doing any analysis.
+
+1. Check today's date and write it down explicitly.
+2. Search for the latest earnings release or investor-relations posting.
+3. Confirm the release date and quarter from the primary source.
+4. If the latest materials are older than 90 days, search again before proceeding.
 
 ## Phase 1: Earnings Data Collection (30-60 minutes)
 

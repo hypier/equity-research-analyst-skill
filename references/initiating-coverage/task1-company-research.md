@@ -2,6 +2,17 @@
 
 This document provides step-by-step instructions for executing Task 1 (Company Research) of the initiating-coverage skill.
 
+## Quick Navigation
+
+1. [Task Overview](#task-overview)
+2. [Data Sources to Gather](#data-sources-to-gather)
+3. [Step-by-Step Research Workflow](#step-by-step-research-workflow)
+4. [Quality Standards](#quality-standards)
+5. [Output Format](#output-format)
+6. [Success Criteria](#success-criteria)
+7. [File Naming Convention](#file-naming-convention)
+8. [Next Steps](#next-steps)
+
 ## Task Overview
 
 **Purpose**: Research company's business, management, competitive position, industry, and risks.

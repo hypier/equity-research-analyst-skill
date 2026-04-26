@@ -2,6 +2,17 @@
 
 Before delivering an initiation report, verify all items below are complete.
 
+## Quick Navigation
+
+1. [Critical Minimums](#critical-minimums---reports-must-meet-these)
+2. [Deliverables Checklist](#deliverables-checklist)
+3. [DOCX Report - Length & Content](#docx-report---length--content)
+4. [DOCX Report - Structure](#docx-report---structure)
+5. [DOCX Report - Formatting](#docx-report---formatting)
+6. [Citations & Sources](#citations--sources--critical)
+7. [XLS Financial Model](#xls-financial-model---structure)
+8. [Final Sanity Check](#final-sanity-check-before-delivery)
+
 ## Critical Minimums - Reports Must Meet These
 
 **CRITICAL DO NOT DELIVER IF:**
@@ -88,7 +99,7 @@ Before delivering an initiation report, verify all items below are complete.
 - [ ] All years use "A" for actual, "E" for estimate notation
 
 **Professional Formatting:**
-- [ ] Consistent fonts throughout (Calibri, Arial, or similar)
+- [ ] Consistent fonts throughout (default to Times New Roman unless the user specifies otherwise)
 - [ ] Headers and footers with page numbers
 - [ ] Dense layout: 60-80% page coverage, minimal white space
 - [ ] Every page has both text AND visuals (charts or tables)
