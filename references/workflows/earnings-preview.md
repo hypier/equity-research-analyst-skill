@@ -4,7 +4,7 @@ description: Build pre-earnings analysis with estimate models, scenario framewor
 
 ## Structured Data Source
 
-Use `tradings-api` for the numeric setup before Web Search:
+Use `tradingviewapi` for the numeric setup before Web Search:
 
 - `GET /api/market-data/{symbol}` — next earnings date/time, current-period ratios, TTM history arrays, next-quarter EPS forecast
 - `GET /api/market-data/{symbol}/analyst-recommendations` — price-target range and current buy/hold/sell distribution
@@ -26,7 +26,7 @@ Web Search is still required for whisper numbers, management's exact prior guida
 
 - Identify the company and reporting quarter
 - Resolve the ticker to `EXCHANGE:TICKER` if needed via `/api/search/market/{query}?filter=stock`
-- Pull structured consensus and baseline data via `tradings-api` (`/api/market-data/{symbol}` and `/analyst-recommendations`)
+- Pull structured consensus and baseline data via `tradingviewapi` (`/api/market-data/{symbol}` and `/analyst-recommendations`)
 - Find the earnings date and time (pre-market vs. after-hours) from `indicators.earnings_release_next_date` and `earnings_release_next_time`
 - Use `/api/quote/{symbol}?session=regular&fields=all`, `/api/price/{symbol}`, and `/api/ta/{symbol}` for the trading setup baseline
 - Review the company's prior quarter earnings call and letter only for guidance wording or narrative commentary that is not in the API
@@ -80,11 +80,11 @@ One-page earnings preview with:
 - Key metrics to watch (ranked by importance)
 - Bull/base/bear scenario table
 - Catalyst checklist
-- Trading setup: recent stock performance from `tradings-api`; implied move from options via external source if needed
+- Trading setup: recent stock performance from `tradingviewapi`; implied move from options via external source if needed
 
 ## Important Notes
 
 - Consensus estimates change — always note the source and date of estimates
 - "Whisper numbers" from buy-side surveys are often more relevant than published consensus
 - Historical earnings reactions help calibrate expectations (search for "[company] earnings reaction history")
-- Options-implied move tells you what the market expects — compare to your scenarios, but source it externally because `tradings-api` does not provide options-implied move
+- Options-implied move tells you what the market expects — compare to your scenarios, but source it externally because `tradingviewapi` does not provide options-implied move

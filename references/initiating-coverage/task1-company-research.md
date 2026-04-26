@@ -27,7 +27,7 @@ This document provides step-by-step instructions for executing Task 1 (Company R
 ## Data Sources to Gather
 
 ### Primary Sources (Company)
-- **Structured prefill via `tradings-api` (for public companies):**
+- **Structured prefill via `tradingviewapi` (for public companies):**
   - `/api/market-data/{symbol}/company`: founding year, employee count, website, sector/industry, business description
   - `/api/market-data/{symbol}/ipo`: IPO timing and listing history
   - `/api/market-data/{symbol}/credit-ratings`: credit profile for mature issuers

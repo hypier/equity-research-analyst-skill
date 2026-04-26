@@ -4,7 +4,7 @@ description: Build and maintain a calendar of upcoming catalysts across a covera
 
 ## ⭐ Structured Data Source
 
-Use `tradings-api` for structured catalyst data (see `../tradings-api.md` Scenario C):
+Use `tradingviewapi` for structured catalyst data (see `../tradingviewapi.md` Scenario C):
 
 - `GET /api/calendar/earnings?from=&to=&market=america` — upcoming earnings calendar (includes consensus EPS and revenue estimates)
 - `GET /api/calendar/revenue?from=&to=` — dividend calendar

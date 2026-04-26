@@ -1,6 +1,6 @@
-# tradings-api Structured Data Reference
+# tradingviewapi Structured Data Reference
 
-This document lists every `tradings-api` (TradingView proxy service) endpoint and maps its response fields to equity research report sections. Shared by all skills in the `equity-research` plugin. **Prefer the structured API for numeric data**; use Web Search only for narrative content (MD&A, forward guidance, earnings call transcripts, segment breakdowns, risk factors).
+This document lists every `tradingviewapi` (TradingView proxy service) endpoint and maps its response fields to equity research report sections. Shared by all skills in the `equity-research` plugin. **Prefer the structured API for numeric data**; use Web Search only for narrative content (MD&A, forward guidance, earnings call transcripts, segment breakdowns, risk factors).
 
 ## Quick Navigation
 
@@ -21,17 +21,17 @@ This document lists every `tradings-api` (TradingView proxy service) endpoint an
 
 ## Lookup Tips
 
-`references/tradings-api.md` is the workflow-facing index and field-mapping guide.
-For exact endpoint behavior, downloaded API docs, and real executed example payloads, always refer to `references/tradings-api-docs/` first.
-In case of any mismatch, treat `references/tradings-api-docs/` as the source of truth and update this file to match it.
+`references/tradingviewapi.md` is the workflow-facing index and field-mapping guide.
+For exact endpoint behavior, downloaded API docs, and real executed example payloads, always refer to `references/tradingviewapi-docs/` first.
+In case of any mismatch, treat `references/tradingviewapi-docs/` as the source of truth and update this file to match it.
 
 ### Reference priority
 
 Use the bundled references in this order:
 
-1. `tradings-api-docs/openapi.json` — source of truth for parameter names, required fields, defaults, and enum constraints
-2. `tradings-api-docs/examples/` — request / response examples and payload-shape hints
-3. `tradings-api.md` — workflow routing and report-field mapping
+1. `tradingviewapi-docs/openapi.json` — source of truth for parameter names, required fields, defaults, and enum constraints
+2. `tradingviewapi-docs/examples/` — request / response examples and payload-shape hints
+3. `tradingviewapi.md` — workflow routing and report-field mapping
 
 If sources disagree:
 
@@ -59,20 +59,20 @@ If sources disagree:
 - `GET /api/market-data/{symbol}`
   Treat the request symbol or preflight search result as canonical. Do not rely on `data.company.ticker` or `data.company.exchange` to reconstruct the primary listing.
 
-- Read this file before opening `tradings-api-docs/openapi.json` or any file in `tradings-api-docs/examples/`.
-- Search `tradings-api-docs/examples/` by endpoint path or JSON field name, not by workflow name.
-- Treat `tradings-api-docs/examples/` as the real executed sample set, not just illustrative pseudodata.
+- Read this file before opening `tradingviewapi-docs/openapi.json` or any file in `tradingviewapi-docs/examples/`.
+- Search `tradingviewapi-docs/examples/` by endpoint path or JSON field name, not by workflow name.
+- Treat `tradingviewapi-docs/examples/` as the real executed sample set, not just illustrative pseudodata.
 - Most common files:
   - `examples/10-market-data.md` for company, TTM, current-period, and analyst data
   - `examples/08-calendar.md` for earnings and macro events
   - `examples/01-price-data.md`, `02-quote-data.md`, `04-technical-analysis.md` for chart inputs
   - `examples/06-news.md` for narrative news sourcing
 
-- OpenAPI source (bundled): `./tradings-api-docs/openapi.json`
-- RapidAPI call examples (bundled, grouped by endpoint): `./tradings-api-docs/examples/`
+- OpenAPI source (bundled): `./tradingviewapi-docs/openapi.json`
+- RapidAPI call examples (bundled, grouped by endpoint): `./tradingviewapi-docs/examples/`
 - Base URL (RapidAPI hosted): `https://tradingview-data1.p.rapidapi.com`
 
-> 📦 **Self-contained note**: `tradings-api-docs/` is the bundled local copy of the downloaded `tradings-api` documentation set for this skill, including real request examples and sample payloads captured from execution. If the contents look stale, refresh the affected files manually from the published API materials and re-align this file to those downloaded docs.
+> 📦 **Self-contained note**: `tradingviewapi-docs/` is the bundled local copy of the downloaded `tradingviewapi` documentation set for this skill, including real request examples and sample payloads captured from execution. If the contents look stale, refresh the affected files manually from the published API materials and re-align this file to those downloaded docs.
 
 ---
 
@@ -94,7 +94,7 @@ curl "https://tradingview-data1.p.rapidapi.com/api/market-data/NASDAQ:AAPL"
 
 Environment variables: `RAPIDAPI_KEY`, optional `TRADINGS_API_BASE`.
 
-For persistent user setup guidance, prefer the user-level shell configuration described in `./tradings-api-docs/README.md` and avoid storing real secrets inside the skill folder or packaged `.skill` artifact.
+For persistent user setup guidance, prefer the user-level shell configuration described in `./tradingviewapi-docs/README.md` and avoid storing real secrets inside the skill folder or packaged `.skill` artifact.
 
 ---
 
@@ -451,7 +451,7 @@ curl ".../api/search/market/Apple?filter=stock"
 When citing data obtained from this API in a report:
 
 ```
-Source: Structured data via tradings-api (TradingView); fetched [YYYY-MM-DD]
+Source: Structured data via tradingviewapi (TradingView); fetched [YYYY-MM-DD]
         Endpoint: /api/market-data/NASDAQ:AAPL
         Fiscal Period: data.current.fiscal_period_current = "2026-Q1"
 ```

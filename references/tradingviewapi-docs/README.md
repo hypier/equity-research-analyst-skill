@@ -1,13 +1,13 @@
-# tradings-api Reference Bundle
+# tradingviewapi Reference Bundle
 
 This directory contains bundled API reference material for the `equity-research-analyst` skill. Treat it as the source of truth for exact endpoint behavior, downloaded schemas, and example payload shapes, but not as the workflow guide for user-facing deliverables.
 
 ## Recommended Reading Order
 
-1. Read `../tradings-api.md` first for the "research task -> endpoint" mapping.
+1. Read `../tradingviewapi.md` first for the "research task -> endpoint" mapping.
 2. Open `openapi.json` when you need exact parameters, schemas, or response fields.
 3. Open `examples/*.md` when you need a concrete request pattern or sample payload.
-4. If `../tradings-api.md` disagrees with payload structure shown here, trust this folder and update `../tradings-api.md`.
+4. If `../tradingviewapi.md` disagrees with payload structure shown here, trust this folder and update `../tradingviewapi.md`.
 
 ## Reference Priority
 
@@ -15,19 +15,19 @@ Use the three reference layers for different jobs:
 
 1. `openapi.json` — source of truth for parameter names, required vs optional fields, defaults, enums, and endpoint existence.
 2. `examples/*.md` — best source for URL shape, header usage, and typical response payload structure after the endpoint and parameters are already validated.
-3. `../tradings-api.md` — workflow-level guidance for which endpoint to call for a research task and which fields matter in deliverables.
+3. `../tradingviewapi.md` — workflow-level guidance for which endpoint to call for a research task and which fields matter in deliverables.
 
 If these sources disagree:
 
 - Trust `openapi.json` for request construction.
 - Treat `examples/*.md` as illustrative payload examples that may occasionally use a bad or cross-market symbol placeholder.
-- Update `../tradings-api.md` to record any verified caveat that repeatedly affects real usage.
+- Update `../tradingviewapi.md` to record any verified caveat that repeatedly affects real usage.
 
 ## Search Tips
 
-- Prefer `rg "GET /api/market-data/{symbol}" references/tradings-api-docs/examples`
-- Prefer `rg "GET /api/calendar/earnings" references/tradings-api-docs/examples`
-- Prefer `rg "earnings_release_next_date|analyst-recommendations" references/tradings-api-docs/examples`
+- Prefer `rg "GET /api/market-data/{symbol}" references/tradingviewapi-docs/examples`
+- Prefer `rg "GET /api/calendar/earnings" references/tradingviewapi-docs/examples`
+- Prefer `rg "earnings_release_next_date|analyst-recommendations" references/tradingviewapi-docs/examples`
 - Open the smallest matching example file instead of loading the largest example bundle wholesale.
 
 ## What Is In This Folder
@@ -89,6 +89,6 @@ When a user asks how to configure the API key, guide them in this order:
 
 ## Maintenance Notes
 
-- This repo no longer includes `sync-tradings-api-docs.sh`.
+- This repo no longer includes `sync-tradingviewapi-docs.sh`.
 - If these bundled references become stale, refresh the affected files manually.
-- Keep detailed endpoint mapping in `../tradings-api.md`; keep this file short and navigational.
+- Keep detailed endpoint mapping in `../tradingviewapi.md`; keep this file short and navigational.

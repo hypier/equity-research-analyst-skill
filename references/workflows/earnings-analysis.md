@@ -61,7 +61,7 @@ Cite in every earnings update:
 - ✅ 10-Q filing (with filing date and EDGAR link)
 - ✅ Earnings call transcript (with date)
 - ✅ Investor presentation/supplemental materials (if available)
-- ✅ Consensus estimates source (`tradings-api` or external source, with date)
+- ✅ Consensus estimates source (`tradingviewapi` or external source, with date)
 - ✅ Prior guidance (from previous quarter's materials)
 
 **REFERENCE SECTION WITH CLICKABLE HYPERLINKS:**
@@ -106,11 +106,11 @@ The earnings update process follows 5 phases:
 
 ### Phase 1: Data Collection (30-60 minutes)
 
-**⭐ PREFERRED: Pull structured data via `tradings-api` FIRST**
+**⭐ PREFERRED: Pull structured data via `tradingviewapi` FIRST**
 
 Before unstructured Web Search, call the TradingView-backed API for numeric data. One call to `/api/market-data/{symbol}` returns company info, TTM financials with 8-quarter history arrays, current-period ratios, and next-quarter consensus EPS — covering ~70% of an earnings update's numerical content.
 
-See `../tradings-api.md` (Scenario A) for the exact curl commands and the JSON-field-to-report-field mapping table. Key endpoints for earnings updates:
+See `../tradingviewapi.md` (Scenario A) for the exact curl commands and the JSON-field-to-report-field mapping table. Key endpoints for earnings updates:
 
 - `GET /api/market-data/{symbol}` — one-shot pull of TTM financials, 8-quarter history arrays, current-period ratios, and next-quarter consensus EPS
 - `GET /api/market-data/{symbol}/analyst-recommendations` — analyst ratings and target-price consensus

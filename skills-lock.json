@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "equity-research-analyst": {
+      "source": "hypier/equity-research-analyst-skill",
+      "sourceType": "github",
+      "computedHash": "97390431645e57dbb6dfe425d19e0c8d35da81a101c421ee9b1bf6433933d275"
+    }
+  }
+}

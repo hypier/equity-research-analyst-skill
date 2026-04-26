@@ -4,7 +4,7 @@ description: Systematic stock screening and investment idea sourcing. Combines q
 
 ## Structured Data Source
 
-Use `tradings-api` to source and rank candidates before doing deeper fundamental work:
+Use `tradingviewapi` to source and rank candidates before doing deeper fundamental work:
 
 - `GET /api/leaderboard/stocks` — screen starting universe by gainers / losers / high dividend / 52-week highs / volatility
 - `GET /api/metadata/tabs?type=stocks` and `GET /api/metadata/columnsets` — discover available leaderboard slices
@@ -79,7 +79,7 @@ Run screens based on the style:
 - Activist involvement
 - Management changes at underperforming companies
 
-Use `tradings-api` to source recent IPO names and public-market context, then supplement with external event / filing work.
+Use `tradingviewapi` to source recent IPO names and public-market context, then supplement with external event / filing work.
 
 ### Step 3: Thematic Sweep
 

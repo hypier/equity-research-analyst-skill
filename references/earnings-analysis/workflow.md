@@ -4,7 +4,7 @@ This document provides detailed step-by-step instructions for each phase of the 
 
 ## Structured Data Source
 
-Use `tradings-api` for the numeric baseline before doing narrative research:
+Use `tradingviewapi` for the numeric baseline before doing narrative research:
 
 - `GET /api/market-data/{symbol}` — one-shot pull for company info, TTM history arrays, current-period ratios, current-quarter metadata, and next-quarter EPS forecast
 - `GET /api/market-data/{symbol}/financials-quarterly` — quarterly three-statement actuals
@@ -36,7 +36,7 @@ Check the latest reported quarter before doing any analysis.
 1. Check today's date and write it down explicitly.
 2. Search for the latest earnings release or investor-relations posting.
 3. Confirm the release date and quarter from the primary source.
-4. Pull the structured `tradings-api` baseline and compare the reported quarter / next earnings fields to the primary source.
+4. Pull the structured `tradingviewapi` baseline and compare the reported quarter / next earnings fields to the primary source.
 5. If the latest materials are older than 90 days, search again before proceeding.
 
 ## Phase 1: Earnings Data Collection (30-60 minutes)
@@ -225,7 +225,7 @@ Treat these as the starting numeric layer. The release, filing, and transcript r
   - From last earnings update or initiation report
   - Check what was estimated for this quarter's metrics
 
-- **Consensus estimates** - Prefer `tradings-api` `/analyst-recommendations` for current Street snapshot; use other external consensus sources only when you need a pre-release consensus timestamp or a metric not present in the API
+- **Consensus estimates** - Prefer `tradingviewapi` `/analyst-recommendations` for current Street snapshot; use other external consensus sources only when you need a pre-release consensus timestamp or a metric not present in the API
   - CRITICAL: Use estimates from BEFORE earnings release
   - Look for "as of [date before earnings]" to ensure pre-announcement consensus
   - Needed for beat/miss analysis
@@ -244,7 +244,7 @@ Treat these as the starting numeric layer. The release, filing, and transcript r
 - [ ] ✅ **ACCESSED** actual earnings press release and read it
 - [ ] ✅ **OPENED** actual earnings call transcript and verified date
 - [ ] ✅ **CONFIRMED** this is the MOST RECENT quarter by checking dates
-- [ ] ✅ Pulled the `tradings-api` baseline and checked it against the primary-source quarter
+- [ ] ✅ Pulled the `tradingviewapi` baseline and checked it against the primary-source quarter
 - [ ] ✅ Have full financial results (revenue, EPS, margins, etc.) from actual release
 - [ ] ✅ Have pre-earnings consensus estimates with source date
 
@@ -279,7 +279,7 @@ KEY BUSINESS METRICS:
 [Metric 3]          XXX         XXX        XXX          +X% YoY
 ```
 
-Populate the reported and historical numeric lines from `tradings-api` first, then reconcile every current-quarter figure to the earnings release / filing before publishing.
+Populate the reported and historical numeric lines from `tradingviewapi` first, then reconcile every current-quarter figure to the earnings release / filing before publishing.
 
 ### Step 4: Identify Key Themes from Call
 
@@ -444,7 +444,7 @@ Create charts focusing on QUARTERLY TRENDS and WHAT'S NEW.
 
 8. **Valuation Chart** (P/E or EV/EBITDA multiple)
    - Historical multiple range (derive from structured price / history series when possible)
-   - Current multiple from `tradings-api`
+   - Current multiple from `tradingviewapi`
    - Fair value multiple
 
 **OPTIONAL CHARTS (if space allows):**
@@ -526,7 +526,7 @@ Before publishing, verify:
 - [ ] Every figure has specific source with document and date
 - [ ] Every table has specific source with document reference
 - [ ] Beat/miss analysis cites consensus source with date
-- [ ] If `tradings-api` supplied the consensus context, the endpoint and fetch date are cited clearly
+- [ ] If `tradingviewapi` supplied the consensus context, the endpoint and fetch date are cited clearly
 - [ ] Guidance changes cite current and prior guidance sources
 - [ ] Key statistics have footnotes with specific page/slide references
 - [ ] Sources section lists all materials with URLs

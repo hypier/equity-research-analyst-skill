@@ -38,10 +38,10 @@ This document provides step-by-step instructions for executing Task 4 (Chart Gen
   - Comparable companies data
   - Valuation ranges
 - **Required**: Structured market data
-  - Historical stock price data from `tradings-api` `/api/price/{symbol}`
-  - Historical financial / valuation series from `tradings-api` history endpoints and `*_h[]` arrays
+  - Historical stock price data from `tradingviewapi` `/api/price/{symbol}`
+  - Historical financial / valuation series from `tradingviewapi` history endpoints and `*_h[]` arrays
 - **Optional**: External market data
-  - Historical valuation multiples if the user wants a bespoke methodology beyond what can be derived from `tradings-api`
+  - Historical valuation multiples if the user wants a bespoke methodology beyond what can be derived from `tradingviewapi`
 
 **⚠️ CRITICAL: DO NOT START THIS TASK UNLESS TASKS 1, 2, AND 3 ARE COMPLETE**
 
@@ -89,15 +89,15 @@ Do not attempt to create placeholder charts or skip charts due to missing data.
 
 ### External Data Verification
 - [ ] Can access `/api/price/{symbol}` for historical stock price data? (for chart 01)
-- [ ] Can access `tradings-api` history / `*_h[]` series for valuation-history derivation?
+- [ ] Can access `tradingviewapi` history / `*_h[]` series for valuation-history derivation?
 - [ ] Optional: external historical valuation data available? (only if needed for chart 34 enhancement)
 
 **IF ANY VERIFICATION FAILS**:
 - Missing Task 1? → Complete Task 1 (Company Research) first
 - Missing Task 2? → Complete Task 2 (Financial Modeling) first
 - Missing Task 3? → Complete Task 3 (Valuation Analysis) first
-- Missing `tradings-api` data? → Pull the required price / history endpoints first
-- Missing optional external data? → Continue with `tradings-api`-based charts and use external sources only for a more customized chart 34
+- Missing `tradingviewapi` data? → Pull the required price / history endpoints first
+- Missing optional external data? → Continue with `tradingviewapi`-based charts and use external sources only for a more customized chart 34
 
 ---
 
@@ -210,10 +210,10 @@ Understanding where each chart's data comes from:
 - chart_33: Price Target Scenarios → Valuation Summary tab (or calculate from scenarios)
 
 ### From External Sources - 2 charts
-- chart_01: Stock Price Performance → `tradings-api` `/api/price/{symbol}`
-- chart_34: Historical Valuation Multiples → derive from `tradings-api` history endpoints where possible; external valuation history is fallback only
+- chart_01: Stock Price Performance → `tradingviewapi` `/api/price/{symbol}`
+- chart_34: Historical Valuation Multiples → derive from `tradingviewapi` history endpoints where possible; external valuation history is fallback only
 
-**IMPORTANT**: Require ALL three tasks (1, 2, 3) complete plus the relevant `tradings-api` history endpoints to create the required charts. External data is supplemental, not the default path.
+**IMPORTANT**: Require ALL three tasks (1, 2, 3) complete plus the relevant `tradingviewapi` history endpoints to create the required charts. External data is supplemental, not the default path.
 
 ---
 

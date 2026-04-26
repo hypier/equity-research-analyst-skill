@@ -4,7 +4,7 @@ description: Update financial models with new data — quarterly earnings, manag
 
 ## Structured Data Source
 
-Use `tradings-api` first for the numeric refresh:
+Use `tradingviewapi` first for the numeric refresh:
 
 - `GET /api/market-data/{symbol}` — one-shot pull for current-period ratios, TTM history, next earnings date, and current quarter metadata
 - `GET /api/market-data/{symbol}/financials-quarterly` — reported quarterly three-statement actuals

@@ -4,7 +4,7 @@ description: Maintain and update investment theses for portfolio positions and w
 
 ## Structured Data Source
 
-Use `tradings-api` to keep the thesis scorecard data-driven:
+Use `tradingviewapi` to keep the thesis scorecard data-driven:
 
 - `GET /api/market-data/{symbol}` — company, valuation, next earnings date, and rolling fundamental summary
 - `GET /api/market-data/{symbol}/ttm` — margin, cash flow, leverage, and return metrics for thesis pillars
@@ -89,4 +89,4 @@ Format: Concise markdown or Word doc with the scorecard, recent updates, and cur
 - Track disconfirming evidence as rigorously as confirming evidence
 - Review theses at least quarterly, even when nothing dramatic has happened
 - If the user manages multiple positions, offer to do a full portfolio thesis review
-- Store thesis data in a structured format so it can be referenced across sessions and refreshed against `tradings-api`
+- Store thesis data in a structured format so it can be referenced across sessions and refreshed against `tradingviewapi`

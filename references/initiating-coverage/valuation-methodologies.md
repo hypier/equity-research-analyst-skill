@@ -4,7 +4,7 @@ This reference document provides comprehensive guidance on the three primary val
 
 ## Structured Data Inputs
 
-Before using external terminals or manual work, prefill the public-market inputs from `tradings-api`:
+Before using external terminals or manual work, prefill the public-market inputs from `tradingviewapi`:
 
 - `GET /api/market-data/{symbol}` — beta, market cap, current / TTM valuation ratios, debt / leverage context, dividend yield, and broad profitability metrics
 - `GET /api/market-data/{symbol}/enterprise-value` — EV bridge and EV-based current multiples
@@ -13,7 +13,7 @@ Before using external terminals or manual work, prefill the public-market inputs
 - `GET /api/market-data/{symbol}/analyst-recommendations` — Street recommendation mix and price-target range
 - `GET /api/quote/{symbol}?session=regular&fields=all` — live share price and current market-cap context
 
-Use external sources only where `tradings-api` is not enough: pre-announcement consensus timestamps, precedent transactions, bond-yield detail, private-company data, and proprietary peer datasets.
+Use external sources only where `tradingviewapi` is not enough: pre-announcement consensus timestamps, precedent transactions, bond-yield detail, private-company data, and proprietary peer datasets.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ DCF analysis values a company based on the present value of its projected future
 ### Step-by-Step DCF Process
 
 #### 1. Historical Financial Analysis
-- Collect 3-5 years of historical financials, prefilling from `tradings-api` history endpoints when available
+- Collect 3-5 years of historical financials, prefilling from `tradingviewapi` history endpoints when available
 - Calculate historical FCF = EBIT(1-Tax Rate) + D&A - CapEx - Change in NWC
 - Analyze historical growth rates and margins
 - Identify trends and cyclicality
@@ -107,7 +107,7 @@ WACC = (E/V × Cost of Equity) + (D/V × Cost of Debt × (1 - Tax Rate))
 Cost of Equity = Risk-Free Rate + Beta × Equity Risk Premium
 ```
 - Risk-Free Rate: 10-year Treasury yield
-- Beta: Prefer `tradings-api` market-data beta; otherwise use regression / comparable beta
+- Beta: Prefer `tradingviewapi` market-data beta; otherwise use regression / comparable beta
 - Equity Risk Premium: Historical average ~5-6%
 
 **Cost of Debt:**
@@ -199,7 +199,7 @@ Trading comps values a company based on how similar companies are valued in the 
 - Next-year (NTM) estimates from consensus
 - Historical growth rates
 
-For public peers, the default starting point should be `tradings-api` market-data, quote, enterprise-value, and analyst-recommendations endpoints before opening external data terminals.
+For public peers, the default starting point should be `tradingviewapi` market-data, quote, enterprise-value, and analyst-recommendations endpoints before opening external data terminals.
 
 **Calculate Market Metrics:**
 - Market Cap = Share Price × Shares Outstanding
@@ -308,7 +308,7 @@ Precedent transactions values a company based on prices paid for similar compani
 - Press releases and investor presentations
 - M&A databases and other transaction datasets
 
-`tradings-api` does not replace precedent-transaction sourcing; it is most useful here for current trading context and target-company fundamentals alongside the deal work.
+`tradingviewapi` does not replace precedent-transaction sourcing; it is most useful here for current trading context and target-company fundamentals alongside the deal work.
 
 #### 3. Calculate Transaction Multiples
 
@@ -419,7 +419,7 @@ Recommendation: BUY with target price of $45 (midpoint of base case)
 ### Sanity Checks
 
 **Cross-check valuation with:**
-1. **Historical multiples**: Is current valuation in line with history? Derive from `tradings-api` price / history data when possible
+1. **Historical multiples**: Is current valuation in line with history? Derive from `tradingviewapi` price / history data when possible
 2. **Peer comparison**: Justified premium/discount vs. peers?
 3. **Implied growth**: What growth is market pricing in?
 4. **Implied returns**: IRR from current price to target price

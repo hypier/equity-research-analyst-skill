@@ -4,7 +4,7 @@ description: Create comprehensive industry and sector landscape reports covering
 
 ## Structured Data Source
 
-Use `tradings-api` to build the public-company and macro backbone of the sector report:
+Use `tradingviewapi` to build the public-company and macro backbone of the sector report:
 
 - `GET /api/metadata/columnsets` and `GET /api/metadata/tabs?type=stocks` — available screen columns and market tabs
 - `GET /api/leaderboard/stocks?...` — sector-level peer pulls with valuation / profitability / performance columns
@@ -38,7 +38,7 @@ Web Search is still required for TAM, third-party market share, M&A precedent de
 - Forecast growth rate and key assumptions
 - Market segmentation (by product, geography, end market, customer type)
 
-Use `tradings-api` for public-company revenue growth and macro baselines; use external industry sources for TAM and non-public market sizing.
+Use `tradingviewapi` for public-company revenue growth and macro baselines; use external industry sources for TAM and non-public market sizing.
 
 **Industry Structure**
 - Fragmented vs. consolidated — top 5 market share
@@ -81,7 +81,7 @@ Build the comparison table from structured public-company data first, then layer
 - Recent M&A transaction multiples
 - How does the sector compare to the broader market?
 
-Current public-market multiples should come from `tradings-api`; precedent M&A multiples still need external deal research.
+Current public-market multiples should come from `tradingviewapi`; precedent M&A multiples still need external deal research.
 
 ### Step 5: Investment Implications
 

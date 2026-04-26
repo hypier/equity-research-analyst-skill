@@ -14,15 +14,15 @@ Keep context tight and load only the files needed for the active task.
 1. Match the request to exactly one workflow in `references/workflows/`.
 2. Read only that workflow file first.
 3. Open deep-dive references only when the active workflow points to them.
-4. Read `references/tradings-api.md` before opening anything in `references/tradings-api-docs/`.
-5. Treat `references/tradings-api-docs/` as a lookup bundle: search by endpoint name or JSON field, then open the smallest relevant file instead of loading an entire large example file.
+4. Read `references/tradingviewapi.md` before opening anything in `references/tradingviewapi-docs/`.
+5. Treat `references/tradingviewapi-docs/` as a lookup bundle: search by endpoint name or JSON field, then open the smallest relevant file instead of loading an entire large example file.
 
-### `tradings-api` lookup guide
+### `tradingviewapi` lookup guide
 
-- Start with `references/tradings-api.md` for task-to-endpoint mapping.
-- Use `references/tradings-api-docs/README.md` for file selection inside the bundled API docs.
-- Use `references/tradings-api-docs/openapi.json` as the source of truth for exact parameters, defaults, and allowed enum values.
-- Use `references/tradings-api-docs/examples/` mainly for concrete URL patterns and response shapes, not for deciding which asset-class parameter should be used.
+- Start with `references/tradingviewapi.md` for task-to-endpoint mapping.
+- Use `references/tradingviewapi-docs/README.md` for file selection inside the bundled API docs.
+- Use `references/tradingviewapi-docs/openapi.json` as the source of truth for exact parameters, defaults, and allowed enum values.
+- Use `references/tradingviewapi-docs/examples/` mainly for concrete URL patterns and response shapes, not for deciding which asset-class parameter should be used.
 - If an example and the OpenAPI spec disagree, trust `openapi.json` for parameters and trust executed examples only for payload shape after the request has been validated against the spec.
 - Search patterns that usually find the right example quickly:
   - `GET /api/market-data/{symbol}`
@@ -51,12 +51,12 @@ Match the user request to one of the nine workflows below and read the correspon
 
 The initiation-report workflow has five sequential tasks (Company Research → Financial Modeling → Valuation → Charts → Assembly). Execute **one task per user request**, verify prerequisites before the next task, and never auto-chain. Details in `references/workflows/initiating-coverage.md`.
 
-## Primary data source: `tradings-api`
+## Primary data source: `tradingviewapi`
 
-Before Web Search, pull structured numeric data (financials, TTM ratios, analyst consensus, calendars, prices, technicals, news) from the bundled `tradings-api` (TradingView proxy). **One call to `/api/market-data/{symbol}` covers ~70% of the numeric content of a typical research report.**
+Before Web Search, pull structured numeric data (financials, TTM ratios, analyst consensus, calendars, prices, technicals, news) from the bundled `tradingviewapi` (TradingView proxy). **One call to `/api/market-data/{symbol}` covers ~70% of the numeric content of a typical research report.**
 
-- Full endpoint map, curl examples, and JSON-path-to-report-field mapping: `references/tradings-api.md`
-- OpenAPI spec and example responses: `references/tradings-api-docs/`
+- Full endpoint map, curl examples, and JSON-path-to-report-field mapping: `references/tradingviewapi.md`
+- OpenAPI spec and example responses: `references/tradingviewapi-docs/`
 
 **Authentication**: users must provide their own `RAPIDAPI_KEY` env var (RapidAPI hosted).
 
@@ -78,7 +78,7 @@ Before Web Search, pull structured numeric data (financials, TTM ratios, analyst
 Every numeric fact in a deliverable must cite its source:
 
 ```
-Source: Structured data via tradings-api (TradingView); fetched [YYYY-MM-DD]
+Source: Structured data via tradingviewapi (TradingView); fetched [YYYY-MM-DD]
         Endpoint: /api/market-data/NASDAQ:AAPL
         Fiscal period: 2026-Q1
 ```
@@ -97,7 +97,7 @@ SEC filings keep separate EDGAR hyperlinks. When consensus data comes from the A
 - Do not fabricate data. Missing field → "N/A". Missing consensus → state "consensus not available".
 
 ## Fallback strategy
-1. `tradings-api` unavailable → fall back to Web Search + SEC EDGAR per the workflow reference.
+1. `tradingviewapi` unavailable → fall back to Web Search + SEC EDGAR per the workflow reference.
 2. Ticker unresolved → ask the user for `EXCHANGE:TICKER`.
 3. Ambiguous workflow → ask the user which deliverable they want.
 
@@ -107,8 +107,8 @@ SEC filings keep separate EDGAR hyperlinks. When consensus data comes from the A
 equity-research-analyst/
 ├── SKILL.md                              # This file
 ├── references/
-│   ├── tradings-api.md                   # Endpoint map + report-field mapping
-│   ├── tradings-api-docs/                # Bundled API spec + examples (snapshot)
+│   ├── tradingviewapi.md                   # Endpoint map + report-field mapping
+│   ├── tradingviewapi-docs/                # Bundled API spec + examples (snapshot)
 │   │   ├── README.md
 │   │   ├── openapi.json
 │   │   └── examples/ (12 .md files)

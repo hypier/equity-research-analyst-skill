@@ -4,7 +4,7 @@ description: Draft concise morning meeting notes summarizing overnight developme
 
 ## Structured Data Source
 
-Use `tradings-api` for the overnight numeric and event scan:
+Use `tradingviewapi` for the overnight numeric and event scan:
 
 - `GET /api/news/stock?lang=en&market_country=US` — US single-name headlines
 - `GET /api/news/economic?lang=en` — macro headlines
@@ -29,7 +29,7 @@ Scan for relevant events across coverage universe:
 
 **Earnings & Guidance**
 - Any coverage companies reporting overnight or pre-market? Start with `/api/calendar/earnings`
-- Earnings surprises (beat/miss on revenue, EPS, key metrics) from `tradings-api` + latest release
+- Earnings surprises (beat/miss on revenue, EPS, key metrics) from `tradingviewapi` + latest release
 - Guidance changes (raised, lowered, maintained) from latest release / transcript
 
 **News & Events**
@@ -89,7 +89,7 @@ If a coverage company reported, provide a quick reaction:
 
 **Action**: Maintain / Upgrade / Downgrade rating? Adjust price target?
 
-Use `tradings-api` for the actuals, quote reaction, and calendar timestamps; use the release / transcript for exact guidance wording.
+Use `tradingviewapi` for the actuals, quote reaction, and calendar timestamps; use the release / transcript for exact guidance wording.
 
 ### Step 4: Output
 
