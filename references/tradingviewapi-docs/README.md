@@ -58,6 +58,16 @@ export RAPIDAPI_KEY="your_key_here"
 
 Use that key in request headers when calling the hosted API.
 
+### How to obtain a RapidAPI key
+
+To get your `RAPIDAPI_KEY`, follow these steps:
+
+1. Visit `https://rapidapi.com/hypier/api/tradingview-data1`
+2. Register an account on the RapidAPI platform
+3. Subscribe to the API
+4. Obtain your API key from the RapidAPI console
+5. Set the key as an environment variable following the documentation above
+
 ## Persistent Configuration Guidance
 
 When guiding a user to set up `RAPIDAPI_KEY`, recommend a user-level shell environment variable as the default long-term solution:
